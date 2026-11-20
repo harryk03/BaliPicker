@@ -112,14 +112,15 @@
         "Daily housekeeping"
       ],
       "rating": "New listing, no reviews yet",
-      "notes": "Run by Balinest Villas, a big Superhost manager with 4.86★ over 10,000+ reviews. Dalung is a bit inland from central Canggu. Price still to come.",
+      "notes": "Not available on 31 Dec, so it can't cover the full Canggu stay as it stands. Run by Balinest Villas, a big Superhost manager with 4.86★ over 10,000+ reviews. Dalung is a bit inland from central Canggu.",
       "images": [
         "img/sunset-view-1.jpg",
         "img/sunset-view-2.jpg",
         "img/sunset-view-3.jpg",
         "img/sunset-view-4.jpg",
         "img/sunset-view-5.jpg"
-      ]
+      ],
+      "unavailable": "Not available on 31 Dec"
     },
     {
       "area": "canggu",

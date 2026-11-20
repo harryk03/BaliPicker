@@ -201,7 +201,7 @@ function renderTabs(){
 function night(i){return i.priceNight||(i.priceTotal&&i.nights?i.priceTotal/i.nights:null)}
 function priceBlock(i){
   const p=people();
-  if((i.kind||"stay")==="stay"&&!i.priceTotal&&!night(i)) return `<div class="price"><div style="grid-column:1/-1"><div class="k">Price${i.nights?` · ${esc(i.nights)} nts`:""}</div><div class="v" style="font-size:14px;font-weight:500">To come once Harry checks the dates</div></div></div>`;
+  if((i.kind||"stay")==="stay"&&!i.priceTotal&&!night(i)) return `<div class="price"><div style="grid-column:1/-1"><div class="k">Price${i.nights?` · ${esc(i.nights)} nts`:""}</div><div class="v" style="font-size:14px;font-weight:500">${i.unavailable?"No price, not available for our dates":"To come once Harry checks the dates"}</div></div></div>`;
   if((i.kind||"stay")==="stay") return `<div class="price"><div><div class="k">Per night</div><div class="v">${money(night(i))}</div></div>
       <div><div class="k">Total${i.nights?` · ${esc(i.nights)} nts`:""}</div><div class="v">${money(i.priceTotal)}</div></div>
       <div><div class="k">Each (÷${p})</div><div class="v">${money(i.priceTotal?i.priceTotal/p:null)}</div></div></div>`;
@@ -232,6 +232,7 @@ function card(i,leader){
       ${imgs.length>1?`<span class="gcount">${imgs.length} photos · swipe</span>`:""}${leader===i.id?`<span class="badge-lead">Leading</span>`:""}</div>`:""}
     <div class="body">
       <div class="title-row"><h2>${esc(i.title)}</h2>${i.source?`<span class="src">${esc(i.source)}</span>`:""}</div>
+      ${i.unavailable?`<span class="bud over">⚠ ${esc(i.unavailable)}</span>`:""}
       <div class="loc">${esc(i.location||"")}${i.dates?` · ${esc(i.dates)}`:""}</div>
       ${facts?`<div class="facts">${facts}</div>`:""}
       ${priceBlock(i)}${budgetBadge(i)}
@@ -246,7 +247,7 @@ function table(list,leader){
   const rows=list.map(i=>{
     const img=(i.images||[]).map(safeImg).filter(Boolean)[0], t=tallyFor(i), n=night(i);
     return `<tr><td>${img?`<img src="${img}" alt="">`:""}</td>
-      <td><b>${esc(i.title)}</b>${leader===i.id?" ★":""}<div class="msg">${esc(i.location||"")}</div></td>
+      <td><b>${esc(i.title)}</b>${leader===i.id?" ★":""}${i.unavailable?`<div class="msg err">⚠ ${esc(i.unavailable)}</div>`:""}<div class="msg">${esc(i.location||"")}</div></td>
       ${stay?`<td class="num">${money(n)}${b&&n?`<div class="msg ${n<=b?"ok":"err"}">${n<=b?"under":"over"}</div>`:""}</td><td class="num">${money(i.priceTotal)}</td><td class="num">${money(i.priceTotal?i.priceTotal/p:null)}</td>`
             :`<td class="num">${money(i.pricePP)}</td><td class="num">${money(i.pricePP?i.pricePP*p:i.priceTotal)}</td><td>${esc(i.duration||"—")}</td>`}
       <td>${esc((i.facts||[]).join(" · "))}</td>
