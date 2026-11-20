@@ -1,0 +1,39 @@
+{
+  "updated": "20 Nov 2026",
+  "config": {
+    "people": 4,
+    "budgetNight": null,
+    "areas": {
+      "uluwatu": { "dates": "26 – 31 Dec", "nights": 5 },
+      "canggu": { "dates": "31 Dec – 5 Jan", "nights": 5 }
+    }
+  },
+  "ideas": [
+    {
+      "id": "industrial-villa",
+      "area": "canggu",
+      "kind": "stay",
+      "title": "4 Bedroom Luxury Industrial Villa",
+      "source": "Airbnb",
+      "url": "https://www.airbnb.com.au/rooms/1585070206193089183",
+      "location": "Berawa, Canggu (Kuta Utara)",
+      "dates": "31 Dec – 5 Jan",
+      "facts": ["4 bedrooms", "4 beds", "5 bathrooms", "Sleeps 8"],
+      "highlights": [
+        "Private pool, hot tub and BBQ area",
+        "Pool table, arcade machine and board games",
+        "Concrete industrial fit-out with a big open-plan living room"
+      ],
+      "priceNight": 961.63,
+      "priceTotal": 4808.14,
+      "nights": 5,
+      "cancel": "Free cancellation before 3pm, 30 Dec",
+      "rating": "New listing, no reviews yet",
+      "notes": "Host Eka averages 4.33★ over 18 reviews on his other places and replies within the hour. The header says 4 bedrooms but the description mentions more, so worth asking. No smoke or CO alarm listed.",
+      "images": ["img/industrial-villa-1.jpg", "img/industrial-villa-2.jpg", "img/industrial-villa-3.jpg", "img/industrial-villa-4.jpg", "img/industrial-villa-5.jpg", "img/industrial-villa-6.jpg"],
+      "addedBy": "Harry",
+      "checked": "20 Nov"
+    }
+  ],
+  "votes": []
+}
