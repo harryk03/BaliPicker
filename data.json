@@ -127,8 +127,8 @@
       "source": "Airbnb",
       "dates": "31 Dec – 5 Jan",
       "nights": 5,
-      "priceNight": null,
-      "priceTotal": null,
+      "priceNight": 722.12,
+      "priceTotal": 3610.6,
       "addedBy": "Harry",
       "id": "seaside-finns",
       "title": "Seaside Luxury 4BR Villa, 400m to Finns",
@@ -146,7 +146,7 @@
         "Walk to Finns and the beach"
       ],
       "rating": "4.8★ from 70 reviews",
-      "notes": "Superhost Rachel, 10 years hosting. The listing mentions a 20% discount because of construction nearby, so expect some daytime noise. Price still to come.",
+      "notes": "Superhost Rachel, 10 years hosting. $802/night with a 10% early booking discount ($401 off) already taken out of the total. The listing also mentions a discount because of construction nearby, so expect some daytime noise.",
       "images": [
         "img/seaside-finns-1.jpg",
         "img/seaside-finns-2.jpg",
@@ -154,7 +154,9 @@
         "img/seaside-finns-4.jpg",
         "img/seaside-finns-5.jpg",
         "img/seaside-finns-6.jpg"
-      ]
+      ],
+      "cancel": "Free cancellation for 24 hours after booking",
+      "checked": "20 Nov"
     }
   ],
   "votes": []
