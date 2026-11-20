@@ -56,41 +56,6 @@
       "area": "canggu",
       "kind": "stay",
       "source": "Airbnb",
-      "dates": "31 Dec – 5 Jan",
-      "nights": 5,
-      "priceNight": null,
-      "priceTotal": null,
-      "addedBy": "Harry",
-      "id": "villa-joonam",
-      "title": "Villa Joonam: 2BR Pool, Gym & Sauna",
-      "url": "https://www.airbnb.com.au/rooms/1232414088253634046",
-      "location": "Central Canggu, near Batu Bolong (Kuta Utara)",
-      "facts": [
-        "2 bedrooms",
-        "2 king beds",
-        "2 bathrooms",
-        "Sleeps 4"
-      ],
-      "highlights": [
-        "Private pool and garden",
-        "Free Bali Social Club pass: gym, classes, sauna, steam room, cold plunge",
-        "Daily housekeeping"
-      ],
-      "rating": "4.94★ from 67 reviews · Guest favourite",
-      "notes": "Only 2 bedrooms, so it's two to a room with 4 of us. Superhost Lotus, 8 years hosting. Price still to come.",
-      "images": [
-        "img/villa-joonam-1.jpg",
-        "img/villa-joonam-2.jpg",
-        "img/villa-joonam-3.jpg",
-        "img/villa-joonam-4.jpg",
-        "img/villa-joonam-5.jpg",
-        "img/villa-joonam-6.jpg"
-      ]
-    },
-    {
-      "area": "canggu",
-      "kind": "stay",
-      "source": "Airbnb",
       "dates": "2 – 5 Jan only",
       "nights": 3,
       "priceNight": 616.7,
