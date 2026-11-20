@@ -201,6 +201,7 @@ function renderTabs(){
 function night(i){return i.priceNight||(i.priceTotal&&i.nights?i.priceTotal/i.nights:null)}
 function priceBlock(i){
   const p=people();
+  if((i.kind||"stay")==="stay"&&!i.priceTotal&&!night(i)) return `<div class="price"><div style="grid-column:1/-1"><div class="k">Price${i.nights?` · ${esc(i.nights)} nts`:""}</div><div class="v" style="font-size:14px;font-weight:500">To come once Harry checks the dates</div></div></div>`;
   if((i.kind||"stay")==="stay") return `<div class="price"><div><div class="k">Per night</div><div class="v">${money(night(i))}</div></div>
       <div><div class="k">Total${i.nights?` · ${esc(i.nights)} nts`:""}</div><div class="v">${money(i.priceTotal)}</div></div>
       <div><div class="k">Each (÷${p})</div><div class="v">${money(i.priceTotal?i.priceTotal/p:null)}</div></div></div>`;

@@ -4,8 +4,14 @@
     "people": 4,
     "budgetNight": null,
     "areas": {
-      "uluwatu": { "dates": "26 – 31 Dec", "nights": 5 },
-      "canggu": { "dates": "31 Dec – 5 Jan", "nights": 5 }
+      "uluwatu": {
+        "dates": "26 – 31 Dec",
+        "nights": 5
+      },
+      "canggu": {
+        "dates": "31 Dec – 5 Jan",
+        "nights": 5
+      }
     }
   },
   "ideas": [
@@ -18,7 +24,12 @@
       "url": "https://www.airbnb.com.au/rooms/1585070206193089183",
       "location": "Berawa, Canggu (Kuta Utara)",
       "dates": "31 Dec – 5 Jan",
-      "facts": ["4 bedrooms", "4 beds", "5 bathrooms", "Sleeps 8"],
+      "facts": [
+        "4 bedrooms",
+        "4 beds",
+        "5 bathrooms",
+        "Sleeps 8"
+      ],
       "highlights": [
         "Private pool, hot tub and BBQ area",
         "Pool table, arcade machine and board games",
@@ -30,9 +41,120 @@
       "cancel": "Free cancellation before 3pm, 30 Dec",
       "rating": "New listing, no reviews yet",
       "notes": "Host Eka averages 4.33★ over 18 reviews on his other places and replies within the hour. The header says 4 bedrooms but the description mentions more, so worth asking. No smoke or CO alarm listed.",
-      "images": ["img/industrial-villa-1.jpg", "img/industrial-villa-2.jpg", "img/industrial-villa-3.jpg", "img/industrial-villa-4.jpg", "img/industrial-villa-5.jpg", "img/industrial-villa-6.jpg"],
+      "images": [
+        "img/industrial-villa-1.jpg",
+        "img/industrial-villa-2.jpg",
+        "img/industrial-villa-3.jpg",
+        "img/industrial-villa-4.jpg",
+        "img/industrial-villa-5.jpg",
+        "img/industrial-villa-6.jpg"
+      ],
       "addedBy": "Harry",
       "checked": "20 Nov"
+    },
+    {
+      "area": "canggu",
+      "kind": "stay",
+      "source": "Airbnb",
+      "dates": "31 Dec – 5 Jan",
+      "nights": 5,
+      "priceNight": null,
+      "priceTotal": null,
+      "addedBy": "Harry",
+      "id": "villa-joonam",
+      "title": "Villa Joonam: 2BR Pool, Gym & Sauna",
+      "url": "https://www.airbnb.com.au/rooms/1232414088253634046",
+      "location": "Central Canggu, near Batu Bolong (Kuta Utara)",
+      "facts": [
+        "2 bedrooms",
+        "2 king beds",
+        "2 bathrooms",
+        "Sleeps 4"
+      ],
+      "highlights": [
+        "Private pool and garden",
+        "Free Bali Social Club pass: gym, classes, sauna, steam room, cold plunge",
+        "Daily housekeeping"
+      ],
+      "rating": "4.94★ from 67 reviews · Guest favourite",
+      "notes": "Only 2 bedrooms, so it's two to a room with 4 of us. Superhost Lotus, 8 years hosting. Price still to come.",
+      "images": [
+        "img/villa-joonam-1.jpg",
+        "img/villa-joonam-2.jpg",
+        "img/villa-joonam-3.jpg",
+        "img/villa-joonam-4.jpg",
+        "img/villa-joonam-5.jpg",
+        "img/villa-joonam-6.jpg"
+      ]
+    },
+    {
+      "area": "canggu",
+      "kind": "stay",
+      "source": "Airbnb",
+      "dates": "31 Dec – 5 Jan",
+      "nights": 5,
+      "priceNight": null,
+      "priceTotal": null,
+      "addedBy": "Harry",
+      "id": "sunset-view",
+      "title": "Sunset View: Chic 4BR Villa",
+      "url": "https://www.airbnb.com.au/rooms/1800597416910564623",
+      "location": "Dalung, near Canggu (Kuta Utara)",
+      "facts": [
+        "4 bedrooms",
+        "4 beds",
+        "4.5 bathrooms",
+        "Sleeps 8"
+      ],
+      "highlights": [
+        "Private pool",
+        "Outdoor kitchen with grill",
+        "Daily housekeeping"
+      ],
+      "rating": "New listing, no reviews yet",
+      "notes": "Run by Balinest Villas, a big Superhost manager with 4.86★ over 10,000+ reviews. Dalung is a bit inland from central Canggu. Price still to come.",
+      "images": [
+        "img/sunset-view-1.jpg",
+        "img/sunset-view-2.jpg",
+        "img/sunset-view-3.jpg",
+        "img/sunset-view-4.jpg",
+        "img/sunset-view-5.jpg"
+      ]
+    },
+    {
+      "area": "canggu",
+      "kind": "stay",
+      "source": "Airbnb",
+      "dates": "31 Dec – 5 Jan",
+      "nights": 5,
+      "priceNight": null,
+      "priceTotal": null,
+      "addedBy": "Harry",
+      "id": "seaside-finns",
+      "title": "Seaside Luxury 4BR Villa, 400m to Finns",
+      "url": "https://www.airbnb.com.au/rooms/53466376",
+      "location": "Canggu, 400m from Finns Beach Club",
+      "facts": [
+        "4 bedrooms",
+        "4 beds",
+        "4.5 bathrooms",
+        "Sleeps 8"
+      ],
+      "highlights": [
+        "Private pool with sun beds",
+        "Outdoor lounge and tropical garden",
+        "Walk to Finns and the beach"
+      ],
+      "rating": "4.8★ from 70 reviews",
+      "notes": "Superhost Rachel, 10 years hosting. The listing mentions a 20% discount because of construction nearby, so expect some daytime noise. Price still to come.",
+      "images": [
+        "img/seaside-finns-1.jpg",
+        "img/seaside-finns-2.jpg",
+        "img/seaside-finns-3.jpg",
+        "img/seaside-finns-4.jpg",
+        "img/seaside-finns-5.jpg",
+        "img/seaside-finns-6.jpg"
+      ]
     }
   ],
   "votes": []
