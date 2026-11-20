@@ -91,10 +91,10 @@
       "area": "canggu",
       "kind": "stay",
       "source": "Airbnb",
-      "dates": "31 Dec – 5 Jan",
-      "nights": 5,
-      "priceNight": null,
-      "priceTotal": null,
+      "dates": "2 – 5 Jan only",
+      "nights": 3,
+      "priceNight": 616.7,
+      "priceTotal": 1850.11,
       "addedBy": "Harry",
       "id": "sunset-view",
       "title": "Sunset View: Chic 4BR Villa",
@@ -112,7 +112,7 @@
         "Daily housekeeping"
       ],
       "rating": "New listing, no reviews yet",
-      "notes": "Not available on 31 Dec, so it can't cover the full Canggu stay as it stands. Run by Balinest Villas, a big Superhost manager with 4.86★ over 10,000+ reviews. Dalung is a bit inland from central Canggu.",
+      "notes": "Booked out 31 Dec and 1 Jan, so we'd need somewhere else for New Year's Eve. $623/night with a 10% early booking discount, and the total includes $168 tax. Run by Balinest Villas, a big Superhost manager with 4.86★ over 10,000+ reviews. Dalung is a bit inland from central Canggu.",
       "images": [
         "img/sunset-view-1.jpg",
         "img/sunset-view-2.jpg",
@@ -120,7 +120,9 @@
         "img/sunset-view-4.jpg",
         "img/sunset-view-5.jpg"
       ],
-      "unavailable": "Not available on 31 Dec"
+      "unavailable": "Only free 2–5 Jan, 3 of our 5 Canggu nights",
+      "checked": "20 Nov",
+      "cancel": "Free cancellation before 3pm, 3 Dec"
     },
     {
       "area": "canggu",
