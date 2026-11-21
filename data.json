@@ -172,6 +172,41 @@
       ],
       "rating": "Reviews around 8/10",
       "notes": "Photos and price still to come."
+    },
+    {
+      "id": "castle-lunita",
+      "area": "uluwatu",
+      "kind": "stay",
+      "source": "Airbnb",
+      "dates": "26 – 31 Dec",
+      "nights": 5,
+      "priceNight": null,
+      "priceTotal": null,
+      "addedBy": "Harry",
+      "title": "Castle Lunita: Ocean View, Cinema & Gym",
+      "url": "https://www.airbnb.com.au/rooms/1599353658658717551",
+      "location": "Clifftop Uluwatu, 10 min walk to Blue Point and Suluban beaches",
+      "facts": [
+        "4 bedrooms",
+        "4 beds",
+        "8 bathrooms",
+        "Sleeps 8"
+      ],
+      "highlights": [
+        "Private pool, sauna, cinema room and home gym",
+        "Panoramic Indian Ocean views",
+        "Outdoor kitchen with grill",
+        "Every bedroom has its own bathroom"
+      ],
+      "rating": "4.93★ from 15 reviews · Guest favourite",
+      "notes": "Superhost Edo, who guests say is very responsive. The listing mentions road construction down the valley until Dec 2026 (with a price drop), usually quiet on the villa side. Price still to come.",
+      "images": [
+        "img/castle-lunita-1.jpg",
+        "img/castle-lunita-2.jpg",
+        "img/castle-lunita-3.jpg",
+        "img/castle-lunita-4.jpg",
+        "img/castle-lunita-5.jpg"
+      ]
     }
   ],
   "votes": []
