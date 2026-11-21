@@ -125,6 +125,53 @@
       ],
       "cancel": "Free cancellation for 24 hours after booking",
       "checked": "20 Nov"
+    },
+    {
+      "area": "uluwatu",
+      "kind": "stay",
+      "source": "Booking.com",
+      "dates": "26 – 31 Dec",
+      "nights": 5,
+      "priceNight": null,
+      "priceTotal": null,
+      "addedBy": "Harry",
+      "images": [],
+      "id": "villa-kayura",
+      "title": "Villa Kayura by BaliSuperHost",
+      "url": "https://www.booking.com/hotel/id/villa-kayura-by-balisuperhost.en-gb.html",
+      "location": "Uluwatu",
+      "facts": [],
+      "highlights": [],
+      "notes": "Run by BaliSuperHost, a big villa manager. Photos, details and price still to come."
+    },
+    {
+      "area": "uluwatu",
+      "kind": "stay",
+      "source": "Booking.com",
+      "dates": "26 – 31 Dec",
+      "nights": 5,
+      "priceNight": null,
+      "priceTotal": null,
+      "addedBy": "Harry",
+      "images": [],
+      "id": "modjo-bingin",
+      "title": "MODJO Villas Bingin",
+      "url": "https://www.booking.com/hotel/id/modjo-villas-bingin.en-gb.html",
+      "location": "Bingin, about a 6 min walk to Bingin Beach",
+      "facts": [
+        "4 bedrooms",
+        "4 queen beds",
+        "4 bathrooms",
+        "Sleeps 8"
+      ],
+      "highlights": [
+        "Private pool",
+        "All bedrooms have their own bathroom and air con",
+        "Short walk to Bingin Beach, cafés and Alchemy",
+        "Padang Padang beach 5 min drive"
+      ],
+      "rating": "Reviews around 8/10",
+      "notes": "Photos and price still to come."
     }
   ],
   "votes": []
