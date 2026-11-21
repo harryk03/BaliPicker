@@ -225,6 +225,34 @@
       "facts": [],
       "highlights": [],
       "notes": "Booking.com's page name says 2BR, so the number of bedrooms needs checking. Photos, details and price still to come."
+    },
+    {
+      "id": "new-5br-pererenan",
+      "area": "canggu",
+      "kind": "stay",
+      "source": "Booking.com",
+      "dates": "31 Dec – 5 Jan",
+      "nights": 5,
+      "priceNight": null,
+      "priceTotal": null,
+      "addedBy": "Harry",
+      "images": [],
+      "title": "New 5BR Villa, 200m to the Beach",
+      "url": "https://www.booking.com/hotel/id/new-5br-villa-beach-at-200m-n1.en-gb.html",
+      "location": "Pererenan, just west of Canggu",
+      "facts": [
+        "5 bedrooms",
+        "5.5 bathrooms",
+        "Sleeps 10"
+      ],
+      "highlights": [
+        "Private pool and tropical garden",
+        "Every bedroom has its own bathroom",
+        "Part of a new complex of 6 villas",
+        "Walk to St. Ali and Pererenan cafés"
+      ],
+      "rating": "10/10 on Vrbo",
+      "notes": "The only 5-bedroom option, so nobody shares if Jasmine comes. Pererenan is quieter than central Canggu, about 10 minutes' drive to Batu Bolong. Photos and price still to come."
     }
   ],
   "votes": []
