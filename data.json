@@ -207,6 +207,24 @@
         "img/castle-lunita-4.jpg",
         "img/castle-lunita-5.jpg"
       ]
+    },
+    {
+      "id": "luxury-villa-av1",
+      "area": "canggu",
+      "kind": "stay",
+      "source": "Booking.com",
+      "dates": "31 Dec – 5 Jan",
+      "nights": 5,
+      "priceNight": null,
+      "priceTotal": null,
+      "addedBy": "Harry",
+      "images": [],
+      "title": "Luxury Villa AV1",
+      "url": "https://www.booking.com/hotel/id/2br-luxury-villa-av1.en-gb.html",
+      "location": "Canggu area",
+      "facts": [],
+      "highlights": [],
+      "notes": "Booking.com's page name says 2BR, so the number of bedrooms needs checking. Photos, details and price still to come."
     }
   ],
   "votes": []
