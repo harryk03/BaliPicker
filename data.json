@@ -218,13 +218,23 @@
       "priceNight": null,
       "priceTotal": null,
       "addedBy": "Harry",
-      "images": [],
+      "images": [
+        "img/luxury-villa-av1-1.jpg",
+        "img/luxury-villa-av1-2.jpg",
+        "img/luxury-villa-av1-3.jpg",
+        "img/luxury-villa-av1-4.jpg",
+        "img/luxury-villa-av1-5.jpg"
+      ],
       "title": "Luxury Villa AV1",
       "url": "https://www.booking.com/hotel/id/2br-luxury-villa-av1.en-gb.html",
       "location": "Canggu area",
       "facts": [],
-      "highlights": [],
-      "notes": "Booking.com's page name says 2BR, so the number of bedrooms needs checking. Photos, details and price still to come."
+      "highlights": [
+        "Private pool with sun loungers and garden",
+        "Double-height open-plan living and dining",
+        "Master bedroom with a freestanding bath"
+      ],
+      "notes": "Booking.com's page name says 2BR, so the number of bedrooms needs checking. Price still to come."
     },
     {
       "id": "new-5br-pererenan",
