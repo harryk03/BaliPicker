@@ -460,6 +460,44 @@
         "img/stone-villa-5.jpg",
         "img/stone-villa-6.jpg"
       ]
+    },
+    {
+      "id": "dolce-young",
+      "area": "uluwatu",
+      "kind": "stay",
+      "source": "Booking.com",
+      "dates": "26 – 31 Dec",
+      "nights": 5,
+      "title": "Dolce x The Young Villas (2 villas)",
+      "url": "https://www.booking.com/hotel/id/dolce-x-the-young-villas.en-gb.html",
+      "location": "Uluwatu, 2.5 km to Cemongkak Beach",
+      "facts": [
+        "2 × 2-bedroom villas",
+        "4 bedrooms total",
+        "4 bathrooms total",
+        "Max 4 per villa"
+      ],
+      "highlights": [
+        "Each villa has a pool with a view, kitchen and terrace",
+        "Air con, soundproofing, washing machine",
+        "Room service, coffee shop and laundry on site"
+      ],
+      "priceTotal": 5622,
+      "priceNight": 1124.4,
+      "checked": "22 Nov",
+      "cancel": "Free cancellation before 26 Nov",
+      "rating": "8.6 on Booking.com from 127 reviews",
+      "addedBy": "Harry",
+      "unavailable": "Needs 2 separate villas: each is 2 bedrooms, max 4 people",
+      "notes": "Only 2-bedroom villas are left (max 4 each), so 5 of us need two side by side: 2 × $2,811 = $5,622. Each is 30% off with a Black Friday deal, taxes included. Pay nothing until 24 Nov.",
+      "images": [
+        "img/dolce-young-1.jpg",
+        "img/dolce-young-2.jpg",
+        "img/dolce-young-3.jpg",
+        "img/dolce-young-4.jpg",
+        "img/dolce-young-5.jpg",
+        "img/dolce-young-6.jpg"
+      ]
     }
   ],
   "votes": []
