@@ -422,6 +422,44 @@
         "img/ocean-v4-4.jpg",
         "img/ocean-v4-5.jpg"
       ]
+    },
+    {
+      "id": "stone-villa",
+      "area": "uluwatu",
+      "kind": "stay",
+      "source": "Airbnb",
+      "dates": "26 – 30 Dec only",
+      "nights": 4,
+      "title": "Stone-Style Pool Villa, Bingin",
+      "url": "https://www.airbnb.com.au/rooms/1806233250258956089",
+      "location": "Pecatu, Bingin: 750 m (about 10 min walk) to Bingin Beach",
+      "facts": [
+        "4 bedrooms",
+        "4 beds",
+        "4 bathrooms",
+        "Sleeps 8"
+      ],
+      "highlights": [
+        "Private pool beside a covered open-air living and kitchen area",
+        "4 air-conditioned bedrooms",
+        "Close to Sana, Motel Mexicola and El Kabron (about 5 min drive)"
+      ],
+      "priceTotal": 1443.88,
+      "priceNight": 360.97,
+      "checked": "22 Nov",
+      "cancel": "Free cancellation before 2pm, 26 Nov",
+      "rating": "New listing, 2 reviews",
+      "addedBy": "Harry",
+      "unavailable": "26–30 Dec only, 4 of our 5 Uluwatu nights",
+      "notes": "Discount on now: 10% early booking discount, $401/night × 4 = $1,604 down to $1,444 ($160 off). Cheapest option on the whole site. Priced for 26–30 Dec, so we'd need somewhere for 30 Dec. Run by Bukit Vista, a big manager rated 4.58★, 11 years hosting. Only 2 reviews so far.",
+      "images": [
+        "img/stone-villa-1.jpg",
+        "img/stone-villa-2.jpg",
+        "img/stone-villa-3.jpg",
+        "img/stone-villa-4.jpg",
+        "img/stone-villa-5.jpg",
+        "img/stone-villa-6.jpg"
+      ]
     }
   ],
   "votes": []
