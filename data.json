@@ -348,6 +348,43 @@
         "img/ocean-forest-5.jpg",
         "img/ocean-forest-6.jpg"
       ]
+    },
+    {
+      "id": "loca-dreamland",
+      "area": "uluwatu",
+      "kind": "stay",
+      "source": "Airbnb",
+      "dates": "26 – 31 Dec",
+      "nights": 5,
+      "title": "Private Luxury 4BR Ocean-View Villa",
+      "url": "https://www.airbnb.com.au/rooms/1503258255620614759",
+      "location": "Dreamland, Uluwatu: 3 min walk to Dreamland Beach, 10 min to Bingin",
+      "facts": [
+        "4 bedrooms",
+        "4 beds",
+        "4.5 bathrooms",
+        "Sleeps 8"
+      ],
+      "highlights": [
+        "Ocean views",
+        "Every bedroom has its own bathroom",
+        "Walk to Dreamland Beach"
+      ],
+      "priceTotal": 6546.72,
+      "priceNight": 1309.34,
+      "checked": "22 Nov",
+      "cancel": "Free cancellation for 24 hours after booking, partial refund before 19 Dec",
+      "rating": "5.0★ from 13 reviews · Guest favourite",
+      "addedBy": "Harry",
+      "notes": "Available for our dates (checked 22 Nov). Closest to the beach of the Uluwatu options. Run by Stay With Loca Dreamland, Superhost. Strict cancellation: only free in the first 24 hours.",
+      "images": [
+        "img/loca-dreamland-1.jpg",
+        "img/loca-dreamland-2.jpg",
+        "img/loca-dreamland-3.jpg",
+        "img/loca-dreamland-4.jpg",
+        "img/loca-dreamland-5.jpg",
+        "img/loca-dreamland-6.jpg"
+      ]
     }
   ],
   "votes": []
