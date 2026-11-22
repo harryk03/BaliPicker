@@ -79,8 +79,8 @@ function render(){
   const votes=(data.votes||[]).filter(v=>v&&v.name);
   const people=Number((data.config||{}).people)||5;
   document.getElementById("voters").innerHTML=votes.length
-    ?`<b>${votes.length} of ${people}</b> have voted: ${votes.map(v=>`<span class="pill">${esc(v.name)}</span>`).join("")}<div class="msg" style="font-size:13px;margin-top:4px">Updated ${esc(data.updated||"")}</div>`
-    :`<b>No votes in yet.</b> <span class="msg">Votes appear here once they're sent to Harry and added.</span>`;
+    ?`<b>${votes.length} of ${people}</b> have voted: ${votes.map(v=>`<span class="pill">${esc(v.name)}</span>`).join("")}<div class="msg" style="font-size:13px;margin-top:4px">Last vote ${esc(data.updated||"")} · updates live</div>`
+    :`<b>No votes in yet.</b> <span class="msg">Votes appear here as soon as people hit Submit vote.</span>`;
   document.getElementById("area-tabs").innerHTML=AREAS.map(a=>`<button class="tab" aria-selected="${a.id===area}" data-a="${a.id}">${a.name}</button>`).join("");
   let html="";
   for(const k of KINDS){
@@ -104,7 +104,21 @@ function render(){
   document.getElementById("sections").innerHTML=html||`<div class="empty">No options here yet.</div>`;
 }
 document.addEventListener("click",e=>{const b=e.target.closest("[data-a]"); if(b){area=b.dataset.a; history.replaceState(null,"","#"+area); render()}});
-fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{data=d;render()}).catch(()=>{document.getElementById("voters").textContent="Couldn't load the results. Pull down to refresh."});
+const STORE="https://api.npoint.io/a809efdc901329b4db75";
+const vkey=n=>String(n||"").trim().toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"anon";
+let fileVotes=[], lastAt="";
+async function loadShared(){
+  try{
+    const d=await fetch(STORE+"?t="+Date.now(),{cache:"no-store"}).then(r=>r.json());
+    const shared=Object.values((d&&d.votes)||{}).filter(v=>v&&v.name);
+    const m=new Map(); for(const v of fileVotes.concat(shared)) m.set(vkey(v.name),{name:String(v.name).slice(0,30),ranks:(v.ranks&&typeof v.ranks==="object")?v.ranks:{},no:Array.isArray(v.no)?v.no:[],at:v.at||""});
+    data.votes=[...m.values()];
+    const at=data.votes.map(v=>v.at).filter(Boolean).sort().pop();
+    if(at) data.updated=new Date(at).toLocaleString("en-AU",{day:"numeric",month:"short",hour:"numeric",minute:"2-digit"});
+    render();
+  }catch(e){}
+}
+fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{data=d; fileVotes=(d.votes||[]).filter(v=>v&&v.name); render(); loadShared(); setInterval(loadShared,20000)}).catch(()=>{document.getElementById("voters").textContent="Couldn't load the results. Pull down to refresh."});
 </script>
 </body>
 </html>

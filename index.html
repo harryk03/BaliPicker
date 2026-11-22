@@ -115,7 +115,7 @@ a.btn{flex:0 0 auto;text-decoration:none;display:inline-block;white-space:nowrap
   <header>
     <div class="kicker">Bali · Christmas & New Year</div>
     <h1>Where we're staying & what we're doing</h1>
-    <p class="sub">Rank your top 3 in each list (1st is your favourite) and tap 👎 on anything you don't like. Then hit <b>Send my vote</b> to share it in WhatsApp.</p>
+    <p class="sub">Rank your top 3 in each list (1st is your favourite) and tap 👎 on anything you don't like. Then add your name and hit <b>Submit vote</b>. It shows up on the results page straight away.</p>
   </header>
 
   <div class="budget" id="budget"></div>
@@ -144,9 +144,9 @@ a.btn{flex:0 0 auto;text-decoration:none;display:inline-block;white-space:nowrap
   <div class="dock-in">
     <div class="dock-row">
       <input id="voter-name" type="text" placeholder="Your name" aria-label="Your name" maxlength="30" autocomplete="given-name">
-      <a class="btn" id="wa-btn" href="#" target="_blank" rel="noopener">Send my vote</a>
+      <button class="btn" id="save-btn" type="button">Submit vote</button>
     </div>
-    <div class="dock-row" style="align-items:flex-start"><div class="summary" id="summary" style="flex:1">Pick your top 3 above.</div><button class="link-btn" id="copy-btn" type="button" style="font-size:13px">Copy</button></div>
+    <div class="dock-row" style="align-items:flex-start"><div class="summary" id="summary" style="flex:1">Pick your top 3 above.</div><a class="link-btn" id="wa-link" href="#" target="_blank" rel="noopener" style="font-size:13px;margin-right:10px">WhatsApp</a><button class="link-btn" id="copy-btn" type="button" style="font-size:13px">Copy</button></div>
   </div>
 </div>
 
@@ -283,11 +283,34 @@ function picks(){return Object.values(me.ranks).reduce((s,r)=>s+(r||[]).filter(B
 function renderSummary(msg,cls){
   const n=picks(), el=$("summary");
   el.className="summary"+(cls?" msg "+cls:"");
-  el.textContent=msg||(n?`${n} pick${n>1?"s":""}${me.no.length?`, ${me.no.length} dislike${me.no.length>1?"s":""}`:""}. Your picks are kept on this phone. Tap Send my vote when you're done.`:"Pick your top 3 above.");
-  const wa=$("wa-btn"); wa.href="https://wa.me/?text="+encodeURIComponent(voteText());
+  el.textContent=msg||(n?`${n} pick${n>1?"s":""}${me.no.length?`, ${me.no.length} dislike${me.no.length>1?"s":""}`:""}. ${me.submitted?"Changes save automatically.":"Tap Submit vote when you're done."}`:"Pick your top 3 above.");
+  $("wa-link").href="https://wa.me/?text="+encodeURIComponent(voteText());
 }
 function renderAll(){renderBudget();renderTabs();renderMain();renderSummary()}
-function persist(){store.set("me",me)}
+const STORE="https://api.npoint.io/a809efdc901329b4db75";
+let fileVotes=[], sharedVotes=[], saveT=null, saving=false;
+const vkey=n=>norm(n).replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"anon";
+const cleanVote=v=>({name:String(v.name||"").slice(0,30),ranks:(v.ranks&&typeof v.ranks==="object")?v.ranks:{},no:Array.isArray(v.no)?v.no:[]});
+function mergeVotes(){const m=new Map(); for(const v of fileVotes.concat(sharedVotes)) if(v.name) m.set(vkey(v.name),cleanVote(v)); votes=[...m.values()]}
+async function loadShared(){try{const d=await fetch(STORE+"?t="+Date.now(),{cache:"no-store"}).then(r=>r.json()); sharedVotes=Object.values((d&&d.votes)||{}).filter(v=>v&&v.name); mergeVotes(); renderMain(); updatedLine()}catch(e){}}
+async function saveVote(manual){
+  if(!me.name.trim()){nameIn.focus();renderSummary("Add your name first so we know whose vote it is.","err");return}
+  if(!picks()&&!me.no.length){if(manual)renderSummary("Pick at least one option first.","err");return}
+  if(saving) return; saving=true; if(manual) renderSummary("Saving…");
+  try{
+    let d=await fetch(STORE+"?t="+Date.now(),{cache:"no-store"}).then(r=>r.json()).catch(()=>null);
+    if(!d||typeof d!=="object") d={}; if(!d.votes||typeof d.votes!=="object") d.votes={};
+    d.votes[vkey(me.name)]={name:me.name.trim().slice(0,30),ranks:me.ranks,no:me.no,at:new Date().toISOString()};
+    const r=await fetch(STORE,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d)});
+    if(!r.ok) throw new Error(r.status);
+    me.submitted=true; store.set("me",me);
+    sharedVotes=Object.values(d.votes); mergeVotes(); renderMain(); updatedLine();
+    renderSummary("Saved ✓ Everyone can see it on the results page.","ok");
+  }catch(e){renderSummary("Couldn't save just now. Try again, or send it on WhatsApp.","err")}
+  saving=false;
+}
+function persist(){store.set("me",me); if(me.submitted&&me.name.trim()){clearTimeout(saveT); saveT=setTimeout(()=>saveVote(false),1200)}}
+function updatedLine(){$("updated").textContent=`${votes.length} vote${votes.length===1?"":"s"} in so far.`}
 
 document.addEventListener("click",e=>{
   const g=e.target.closest("[data-g]"); if(g){const gal=g.parentElement.querySelector(".gallery"); gal.scrollBy({left:gal.clientWidth*(+g.dataset.g),behavior:"smooth"}); return}
@@ -313,14 +336,12 @@ document.addEventListener("click",e=>{
 const nameIn=$("voter-name"); nameIn.value=me.name||"";
 nameIn.addEventListener("input",()=>{me.name=nameIn.value;persist();renderMain();renderSummary()});
 
-$("wa-btn").addEventListener("click",e=>{
-  if(!me.name.trim()){e.preventDefault();nameIn.focus();renderSummary("Add your name first so Harry knows whose vote it is.","err");return}
-  if(!picks()&&!me.no.length){e.preventDefault();renderSummary("Pick at least one option first.","err")}
-});
+$("save-btn").addEventListener("click",()=>saveVote(true));
+$("wa-link").addEventListener("click",e=>{if(!me.name.trim()){e.preventDefault();nameIn.focus();renderSummary("Add your name first.","err")}});
 $("copy-btn").addEventListener("click",()=>{
   if(!me.name.trim()){nameIn.focus();renderSummary("Add your name first.","err");return}
-  try{navigator.clipboard.writeText(voteText()).then(()=>renderSummary("Copied. Paste it to Harry.","ok"),()=>renderSummary("Couldn't copy. Use Send my vote instead.","err"))}
-  catch(err){renderSummary("Couldn't copy. Use Send my vote instead.","err")}
+  try{navigator.clipboard.writeText(voteText()).then(()=>renderSummary("Copied. Paste it to Harry.","ok"),()=>renderSummary("Couldn't copy. Use Submit vote instead.","err"))}
+  catch(err){renderSummary("Couldn't copy. Use Submit vote instead.","err")}
 });
 $("add-form").addEventListener("submit",e=>{
   e.preventDefault();
@@ -333,10 +354,9 @@ $("add-form").addEventListener("submit",e=>{
 
 fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{
   config=d.config||{}; ideas=(d.ideas||[]).filter(i=>i&&i.id&&i.title&&i.area);
-  votes=(d.votes||[]).filter(v=>v&&v.name).map(v=>({name:String(v.name),ranks:v.ranks||{},no:Array.isArray(v.no)?v.no:[]}));
+  fileVotes=(d.votes||[]).filter(v=>v&&v.name); mergeVotes();
   if(!view.area||!AREAS.some(a=>a.id===view.area)) view.area=(AREAS.find(a=>ideas.some(i=>i.area===a.id))||AREAS[0]).id;
-  if(d.updated) $("updated").textContent=`Options and tally last updated ${d.updated}. ${votes.length} vote${votes.length===1?"":"s"} counted so far.`;
-  renderAll();
+  updatedLine(); renderAll(); loadShared(); setInterval(loadShared,30000);
 }).catch(()=>{$("main").innerHTML=`<div class="empty">Couldn't load the options. Pull down to refresh.</div>`});
 </script>
 </body>
