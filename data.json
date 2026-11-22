@@ -385,6 +385,43 @@
         "img/loca-dreamland-5.jpg",
         "img/loca-dreamland-6.jpg"
       ]
+    },
+    {
+      "id": "ocean-v4",
+      "area": "uluwatu",
+      "kind": "stay",
+      "source": "Airbnb",
+      "dates": "26 – 30 Dec only",
+      "nights": 4,
+      "title": "Ocean V 4: New & Huge 4BR near the Beach",
+      "url": "https://www.airbnb.com.au/rooms/1510705725202566597",
+      "location": "Uluwatu, 10 min walk to Padang Padang, 15 min to Bingin",
+      "facts": [
+        "4 bedrooms",
+        "4 beds",
+        "4.5 bathrooms",
+        "Sleeps 8"
+      ],
+      "highlights": [
+        "Private pool and jacuzzi",
+        "Enclosed air-conditioned living area with sunken lounge and 65\" TV",
+        "Cafés and restaurants a short stroll away"
+      ],
+      "priceTotal": 2380.64,
+      "priceNight": 595.16,
+      "checked": "22 Nov",
+      "cancel": "Free cancellation before 3pm, 25 Dec",
+      "rating": "4.92★ from 24 reviews",
+      "addedBy": "Harry",
+      "unavailable": "26–30 Dec only, 4 of our 5 Uluwatu nights",
+      "notes": "Priced for 26–30 Dec (4 nights), so we'd need somewhere for the night of 30 Dec. Superhost Ana, 8 years hosting. Free cancellation right up to 25 Dec.",
+      "images": [
+        "img/ocean-v4-1.jpg",
+        "img/ocean-v4-2.jpg",
+        "img/ocean-v4-3.jpg",
+        "img/ocean-v4-4.jpg",
+        "img/ocean-v4-5.jpg"
+      ]
     }
   ],
   "votes": []
