@@ -310,6 +310,44 @@
         "img/gracie-casa-5.jpg",
         "img/gracie-casa-6.jpg"
       ]
+    },
+    {
+      "id": "ocean-forest",
+      "area": "uluwatu",
+      "kind": "stay",
+      "source": "Airbnb",
+      "dates": "26 – 31 Dec",
+      "nights": 5,
+      "title": "Ocean Forest Villa, Bingin",
+      "url": "https://www.airbnb.com.au/rooms/1059413909937078775",
+      "location": "Uluwatu-Bingin, 1.5 km to Padang Padang, 2 km to Bingin Beach",
+      "facts": [
+        "4 bedrooms",
+        "5 beds",
+        "4 bathrooms",
+        "Sleeps 9"
+      ],
+      "highlights": [
+        "Private skate bowl and basketball court",
+        "Long pool and tropical garden with ocean and forest views",
+        "Full-time staff, daily cleaning and fast Wi-Fi",
+        "Optional private feast with catering and live music"
+      ],
+      "priceTotal": 3719.75,
+      "priceNight": 743.95,
+      "checked": "22 Nov",
+      "cancel": "Free cancellation before 3pm, 21 Dec",
+      "rating": "4.82★ from 28 reviews",
+      "addedBy": "Harry",
+      "notes": "Available for our dates (checked 22 Nov). Big discount on now ($6,494 down to $3,720). Superhost Yohana, 3 years hosting. Free cancellation right up to 21 Dec.",
+      "images": [
+        "img/ocean-forest-1.jpg",
+        "img/ocean-forest-2.jpg",
+        "img/ocean-forest-3.jpg",
+        "img/ocean-forest-4.jpg",
+        "img/ocean-forest-5.jpg",
+        "img/ocean-forest-6.jpg"
+      ]
     }
   ],
   "votes": []
