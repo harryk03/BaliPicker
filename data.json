@@ -130,42 +130,6 @@
       "area": "uluwatu",
       "kind": "stay",
       "source": "Booking.com",
-      "dates": "26 – 30 Dec only",
-      "nights": 4,
-      "priceNight": 886,
-      "priceTotal": 3544,
-      "addedBy": "Harry",
-      "images": [
-        "img/villa-kayura-1.jpg",
-        "img/villa-kayura-2.jpg",
-        "img/villa-kayura-3.jpg",
-        "img/villa-kayura-4.jpg",
-        "img/villa-kayura-5.jpg"
-      ],
-      "id": "villa-kayura",
-      "title": "Villa Kayura by BaliSuperHost",
-      "url": "https://www.booking.com/hotel/id/villa-kayura-by-balisuperhost.en-gb.html",
-      "location": "Uluwatu",
-      "facts": [
-        "4 bedrooms",
-        "4 bathrooms",
-        "Sleeps 5"
-      ],
-      "highlights": [
-        "Private pool and terrace",
-        "Every bedroom has its own bathroom",
-        "2 km to Dreamland Beach"
-      ],
-      "notes": "Not free on 30 Dec, so we'd need another place for one night. Price includes taxes with 10% off. Run by BaliSuperHost.",
-      "checked": "22 Nov",
-      "unavailable": "Booked on 30 Dec, so only free 26–30 Dec, 4 of our 5 Uluwatu nights",
-      "rating": "10 on Booking.com from 1 review",
-      "cancel": "Free cancellation before 26 Nov"
-    },
-    {
-      "area": "uluwatu",
-      "kind": "stay",
-      "source": "Booking.com",
       "dates": "26 – 31 Dec",
       "nights": 5,
       "priceNight": 1014.8,
