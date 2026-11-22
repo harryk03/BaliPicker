@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bali Vote Results</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5efe3;--card:#fffdf8;--ink:#1e2722;--muted:#6c6f66;--line:#e4d9c6;--green:#2e5b48;--green-soft:#e2ece4;--terra:#c4613a;--terra-soft:#f6e3d8;--gold:#b88a1c;--gold-soft:#f5ebcc}
+@media (prefers-color-scheme:dark){:root{--bg:#151a17;--card:#1e2420;--ink:#ece6da;--muted:#9a9d94;--line:#2f3731;--green:#7fb89b;--green-soft:#22332a;--terra:#e48a63;--terra-soft:#3a2820;--gold:#e0b84a;--gold-soft:#3a3220}}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--green)}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 60px}
+.kicker{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--terra);font-weight:600}
+h1{font-family:Fraunces,Georgia,serif;font-weight:650;font-size:30px;line-height:1.1;margin:4px 0 6px}
+h2{font-family:Fraunces,Georgia,serif;font-weight:650;font-size:22px;margin:28px 0 4px}
+.sub,.msg{color:var(--muted)}
+.sub{margin:0 0 14px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:14px}
+.pill{display:inline-block;font-size:13px;padding:4px 10px;border-radius:999px;background:var(--bg);border:1px solid var(--line);margin:3px 4px 3px 0}
+.tabs{display:flex;gap:6px;margin:10px 0}
+.tab{flex:1;padding:10px;border-radius:12px;border:1px solid var(--line);background:var(--card);font-weight:600;cursor:pointer;font-family:Fraunces,Georgia,serif;font-size:17px;color:var(--ink)}
+.tab[aria-selected=true]{background:var(--green);border-color:var(--green);color:#fff}
+.row{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px;margin-bottom:8px}
+.row img{width:92px;height:68px;object-fit:cover;border-radius:9px;flex:0 0 auto;background:var(--line)}
+.rank{font-family:Fraunces,Georgia,serif;font-size:22px;font-weight:650;width:26px;text-align:center;flex:0 0 auto;padding-top:14px}
+.main{flex:1;min-width:0}
+.t{font-weight:600;line-height:1.25}
+.meta{font-size:13px;color:var(--muted);margin-top:2px}
+.score{text-align:right;flex:0 0 auto}
+.pts{font-size:22px;font-weight:650;font-family:Fraunces,Georgia,serif}
+.tag{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;margin-top:4px}
+.tag.lead{background:var(--gold-soft);color:var(--gold)}
+.tag.cull{background:var(--terra-soft);color:var(--terra)}
+.tag.none{background:var(--bg);color:var(--muted);border:1px solid var(--line)}
+.who{font-size:13px;margin-top:4px}
+.who .d{color:var(--terra)}
+.row.culled{opacity:.75}
+.empty{background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:18px;text-align:center;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">Bali · Vote results</div>
+  <h1>How the votes stand</h1>
+  <p class="sub">Points: 1st = 3, 2nd = 2, 3rd = 1. 👎 = dislikes. Anything tagged <b>Cull?</b> has more dislikes than support. <a href="./">Back to voting →</a></p>
+
+  <div class="box" id="voters">Loading…</div>
+
+  <div class="tabs" id="area-tabs"></div>
+  <div id="sections"></div>
+</div>
+<script>
+const AREAS=[{id:"uluwatu",name:"Uluwatu"},{id:"canggu",name:"Canggu"}];
+const KINDS=[{id:"stay",name:"Stays"},{id:"do",name:"Things to do"}];
+const POINTS=[3,2,1];
+const ORD=["1st","2nd","3rd"];
+let data=null, area=location.hash==="#canggu"?"canggu":"uluwatu";
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const money=n=>(typeof n==="number"&&isFinite(n))?"$"+Math.round(n).toLocaleString("en-AU"):"—";
+const safeImg=p=>/^img\/[\w.-]+\.(jpe?g|png|webp)$/i.test(String(p))?p:null;
+const safeUrl=u=>{try{const x=new URL(String(u));return /^https?:$/.test(x.protocol)?x.href:null}catch(e){return null}};
+
+function tally(i,votes){
+  const key=i.area+"-"+(i.kind||"stay"); let pts=0; const ranks=[], nos=[];
+  for(const v of votes){
+    const r=(v.ranks&&v.ranks[key])||[], ix=r.indexOf(i.id);
+    if(ix>=0&&ix<3){pts+=POINTS[ix]; ranks.push({n:v.name,ix})}
+    if((v.no||[]).includes(i.id)) nos.push(v.name);
+  }
+  ranks.sort((a,b)=>a.ix-b.ix);
+  return {pts,ranks,nos,firsts:ranks.filter(x=>x.ix===0).length};
+}
+
+function render(){
+  const votes=(data.votes||[]).filter(v=>v&&v.name);
+  const people=Number((data.config||{}).people)||5;
+  document.getElementById("voters").innerHTML=votes.length
+    ?`<b>${votes.length} of ${people}</b> have voted: ${votes.map(v=>`<span class="pill">${esc(v.name)}</span>`).join("")}<div class="msg" style="font-size:13px;margin-top:4px">Updated ${esc(data.updated||"")}</div>`
+    :`<b>No votes in yet.</b> <span class="msg">Votes appear here once they're sent to Harry and added.</span>`;
+  document.getElementById("area-tabs").innerHTML=AREAS.map(a=>`<button class="tab" aria-selected="${a.id===area}" data-a="${a.id}">${a.name}</button>`).join("");
+  let html="";
+  for(const k of KINDS){
+    const list=(data.ideas||[]).filter(i=>i.area===area&&(i.kind||"stay")===k.id);
+    if(!list.length) continue;
+    const rows=list.map(i=>({i,t:tally(i,votes)})).sort((a,b)=>b.t.pts-a.t.pts||b.t.firsts-a.t.firsts||a.t.nos.length-b.t.nos.length);
+    const top=rows[0]&&rows[0].t.pts>0?rows[0].i.id:null;
+    const p=Number((data.config||{}).people)||5;
+    html+=`<h2>${k.name} · ${AREAS.find(a=>a.id===area).name}</h2><p class="msg" style="margin:0 0 10px;font-size:13px">${list.length} options</p>`;
+    html+=rows.map((r,n)=>{
+      const i=r.i,t=r.t, img=(i.images||[]).map(safeImg).filter(Boolean)[0], url=safeUrl(i.url);
+      const cull=t.nos.length>0&&t.nos.length>=t.ranks.length;
+      const each=(i.kind||"stay")==="stay"?(i.priceTotal?money(i.priceTotal/p)+" each":"price tbc"):(i.pricePP?money(i.pricePP)+" pp":"");
+      const tag=i.id===top?`<span class="tag lead">★ Leading</span>`:cull?`<span class="tag cull">Cull?</span>`:(!t.ranks.length&&!t.nos.length?`<span class="tag none">No votes</span>`:"");
+      return `<div class="row${cull?" culled":""}"><div class="rank">${n+1}</div>${img?`<img src="${img}" alt="" loading="lazy">`:""}
+        <div class="main"><div class="t">${url?`<a href="${esc(url)}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">${esc(i.title)}</a>`:esc(i.title)}</div>
+          <div class="meta">${esc(each)}${i.dates?" · "+esc(i.dates):""}</div>
+          <div class="who">${t.ranks.map(x=>esc(x.n)+" "+ORD[x.ix]).join(", ")||'<span class="msg">No ranks</span>'}${t.nos.length?` · <span class="d">👎 ${t.nos.map(esc).join(", ")}</span>`:""}</div></div>
+        <div class="score"><div class="pts">${t.pts}</div><div class="msg" style="font-size:12px">pts${t.nos.length?` · 👎${t.nos.length}`:""}</div>${tag}</div></div>`}).join("");
+  }
+  document.getElementById("sections").innerHTML=html||`<div class="empty">No options here yet.</div>`;
+}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-a]"); if(b){area=b.dataset.a; history.replaceState(null,"","#"+area); render()}});
+fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{data=d;render()}).catch(()=>{document.getElementById("voters").textContent="Couldn't load the results. Pull down to refresh."});
+</script>
+</body>
+</html>
