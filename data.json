@@ -273,6 +273,43 @@
       "notes": "Available for our dates (checked 22 Nov). Everyone gets their own room. Price includes taxes with a 15% Late Escape deal, but it's non-refundable. Location rated lower (7.5) as it's further out than central Canggu.",
       "checked": "22 Nov",
       "cancel": "Non-refundable"
+    },
+    {
+      "id": "gracie-casa",
+      "area": "uluwatu",
+      "kind": "stay",
+      "source": "Airbnb",
+      "dates": "26 – 31 Dec",
+      "nights": 5,
+      "title": "Gracie Casa Villa, Bingin Beach",
+      "url": "https://www.airbnb.com.au/rooms/1590825048263695942",
+      "location": "Bingin, Uluwatu",
+      "facts": [
+        "4 bedrooms",
+        "5 beds",
+        "3 bathrooms",
+        "Sleeps 8"
+      ],
+      "highlights": [
+        "Private pool with outdoor shower",
+        "3 bedrooms plus a mezzanine with 2 single beds",
+        "Near Bingin Beach"
+      ],
+      "priceTotal": 2897.7,
+      "priceNight": 579.54,
+      "checked": "22 Nov",
+      "cancel": "Free cancellation before 3pm, 26 Nov",
+      "rating": "4.82★ from 11 reviews",
+      "addedBy": "Harry",
+      "notes": "Available for our dates (checked 22 Nov). Cheapest option so far. The 4th 'bedroom' is a mezzanine with 2 singles, and there are only 3 bathrooms for 5 of us. Superhost Junita. Price includes a 10% discount.",
+      "images": [
+        "img/gracie-casa-1.jpg",
+        "img/gracie-casa-2.jpg",
+        "img/gracie-casa-3.jpg",
+        "img/gracie-casa-4.jpg",
+        "img/gracie-casa-5.jpg",
+        "img/gracie-casa-6.jpg"
+      ]
     }
   ],
   "votes": []
