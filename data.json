@@ -168,8 +168,8 @@
       "source": "Booking.com",
       "dates": "26 – 31 Dec",
       "nights": 5,
-      "priceNight": 1127.4,
-      "priceTotal": 5637,
+      "priceNight": 1014.8,
+      "priceTotal": 5074,
       "addedBy": "Harry",
       "images": [
         "img/modjo-bingin-1.jpg",
@@ -189,15 +189,15 @@
         "230 m²"
       ],
       "highlights": [
-        "Private pool",
-        "All bedrooms have their own bathroom and air con",
-        "Short walk to Bingin Beach, cafés and Alchemy",
-        "Padang Padang beach 5 min drive"
+        "Private pool with garden and pool views",
+        "Sunken lounge and open-plan living",
+        "Outdoor bathrooms with stone baths",
+        "Short walk to Bingin Beach, cafés and Alchemy"
       ],
       "rating": "9.2 on Booking.com from 101 reviews",
-      "notes": "Available for our dates but only 1 left (checked 22 Nov). Price includes taxes with a 31% Late Escape deal. Best-reviewed option in Uluwatu so far.",
+      "notes": "Available for our dates but only 1 left (checked 22 Nov). $5,074 total for 5 adults from the Booking.com app, including parking and fast Wi-Fi. That rate is non-refundable. Rated 9.2 from 101 reviews, the best-reviewed option in Uluwatu so far.",
       "checked": "22 Nov",
-      "cancel": "Free cancellation before 26 Nov ($4,705 if non-refundable)"
+      "cancel": "Non-refundable (a free-cancellation rate was about $5,637)"
     },
     {
       "id": "castle-lunita",
