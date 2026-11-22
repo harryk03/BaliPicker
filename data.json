@@ -536,6 +536,264 @@
         "img/dolce-young-11.jpg",
         "img/dolce-young-12.jpg"
       ]
+    },
+    {
+      "area": "canggu",
+      "kind": "stay",
+      "source": "Booking.com",
+      "dates": "31 Dec – 5 Jan",
+      "nights": 5,
+      "checked": "22 Nov",
+      "addedBy": "Harry",
+      "id": "elegant-4br",
+      "title": "Elegant 4BR Villa, Huge Pool",
+      "url": "https://www.booking.com/hotel/id/elegant-3-br-villa-huge-pool-in-central-canggu.en-gb.html",
+      "location": "Central Canggu, about 1.4 km from Finns",
+      "facts": [
+        "4 bedrooms",
+        "4 beds",
+        "4 bathrooms",
+        "400 m²"
+      ],
+      "highlights": [
+        "Huge private pool",
+        "Every bedroom has its own bathroom",
+        "Free parking and Wi-Fi"
+      ],
+      "priceTotal": 2846.95,
+      "priceNight": 569.39,
+      "cancel": "Free cancellation before 10 Dec",
+      "rating": "9.1 on Booking.com from 20 reviews",
+      "notes": "Best-reviewed of the Booking.com finds. 20% Early Booker deal ($3,559 down to $2,847), taxes included. Only 1 left.",
+      "images": [
+        "img/elegant-4br-1.jpg",
+        "img/elegant-4br-2.jpg",
+        "img/elegant-4br-3.jpg",
+        "img/elegant-4br-4.jpg",
+        "img/elegant-4br-5.jpg",
+        "img/elegant-4br-6.jpg",
+        "img/elegant-4br-7.jpg",
+        "img/elegant-4br-8.jpg",
+        "img/elegant-4br-9.jpg",
+        "img/elegant-4br-10.jpg",
+        "img/elegant-4br-11.jpg",
+        "img/elegant-4br-12.jpg"
+      ]
+    },
+    {
+      "area": "canggu",
+      "kind": "stay",
+      "source": "Booking.com",
+      "dates": "31 Dec – 5 Jan",
+      "nights": 5,
+      "checked": "22 Nov",
+      "addedBy": "Harry",
+      "id": "casa-di-elle",
+      "title": "Casa di Elle: Rooftop Villa, Berawa",
+      "url": "https://www.booking.com/hotel/id/brand-new-berawa-near-baked-canggu.en-gb.html",
+      "location": "Berawa, about 1.8 km from Finns",
+      "facts": [
+        "4 bedrooms",
+        "4 beds",
+        "4 bathrooms",
+        "120 m²"
+      ],
+      "highlights": [
+        "Rooftop terrace",
+        "Private pool and garden",
+        "Balconies with garden and mountain views"
+      ],
+      "priceTotal": 2024.23,
+      "priceNight": 404.85,
+      "cancel": "Free cancellation before 26 Dec",
+      "rating": "7.6 on Booking.com from 9 reviews (location rated 9.5)",
+      "notes": "Brand new. $2,024 when paying online (Booking.com covers $159), taxes included. Smaller footprint at 120 m².",
+      "images": [
+        "img/casa-di-elle-1.jpg",
+        "img/casa-di-elle-2.jpg",
+        "img/casa-di-elle-3.jpg",
+        "img/casa-di-elle-4.jpg",
+        "img/casa-di-elle-5.jpg",
+        "img/casa-di-elle-6.jpg",
+        "img/casa-di-elle-7.jpg",
+        "img/casa-di-elle-8.jpg",
+        "img/casa-di-elle-9.jpg",
+        "img/casa-di-elle-10.jpg",
+        "img/casa-di-elle-11.jpg",
+        "img/casa-di-elle-12.jpg"
+      ]
+    },
+    {
+      "area": "canggu",
+      "kind": "stay",
+      "source": "Booking.com",
+      "dates": "31 Dec – 5 Jan",
+      "nights": 5,
+      "checked": "22 Nov",
+      "addedBy": "Harry",
+      "id": "umah-madewi",
+      "title": "Umah MaDeWi",
+      "url": "https://www.booking.com/hotel/id/umah-madewi.en-gb.html",
+      "location": "Tibubeneng, about 2 km from Finns",
+      "facts": [
+        "4 bedrooms",
+        "2 doubles + 2 singles",
+        "3 bathrooms",
+        "200 m²"
+      ],
+      "highlights": [
+        "Private pool and garden",
+        "Terrace and lounge",
+        "Cheapest Canggu option"
+      ],
+      "priceTotal": 1673,
+      "priceNight": 334.6,
+      "cancel": "Free cancellation before 30 Dec ($1,506 if non-refundable)",
+      "rating": "9.3 on Booking.com from 4 reviews",
+      "notes": "Cheapest by far, but only 3 bathrooms for 5 of us and two of the bedrooms are singles.",
+      "images": [
+        "img/umah-madewi-1.jpg",
+        "img/umah-madewi-2.jpg",
+        "img/umah-madewi-3.jpg",
+        "img/umah-madewi-4.jpg",
+        "img/umah-madewi-5.jpg",
+        "img/umah-madewi-6.jpg",
+        "img/umah-madewi-7.jpg",
+        "img/umah-madewi-8.jpg",
+        "img/umah-madewi-9.jpg",
+        "img/umah-madewi-10.jpg",
+        "img/umah-madewi-11.jpg",
+        "img/umah-madewi-12.jpg"
+      ]
+    },
+    {
+      "area": "canggu",
+      "kind": "stay",
+      "source": "Booking.com",
+      "dates": "31 Dec – 5 Jan",
+      "nights": 5,
+      "checked": "22 Nov",
+      "addedBy": "Harry",
+      "id": "kammara",
+      "title": "Kammara Villa: Tropical Retreat with Pool",
+      "url": "https://www.booking.com/hotel/id/kammara-1-your-dream-getaway-gorgeous-new-villa-with-4-bedrooms-jungle-views-and.en-gb.html",
+      "location": "Canggu, about 1.6 km from Finns",
+      "facts": [
+        "4 bedrooms",
+        "4 beds",
+        "4 bathrooms",
+        "180 m²"
+      ],
+      "highlights": [
+        "Private pool and BBQ area",
+        "Daily housekeeping",
+        "Jungle views"
+      ],
+      "priceTotal": 3059.61,
+      "priceNight": 611.92,
+      "cancel": "Free cancellation before 26 Dec",
+      "rating": "7.1 on Booking.com from 6 reviews",
+      "notes": "30% off ($4,371 down to $3,060), taxes included. Reviews are only average.",
+      "images": [
+        "img/kammara-1.jpg",
+        "img/kammara-2.jpg",
+        "img/kammara-3.jpg",
+        "img/kammara-4.jpg",
+        "img/kammara-5.jpg",
+        "img/kammara-6.jpg",
+        "img/kammara-7.jpg",
+        "img/kammara-8.jpg",
+        "img/kammara-9.jpg",
+        "img/kammara-10.jpg",
+        "img/kammara-11.jpg",
+        "img/kammara-12.jpg"
+      ]
+    },
+    {
+      "area": "canggu",
+      "kind": "stay",
+      "source": "Booking.com",
+      "dates": "31 Dec – 5 Jan",
+      "nights": 5,
+      "checked": "22 Nov",
+      "addedBy": "Harry",
+      "id": "casa-embra",
+      "title": "Casa Embra: Elegant 4BR in Berawa",
+      "url": "https://www.booking.com/hotel/id/casa-embra-chic-amp-tropical-4-bedroom-villa-in-central-berawa.en-gb.html",
+      "location": "Central Berawa, about 1.4 km from Finns (18 min walk to Berawa Beach)",
+      "facts": [
+        "4 bedrooms",
+        "4 king beds",
+        "4 bathrooms",
+        "248 m²"
+      ],
+      "highlights": [
+        "Private pool",
+        "Every bedroom has its own bathroom",
+        "Balcony and patio"
+      ],
+      "priceTotal": 6219.62,
+      "priceNight": 1243.92,
+      "cancel": "Free cancellation before 1 Dec",
+      "rating": "9.3 on Booking.com from 3 reviews",
+      "notes": "33% off Black Friday deal ($9,283 down to $6,220), taxes included. Run by Bali Management Villas.",
+      "images": [
+        "img/casa-embra-1.jpg",
+        "img/casa-embra-2.jpg",
+        "img/casa-embra-3.jpg",
+        "img/casa-embra-4.jpg",
+        "img/casa-embra-5.jpg",
+        "img/casa-embra-6.jpg",
+        "img/casa-embra-7.jpg",
+        "img/casa-embra-8.jpg",
+        "img/casa-embra-9.jpg",
+        "img/casa-embra-10.jpg",
+        "img/casa-embra-11.jpg",
+        "img/casa-embra-12.jpg"
+      ]
+    },
+    {
+      "area": "canggu",
+      "kind": "stay",
+      "source": "Booking.com",
+      "dates": "31 Dec – 5 Jan",
+      "nights": 5,
+      "checked": "22 Nov",
+      "addedBy": "Harry",
+      "id": "maison-obsidian",
+      "title": "Maison Obsidian: Sauna & Ice Bath",
+      "url": "https://www.booking.com/hotel/id/maison-obsidian-4br-ice-bath-sauna-canggu.en-gb.html",
+      "location": "Canggu, about 1.7 km from Finns",
+      "facts": [
+        "4 bedrooms",
+        "4 king beds",
+        "5 bathrooms",
+        "309 m²"
+      ],
+      "highlights": [
+        "Sauna and ice bath",
+        "Infinity pool and bar",
+        "Dishwasher, BBQ, soundproofing"
+      ],
+      "priceTotal": 5819.12,
+      "priceNight": 1163.82,
+      "cancel": "Free cancellation before 1 Dec",
+      "rating": "10 on Booking.com from 1 review",
+      "notes": "New on Booking.com: 20% New Property Deal for the first 3 bookers ($7,274 down to $5,819), taxes included.",
+      "images": [
+        "img/maison-obsidian-1.jpg",
+        "img/maison-obsidian-2.jpg",
+        "img/maison-obsidian-3.jpg",
+        "img/maison-obsidian-4.jpg",
+        "img/maison-obsidian-5.jpg",
+        "img/maison-obsidian-6.jpg",
+        "img/maison-obsidian-7.jpg",
+        "img/maison-obsidian-8.jpg",
+        "img/maison-obsidian-9.jpg",
+        "img/maison-obsidian-10.jpg",
+        "img/maison-obsidian-11.jpg",
+        "img/maison-obsidian-12.jpg"
+      ]
     }
   ],
   "votes": []
