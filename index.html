@@ -77,6 +77,16 @@ header h1{font-family:Fraunces,Georgia,serif;font-weight:650;font-size:30px;line
 .vbtn[aria-pressed=true].r2,.vbtn[aria-pressed=true].r3{background:var(--green);border-color:var(--green);color:#fff}
 .vbtn.no{flex:1.25}
 .vbtn[aria-pressed=true].no{background:var(--terra);border-color:var(--terra);color:#fff}
+.vbtn.taken{opacity:.38;border-style:dashed}
+.mypicks{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 12px;margin-bottom:14px;font-size:14px}
+.mypicks .h{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;margin-bottom:4px}
+.mypicks .p{display:flex;align-items:center;gap:8px;padding:3px 0}
+.mypicks .slot{font-weight:600;width:52px;flex:0 0 auto}
+.mypicks .nm{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mypicks .empty-s{color:var(--muted)}
+.mypicks button{background:none;border:0;color:var(--terra);font-size:13px;cursor:pointer;padding:2px 4px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:130px;max-width:92%;width:max-content;background:var(--ink);color:var(--bg);padding:10px 14px;border-radius:12px;font-size:14px;z-index:20;box-shadow:0 6px 20px rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.show{opacity:1}
 .tally{font-size:13px;margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);color:var(--muted)}
 .tally b{color:var(--ink)}
 .empty{background:var(--card);border:1px dashed var(--line);border-radius:16px;padding:22px;text-align:center;color:var(--muted)}
@@ -115,7 +125,7 @@ a.btn{flex:0 0 auto;text-decoration:none;display:inline-block;white-space:nowrap
   <header>
     <div class="kicker">Bali · Christmas & New Year</div>
     <h1>Where we're staying & what we're doing</h1>
-    <p class="sub">Rank your top 3 in each list (1st is your favourite) and tap 👎 on anything you don't like. Then add your name and hit <b>Submit vote</b>. It shows up on the results page straight away.</p>
+    <p class="sub">Rank your top 3 in each area, one 1st, one 2nd and one 3rd each (1st is your favourite), and tap 👎 on anything you don't like. Then add your name and hit <b>Submit vote</b>. It shows up on the results page straight away.</p>
   </header>
 
   <div class="budget" id="budget"></div>
@@ -220,7 +230,7 @@ function budgetBadge(i){
 }
 function voteRow(i){
   const r=me.ranks[sectionKey(i.area,i.kind||"stay")]||[], lab=["★ 1st","2nd","3rd"];
-  return `<div class="vote">${[0,1,2].map(n=>`<button class="vbtn r${n+1}" aria-pressed="${r[n]===i.id}" data-rank="${n}" data-id="${esc(i.id)}">${lab[n]}</button>`).join("")}
+  return `<div class="vote">${[0,1,2].map(n=>{const taken=r[n]&&r[n]!==i.id; return `<button class="vbtn r${n+1}${taken?" taken":""}" aria-pressed="${r[n]===i.id}"${taken?` aria-disabled="true" title="${lab[n]} is already used in this list"`:""} data-rank="${n}" data-id="${esc(i.id)}">${lab[n]}</button>`}).join("")}
     <button class="vbtn no" aria-pressed="${me.no.includes(i.id)}" data-no="${esc(i.id)}" aria-label="Dislike">👎 Dislike</button></div>`;
 }
 function tallyLine(i){
@@ -265,8 +275,16 @@ function renderMain(){
   if(!list.length){
     $("main").innerHTML=`<div class="empty">No ${view.kind==="stay"?"stays":"things to do"} in ${AREAS.find(a=>a.id===view.area).name} yet. Send a link below.</div>`; return;
   }
-  $("main").innerHTML=view.mode==="table"?table(list,leader):`<div class="cards">${list.map(i=>card(i,leader)).join("")}</div>`;
+  $("main").innerHTML=myPicks()+(view.mode==="table"?table(list,leader):`<div class="cards">${list.map(i=>card(i,leader)).join("")}</div>`);
 }
+function myPicks(){
+  const key=sectionKey(view.area,view.kind), r=me.ranks[key]||[], lab=["★ 1st","2nd","3rd"];
+  const area=AREAS.find(a=>a.id===view.area).name;
+  return `<div class="mypicks"><div class="h">Your picks · ${esc(area)} ${view.kind==="stay"?"stays":"things to do"}</div>${[0,1,2].map(n=>{const i=ideas.find(x=>x.id===r[n]);
+    return `<div class="p"><span class="slot">${lab[n]}</span>${i?`<span class="nm">${esc(i.title)}</span><button type="button" data-clear="${n}" aria-label="Clear ${lab[n]}">✕ Clear</button>`:`<span class="nm empty-s">Not picked yet</span>`}</div>`}).join("")}</div>`;
+}
+let toastT=null;
+function toast(msg){let t=$("toast"); if(!t){t=document.createElement("div");t.id="toast";t.className="toast";t.setAttribute("role","status");document.body.appendChild(t)} t.textContent=msg; t.classList.add("show"); clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove("show"),3200)}
 
 function voteText(){
   const lines=[`🗳️ Bali vote: ${me.name.trim()||"?"}`];
@@ -317,10 +335,13 @@ document.addEventListener("click",e=>{
   const at=e.target.closest("[data-area]"); if(at){view.area=at.dataset.area;store.set("area",view.area);renderAll();return}
   const kt=e.target.closest("[data-kind]"); if(kt){view.kind=kt.dataset.kind;store.set("kind",view.kind);renderAll();return}
   if(e.target.closest("[data-mode]")){view.mode=view.mode==="table"?"cards":"table";renderAll();return}
+  const cb=e.target.closest("[data-clear]");
+  if(cb){const key=sectionKey(view.area,view.kind), r=(me.ranks[key]||[]).slice(0,3); while(r.length<3) r.push(null); r[+cb.dataset.clear]=null; me.ranks[key]=r; persist(); renderMain(); renderSummary(); return}
   const rb=e.target.closest("[data-rank]");
   if(rb){
     const id=rb.dataset.id,n=+rb.dataset.rank,i=ideas.find(x=>x.id===id); if(!i) return;
     const key=sectionKey(i.area,i.kind||"stay"), r=(me.ranks[key]||[]).slice(0,3); while(r.length<3) r.push(null);
+    if(r[n]&&r[n]!==id){const cur=ideas.find(x=>x.id===r[n]); const lab=["1st","2nd","3rd"][n]; toast(`You've already got ${cur?cur.title:"another villa"} as your ${lab}. Clear it first (tap its ${lab} again, or ✕ Clear at the top), then pick this one.`); return}
     if(r[n]===id) r[n]=null; else {for(let k=0;k<3;k++) if(r[k]===id) r[k]=null; r[n]=id}
     me.ranks[key]=r; me.no=me.no.filter(x=>x!==id); persist(); renderMain(); renderSummary(); return;
   }
