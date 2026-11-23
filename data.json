@@ -1,544 +1,587 @@
 {
-  "updated": "22 Nov 2026",
-  "config": {
-    "people": 5,
-    "budgetNight": null,
-    "areas": {
-      "uluwatu": {
-        "dates": "26 – 31 Dec",
-        "nights": 5
-      },
-      "canggu": {
-        "dates": "31 Dec – 5 Jan",
-        "nights": 5
-      }
-    }
+ "updated": "23 Nov 2026",
+ "config": {
+  "people": 5,
+  "budgetNight": null,
+  "areas": {
+   "uluwatu": {
+    "dates": "26 – 31 Dec",
+    "nights": 5
+   },
+   "canggu": {
+    "dates": "31 Dec – 5 Jan",
+    "nights": 5
+   }
+  }
+ },
+ "ideas": [
+  {
+   "id": "industrial-villa",
+   "area": "canggu",
+   "kind": "stay",
+   "title": "4 Bedroom Luxury Industrial Villa",
+   "source": "Airbnb",
+   "url": "https://www.airbnb.com.au/rooms/1585070206193089183",
+   "location": "Berawa, Canggu (Kuta Utara)",
+   "dates": "31 Dec – 5 Jan",
+   "facts": [
+    "4 bedrooms",
+    "4 beds",
+    "5 bathrooms",
+    "Sleeps 8"
+   ],
+   "highlights": [
+    "Private pool, hot tub and BBQ area",
+    "Pool table, arcade machine and board games",
+    "Concrete industrial fit-out with a big open-plan living room"
+   ],
+   "priceNight": 966.65,
+   "priceTotal": 4833.23,
+   "nights": 5,
+   "cancel": "Free cancellation before 3pm, 30 Dec",
+   "rating": "New listing, no reviews yet",
+   "notes": "Available for our dates (checked 22 Nov). Host Eka averages 4.33★ over 18 reviews on his other places. The header says 4 bedrooms but the description mentions more, so worth asking. No smoke or CO alarm listed.",
+   "images": [
+    "img/industrial-villa-1.jpg",
+    "img/industrial-villa-2.jpg",
+    "img/industrial-villa-3.jpg",
+    "img/industrial-villa-4.jpg",
+    "img/industrial-villa-5.jpg",
+    "img/industrial-villa-6.jpg",
+    "img/industrial-villa-7.jpg",
+    "img/industrial-villa-8.jpg",
+    "img/industrial-villa-9.jpg",
+    "img/industrial-villa-10.jpg",
+    "img/industrial-villa-11.jpg",
+    "img/industrial-villa-12.jpg"
+   ],
+   "addedBy": "Harry",
+   "checked": "22 Nov"
   },
-  "ideas": [
-    {
-      "id": "industrial-villa",
-      "area": "canggu",
-      "kind": "stay",
-      "title": "4 Bedroom Luxury Industrial Villa",
-      "source": "Airbnb",
-      "url": "https://www.airbnb.com.au/rooms/1585070206193089183",
-      "location": "Berawa, Canggu (Kuta Utara)",
-      "dates": "31 Dec – 5 Jan",
-      "facts": [
-        "4 bedrooms",
-        "4 beds",
-        "5 bathrooms",
-        "Sleeps 8"
-      ],
-      "highlights": [
-        "Private pool, hot tub and BBQ area",
-        "Pool table, arcade machine and board games",
-        "Concrete industrial fit-out with a big open-plan living room"
-      ],
-      "priceNight": 966.65,
-      "priceTotal": 4833.23,
-      "nights": 5,
-      "cancel": "Free cancellation before 3pm, 30 Dec",
-      "rating": "New listing, no reviews yet",
-      "notes": "Available for our dates (checked 22 Nov). Host Eka averages 4.33★ over 18 reviews on his other places. The header says 4 bedrooms but the description mentions more, so worth asking. No smoke or CO alarm listed.",
-      "images": [
-        "img/industrial-villa-1.jpg",
-        "img/industrial-villa-2.jpg",
-        "img/industrial-villa-3.jpg",
-        "img/industrial-villa-4.jpg",
-        "img/industrial-villa-5.jpg",
-        "img/industrial-villa-6.jpg",
-        "img/industrial-villa-7.jpg",
-        "img/industrial-villa-8.jpg",
-        "img/industrial-villa-9.jpg",
-        "img/industrial-villa-10.jpg",
-        "img/industrial-villa-11.jpg",
-        "img/industrial-villa-12.jpg"
-      ],
-      "addedBy": "Harry",
-      "checked": "22 Nov"
-    },
-    {
-      "area": "canggu",
-      "kind": "stay",
-      "source": "Airbnb",
-      "dates": "31 Dec – 5 Jan",
-      "nights": 5,
-      "priceNight": 725.89,
-      "priceTotal": 3629.45,
-      "addedBy": "Harry",
-      "id": "seaside-finns",
-      "title": "Seaside Luxury 4BR Villa, 400m to Finns",
-      "url": "https://www.airbnb.com.au/rooms/53466376",
-      "location": "Canggu, 400m from Finns Beach Club",
-      "facts": [
-        "4 bedrooms",
-        "4 beds",
-        "4.5 bathrooms",
-        "Sleeps 8"
-      ],
-      "highlights": [
-        "Private pool with sun beds",
-        "Outdoor lounge and tropical garden",
-        "Walk to Finns and the beach"
-      ],
-      "rating": "4.8★ from 70 reviews",
-      "notes": "Available for our dates (checked 22 Nov). Superhost Rachel, 10 years hosting. Price includes a 10% early booking discount. The listing mentions a discount because of construction nearby, so expect some daytime noise.",
-      "images": [
-        "img/seaside-finns-1.jpg",
-        "img/seaside-finns-2.jpg",
-        "img/seaside-finns-3.jpg",
-        "img/seaside-finns-4.jpg",
-        "img/seaside-finns-5.jpg",
-        "img/seaside-finns-6.jpg",
-        "img/seaside-finns-7.jpg",
-        "img/seaside-finns-8.jpg",
-        "img/seaside-finns-9.jpg",
-        "img/seaside-finns-10.jpg",
-        "img/seaside-finns-11.jpg",
-        "img/seaside-finns-12.jpg"
-      ],
-      "cancel": "Free cancellation for 24 hours after booking, partial refund before 24 Dec",
-      "checked": "22 Nov"
-    },
-    {
-      "area": "uluwatu",
-      "kind": "stay",
-      "source": "Booking.com",
-      "dates": "26 – 31 Dec",
-      "nights": 5,
-      "priceNight": 1014.8,
-      "priceTotal": 5074,
-      "addedBy": "Harry",
-      "images": [
-        "img/modjo-bingin-1.jpg",
-        "img/modjo-bingin-2.jpg",
-        "img/modjo-bingin-3.jpg",
-        "img/modjo-bingin-4.jpg",
-        "img/modjo-bingin-5.jpg",
-        "img/modjo-bingin-6.jpg",
-        "img/modjo-bingin-7.jpg",
-        "img/modjo-bingin-8.jpg",
-        "img/modjo-bingin-9.jpg",
-        "img/modjo-bingin-10.jpg",
-        "img/modjo-bingin-11.jpg"
-      ],
-      "id": "modjo-bingin",
-      "title": "MODJO Villas Bingin",
-      "url": "https://www.booking.com/hotel/id/modjo-villas-bingin.en-gb.html",
-      "location": "Bingin, about a 6 min walk to Bingin Beach",
-      "facts": [
-        "4 bedrooms",
-        "5 bathrooms",
-        "Sleeps 5",
-        "230 m²"
-      ],
-      "highlights": [
-        "Private pool with garden and pool views",
-        "Sunken lounge and open-plan living",
-        "Outdoor bathrooms with stone baths",
-        "Short walk to Bingin Beach, cafés and Alchemy"
-      ],
-      "rating": "9.2 on Booking.com from 101 reviews",
-      "notes": "Available for our dates but only 1 left (checked 22 Nov). $5,074 total for 5 adults from the Booking.com app, including parking and fast Wi-Fi. That rate is non-refundable. Rated 9.2 from 101 reviews, the best-reviewed option in Uluwatu so far.",
-      "checked": "22 Nov",
-      "cancel": "Non-refundable (a free-cancellation rate was about $5,637)"
-    },
-    {
-      "id": "castle-lunita",
-      "area": "uluwatu",
-      "kind": "stay",
-      "source": "Airbnb",
-      "dates": "26 – 31 Dec",
-      "nights": 5,
-      "priceNight": 1335.01,
-      "priceTotal": 6675.07,
-      "addedBy": "Harry",
-      "title": "Castle Lunita: Ocean View, Cinema & Gym",
-      "url": "https://www.airbnb.com.au/rooms/1599353658658717551",
-      "location": "Clifftop Uluwatu, 10 min walk to Blue Point and Suluban beaches",
-      "facts": [
-        "4 bedrooms",
-        "4 beds",
-        "8 bathrooms",
-        "Sleeps 8"
-      ],
-      "highlights": [
-        "Private pool, sauna, cinema room and home gym",
-        "Panoramic Indian Ocean views",
-        "Outdoor kitchen with grill",
-        "Every bedroom has its own bathroom"
-      ],
-      "rating": "4.93★ from 15 reviews · Guest favourite",
-      "notes": "Available for our dates (checked 22 Nov). Price is for 5 guests including taxes; it's $5,745 before tax. Superhost Edo, very responsive. Road construction down the valley until Dec 2026, usually quiet on the villa side.",
-      "images": [
-        "img/castle-lunita-1.jpg",
-        "img/castle-lunita-2.jpg",
-        "img/castle-lunita-3.jpg",
-        "img/castle-lunita-4.jpg",
-        "img/castle-lunita-5.jpg",
-        "img/castle-lunita-6.jpg",
-        "img/castle-lunita-7.jpg",
-        "img/castle-lunita-8.jpg",
-        "img/castle-lunita-9.jpg",
-        "img/castle-lunita-10.jpg",
-        "img/castle-lunita-11.jpg",
-        "img/castle-lunita-12.jpg"
-      ],
-      "checked": "22 Nov",
-      "cancel": "Free cancellation before 3pm, 12 Dec"
-    },
-    {
-      "id": "new-5br-pererenan",
-      "area": "canggu",
-      "kind": "stay",
-      "source": "Booking.com",
-      "dates": "31 Dec – 5 Jan",
-      "nights": 5,
-      "priceNight": 914.8,
-      "priceTotal": 4574,
-      "addedBy": "Harry",
-      "images": [
-        "img/new-5br-pererenan-1.jpg",
-        "img/new-5br-pererenan-2.jpg",
-        "img/new-5br-pererenan-3.jpg",
-        "img/new-5br-pererenan-4.jpg",
-        "img/new-5br-pererenan-5.jpg",
-        "img/new-5br-pererenan-6.jpg",
-        "img/new-5br-pererenan-7.jpg",
-        "img/new-5br-pererenan-8.jpg",
-        "img/new-5br-pererenan-9.jpg",
-        "img/new-5br-pererenan-10.jpg",
-        "img/new-5br-pererenan-11.jpg",
-        "img/new-5br-pererenan-12.jpg"
-      ],
-      "title": "New 5BR Villa, 200m to the Beach",
-      "url": "https://www.booking.com/hotel/id/new-5br-villa-beach-at-200m-n1.en-gb.html",
-      "location": "Seseh, just west of Pererenan, 4 min walk to Seseh Beach",
-      "facts": [
-        "5 bedrooms",
-        "6 bathrooms",
-        "Sleeps 5",
-        "278 m²"
-      ],
-      "highlights": [
-        "Private pool and tropical garden",
-        "Every bedroom has its own bathroom",
-        "Fast Wi-Fi, about 100 Mbps",
-        "Part of a new complex of 6 villas",
-        "Walk to St. Ali and Pererenan cafés"
-      ],
-      "rating": "9.0 on Booking.com from 2 reviews",
-      "notes": "Available for our dates (checked 22 Nov). Everyone gets their own room. Price includes taxes with a 15% Late Escape deal, but it's non-refundable. Location rated lower (7.5) as it's further out than central Canggu.",
-      "checked": "22 Nov",
-      "cancel": "Non-refundable"
-    },
-    {
-      "id": "stone-villa",
-      "area": "uluwatu",
-      "kind": "stay",
-      "source": "Airbnb",
-      "dates": "26 – 30 Dec only",
-      "nights": 4,
-      "title": "Stone-Style Pool Villa, Bingin",
-      "url": "https://www.airbnb.com.au/rooms/1806233250258956089",
-      "location": "Pecatu, Bingin: 750 m (about 10 min walk) to Bingin Beach",
-      "facts": [
-        "4 bedrooms",
-        "4 beds",
-        "4 bathrooms",
-        "Sleeps 8"
-      ],
-      "highlights": [
-        "Private pool beside a covered open-air living and kitchen area",
-        "4 air-conditioned bedrooms",
-        "Close to Sana, Motel Mexicola and El Kabron (about 5 min drive)"
-      ],
-      "priceTotal": 1443.88,
-      "priceNight": 360.97,
-      "checked": "22 Nov",
-      "cancel": "Free cancellation before 2pm, 26 Nov",
-      "rating": "New listing, 2 reviews",
-      "addedBy": "Harry",
-      "unavailable": "26–30 Dec only, 4 of our 5 Uluwatu nights",
-      "notes": "Discount on now: 10% early booking discount, $401/night × 4 = $1,604 down to $1,444 ($160 off). Cheapest option on the whole site. Priced for 26–30 Dec, so we'd need somewhere for 30 Dec. Run by Bukit Vista, a big manager rated 4.58★, 11 years hosting. Only 2 reviews so far.",
-      "images": [
-        "img/stone-villa-1.jpg",
-        "img/stone-villa-2.jpg",
-        "img/stone-villa-3.jpg",
-        "img/stone-villa-4.jpg",
-        "img/stone-villa-5.jpg",
-        "img/stone-villa-6.jpg",
-        "img/stone-villa-7.jpg",
-        "img/stone-villa-8.jpg",
-        "img/stone-villa-9.jpg",
-        "img/stone-villa-10.jpg",
-        "img/stone-villa-11.jpg",
-        "img/stone-villa-12.jpg"
-      ]
-    },
-    {
-      "id": "dolce-young",
-      "area": "uluwatu",
-      "kind": "stay",
-      "source": "Booking.com",
-      "dates": "26 – 31 Dec",
-      "nights": 5,
-      "title": "Dolce x The Young Villas (2 villas)",
-      "url": "https://www.booking.com/hotel/id/dolce-x-the-young-villas.en-gb.html",
-      "location": "Uluwatu, 2.5 km to Cemongkak Beach",
-      "facts": [
-        "2 × 2-bedroom villas",
-        "4 bedrooms total",
-        "4 bathrooms total",
-        "Max 4 per villa"
-      ],
-      "highlights": [
-        "Each villa has a pool with a view, kitchen and terrace",
-        "Air con, soundproofing, washing machine",
-        "Room service, coffee shop and laundry on site"
-      ],
-      "priceTotal": 5622,
-      "priceNight": 1124.4,
-      "checked": "22 Nov",
-      "cancel": "Free cancellation before 26 Nov",
-      "rating": "8.6 on Booking.com from 127 reviews",
-      "addedBy": "Harry",
-      "unavailable": "Needs 2 separate villas: each is 2 bedrooms, max 4 people",
-      "notes": "Only 2-bedroom villas are left (max 4 each), so 5 of us need two side by side: 2 × $2,811 = $5,622. Each is 30% off with a Black Friday deal, taxes included. Pay nothing until 24 Nov.",
-      "images": [
-        "img/dolce-young-1.jpg",
-        "img/dolce-young-2.jpg",
-        "img/dolce-young-3.jpg",
-        "img/dolce-young-4.jpg",
-        "img/dolce-young-5.jpg",
-        "img/dolce-young-6.jpg",
-        "img/dolce-young-7.jpg",
-        "img/dolce-young-8.jpg",
-        "img/dolce-young-9.jpg",
-        "img/dolce-young-10.jpg",
-        "img/dolce-young-11.jpg",
-        "img/dolce-young-12.jpg"
-      ]
-    },
-    {
-      "area": "canggu",
-      "kind": "stay",
-      "source": "Booking.com",
-      "dates": "31 Dec – 5 Jan",
-      "nights": 5,
-      "checked": "22 Nov",
-      "addedBy": "Harry",
-      "id": "casa-embra",
-      "title": "Casa Embra: Elegant 4BR in Berawa",
-      "url": "https://www.booking.com/hotel/id/casa-embra-chic-amp-tropical-4-bedroom-villa-in-central-berawa.en-gb.html",
-      "location": "Central Berawa, about 1.4 km from Finns (18 min walk to Berawa Beach)",
-      "facts": [
-        "4 bedrooms",
-        "4 king beds",
-        "4 bathrooms",
-        "248 m²"
-      ],
-      "highlights": [
-        "Private pool",
-        "Every bedroom has its own bathroom",
-        "Balcony and patio"
-      ],
-      "priceTotal": 6219.62,
-      "priceNight": 1243.92,
-      "cancel": "Free cancellation before 1 Dec",
-      "rating": "9.3 on Booking.com from 3 reviews",
-      "notes": "33% off Black Friday deal ($9,283 down to $6,220), taxes included. Run by Bali Management Villas.",
-      "images": [
-        "img/casa-embra-1.jpg",
-        "img/casa-embra-2.jpg",
-        "img/casa-embra-3.jpg",
-        "img/casa-embra-4.jpg",
-        "img/casa-embra-5.jpg",
-        "img/casa-embra-6.jpg",
-        "img/casa-embra-7.jpg",
-        "img/casa-embra-8.jpg",
-        "img/casa-embra-9.jpg",
-        "img/casa-embra-10.jpg",
-        "img/casa-embra-11.jpg",
-        "img/casa-embra-12.jpg"
-      ]
-    },
-    {
-      "id": "villa-kayura",
-      "area": "uluwatu",
-      "kind": "stay",
-      "source": "Booking.com",
-      "dates": "26 – 30 Dec only",
-      "nights": 4,
-      "title": "Villa Kayura by BaliSuperHost",
-      "url": "https://www.booking.com/hotel/id/villa-kayura-by-balisuperhost.en-gb.html",
-      "location": "Uluwatu, 2 km from Dreamland Beach",
-      "facts": [
-        "4 bedrooms",
-        "4 beds",
-        "4 bathrooms",
-        "Sleeps 5"
-      ],
-      "highlights": [
-        "Private pool and terrace",
-        "Every bedroom has its own bathroom",
-        "Free parking"
-      ],
-      "priceTotal": 3544,
-      "priceNight": 886,
-      "checked": "22 Nov",
-      "cancel": "Free cancellation before 26 Nov",
-      "rating": "10 on Booking.com from 1 review",
-      "addedBy": "Robert",
-      "unavailable": "26–30 Dec only, booked on 30 Dec",
-      "notes": "Robert's pick. Booked on the night of 30 Dec, so we'd need somewhere else for that night. 10% off, taxes included. Run by BaliSuperHost.",
-      "images": [
-        "img/villa-kayura-1.jpg",
-        "img/villa-kayura-2.jpg",
-        "img/villa-kayura-3.jpg",
-        "img/villa-kayura-4.jpg",
-        "img/villa-kayura-5.jpg",
-        "img/villa-kayura-6.jpg",
-        "img/villa-kayura-7.jpg",
-        "img/villa-kayura-8.jpg",
-        "img/villa-kayura-9.jpg",
-        "img/villa-kayura-10.jpg",
-        "img/villa-kayura-11.jpg",
-        "img/villa-kayura-12.jpg"
-      ]
-    },
-    {
-      "id": "pererenan-unique-pool",
-      "area": "canggu",
-      "kind": "stay",
-      "source": "Booking.com",
-      "dates": "31 Dec – 5 Jan",
-      "nights": 5,
-      "title": "Luxury 4BR Pererenan Villa with Unique Pool",
-      "url": "https://www.booking.com/hotel/id/luxury-4bd-pererenan-villa-by-beach-with-unique-pool.en-gb.html",
-      "location": "Pererenan, under 1 km to Pererenan Beach, about 1.4 km from Finns",
-      "facts": [
-        "4 bedrooms",
-        "4 king beds",
-        "5 bathrooms",
-        "400 m²"
-      ],
-      "highlights": [
-        "Unique-shaped private pool and sun terrace",
-        "Balcony, garden and outdoor lounge",
-        "Free parking and Wi-Fi"
-      ],
-      "priceTotal": 5092,
-      "priceNight": 1018.4,
-      "checked": "23 Nov",
-      "cancel": "Free cancellation before 17 Dec (pay nothing until 15 Dec)",
-      "rating": "10 on Booking.com from 3 reviews",
-      "addedBy": "Robert",
-      "notes": "Robert's pick. Available for our dates. $5,092 total for 5 adults, taxes included, with free cancellation until 17 Dec.",
-      "images": [
-        "img/pererenan-unique-pool-1.jpg",
-        "img/pererenan-unique-pool-2.jpg",
-        "img/pererenan-unique-pool-3.jpg",
-        "img/pererenan-unique-pool-4.jpg",
-        "img/pererenan-unique-pool-5.jpg",
-        "img/pererenan-unique-pool-6.jpg",
-        "img/pererenan-unique-pool-7.jpg",
-        "img/pererenan-unique-pool-8.jpg",
-        "img/pererenan-unique-pool-9.jpg",
-        "img/pererenan-unique-pool-10.jpg",
-        "img/pererenan-unique-pool-11.jpg",
-        "img/pererenan-unique-pool-12.jpg"
-      ]
-    },
-    {
-      "area": "uluwatu",
-      "kind": "stay",
-      "source": "Booking.com",
-      "dates": "26 – 31 Dec",
-      "nights": 5,
-      "checked": "23 Nov",
-      "addedBy": "Robert",
-      "id": "villa-brisa",
-      "title": "Villa Brisa: Ocean-View 3BR, Bingin Hills",
-      "url": "https://www.booking.com/hotel/id/villa-brisa-luxury-3br-in-bingin-hills-with-bbq-amp-ocean-view.en-gb.html",
-      "location": "Bingin Hills, Uluwatu",
-      "facts": [
-        "3 bedrooms",
-        "3 bathrooms",
-        "Sleeps 5",
-        "207 m²"
-      ],
-      "highlights": [
-        "Sea views and a pool with a view",
-        "BBQ, terrace and balcony",
-        "Daily housekeeping"
-      ],
-      "priceTotal": 4154.4,
-      "priceNight": 830.88,
-      "cancel": "Non-refundable",
-      "rating": "9.9 on Booking.com from 21 reviews",
-      "unavailable": "Only 3 bedrooms, so two of us share",
-      "notes": "Robert's pick. 36% Black Friday deal ($6,491 down to $4,154), taxes included, but that rate is non-refundable. Best-reviewed villa on the site.",
-      "images": [
-        "img/villa-brisa-1.jpg",
-        "img/villa-brisa-2.jpg",
-        "img/villa-brisa-3.jpg",
-        "img/villa-brisa-4.jpg",
-        "img/villa-brisa-5.jpg",
-        "img/villa-brisa-6.jpg",
-        "img/villa-brisa-7.jpg",
-        "img/villa-brisa-8.jpg",
-        "img/villa-brisa-9.jpg",
-        "img/villa-brisa-10.jpg",
-        "img/villa-brisa-11.jpg",
-        "img/villa-brisa-12.jpg"
-      ]
-    },
-    {
-      "area": "uluwatu",
-      "kind": "stay",
-      "source": "Booking.com",
-      "dates": "26 – 31 Dec",
-      "nights": 5,
-      "checked": "23 Nov",
-      "addedBy": "Robert",
-      "id": "villa-mata",
-      "title": "Villa Mata Uluwatu",
-      "url": "https://www.booking.com/hotel/id/villa-mata-uluwatu.en-gb.html",
-      "location": "Uluwatu, near Uluwatu Temple",
-      "facts": [
-        "3 bedrooms + sofa bed",
-        "3 bathrooms",
-        "Sleeps 5",
-        "300 m²"
-      ],
-      "highlights": [
-        "Private pool",
-        "Garden terrace",
-        "Free parking and Wi-Fi"
-      ],
-      "priceTotal": 2773,
-      "priceNight": 554.6,
-      "cancel": "Free cancellation before 26 Nov",
-      "rating": "8.4 on Booking.com from 6 reviews",
-      "unavailable": "Only 3 bedrooms; the 5th person is on a sofa bed",
-      "notes": "Robert's pick. $2,773 total for 5 adults, taxes included, fully refundable until 26 Nov.",
-      "images": [
-        "img/villa-mata-1.jpg",
-        "img/villa-mata-2.jpg",
-        "img/villa-mata-3.jpg",
-        "img/villa-mata-4.jpg",
-        "img/villa-mata-5.jpg",
-        "img/villa-mata-6.jpg",
-        "img/villa-mata-7.jpg",
-        "img/villa-mata-8.jpg",
-        "img/villa-mata-9.jpg",
-        "img/villa-mata-10.jpg",
-        "img/villa-mata-11.jpg",
-        "img/villa-mata-12.jpg"
-      ]
-    }
-  ],
-  "votes": []
+  {
+   "area": "canggu",
+   "kind": "stay",
+   "source": "Airbnb",
+   "dates": "31 Dec – 5 Jan",
+   "nights": 5,
+   "priceNight": 725.89,
+   "priceTotal": 3629.45,
+   "addedBy": "Harry",
+   "id": "seaside-finns",
+   "title": "Seaside Luxury 4BR Villa, 400m to Finns",
+   "url": "https://www.airbnb.com.au/rooms/53466376",
+   "location": "Canggu, 400m from Finns Beach Club",
+   "facts": [
+    "4 bedrooms",
+    "4 beds",
+    "4.5 bathrooms",
+    "Sleeps 8"
+   ],
+   "highlights": [
+    "Private pool with sun beds",
+    "Outdoor lounge and tropical garden",
+    "Walk to Finns and the beach"
+   ],
+   "rating": "4.8★ from 70 reviews",
+   "notes": "Available for our dates (checked 22 Nov). Superhost Rachel, 10 years hosting. Price includes a 10% early booking discount. The listing mentions a discount because of construction nearby, so expect some daytime noise.",
+   "images": [
+    "img/seaside-finns-1.jpg",
+    "img/seaside-finns-2.jpg",
+    "img/seaside-finns-3.jpg",
+    "img/seaside-finns-4.jpg",
+    "img/seaside-finns-5.jpg",
+    "img/seaside-finns-6.jpg",
+    "img/seaside-finns-7.jpg",
+    "img/seaside-finns-8.jpg",
+    "img/seaside-finns-9.jpg",
+    "img/seaside-finns-10.jpg",
+    "img/seaside-finns-11.jpg",
+    "img/seaside-finns-12.jpg"
+   ],
+   "cancel": "Free cancellation for 24 hours after booking, partial refund before 24 Dec",
+   "checked": "22 Nov"
+  },
+  {
+   "area": "uluwatu",
+   "kind": "stay",
+   "source": "Booking.com",
+   "dates": "26 – 31 Dec",
+   "nights": 5,
+   "priceNight": 1014.8,
+   "priceTotal": 5074,
+   "addedBy": "Harry",
+   "images": [
+    "img/modjo-bingin-1.jpg",
+    "img/modjo-bingin-2.jpg",
+    "img/modjo-bingin-3.jpg",
+    "img/modjo-bingin-4.jpg",
+    "img/modjo-bingin-5.jpg",
+    "img/modjo-bingin-6.jpg",
+    "img/modjo-bingin-7.jpg",
+    "img/modjo-bingin-8.jpg",
+    "img/modjo-bingin-9.jpg",
+    "img/modjo-bingin-10.jpg",
+    "img/modjo-bingin-11.jpg"
+   ],
+   "id": "modjo-bingin",
+   "title": "MODJO Villas Bingin",
+   "url": "https://www.booking.com/hotel/id/modjo-villas-bingin.en-gb.html",
+   "location": "Bingin, about a 6 min walk to Bingin Beach",
+   "facts": [
+    "4 bedrooms",
+    "5 bathrooms",
+    "Sleeps 5",
+    "230 m²"
+   ],
+   "highlights": [
+    "Private pool with garden and pool views",
+    "Sunken lounge and open-plan living",
+    "Outdoor bathrooms with stone baths",
+    "Short walk to Bingin Beach, cafés and Alchemy"
+   ],
+   "rating": "9.2 on Booking.com from 101 reviews",
+   "notes": "Available for our dates but only 1 left (checked 22 Nov). $5,074 total for 5 adults from the Booking.com app, including parking and fast Wi-Fi. That rate is non-refundable. Rated 9.2 from 101 reviews, the best-reviewed option in Uluwatu so far.",
+   "checked": "22 Nov",
+   "cancel": "Non-refundable (a free-cancellation rate was about $5,637)"
+  },
+  {
+   "id": "castle-lunita",
+   "area": "uluwatu",
+   "kind": "stay",
+   "source": "Airbnb",
+   "dates": "26 – 31 Dec",
+   "nights": 5,
+   "priceNight": 1335.01,
+   "priceTotal": 6675.07,
+   "addedBy": "Harry",
+   "title": "Castle Lunita: Ocean View, Cinema & Gym",
+   "url": "https://www.airbnb.com.au/rooms/1599353658658717551",
+   "location": "Clifftop Uluwatu, 10 min walk to Blue Point and Suluban beaches",
+   "facts": [
+    "4 bedrooms",
+    "4 beds",
+    "8 bathrooms",
+    "Sleeps 8"
+   ],
+   "highlights": [
+    "Private pool, sauna, cinema room and home gym",
+    "Panoramic Indian Ocean views",
+    "Outdoor kitchen with grill",
+    "Every bedroom has its own bathroom"
+   ],
+   "rating": "4.93★ from 15 reviews · Guest favourite",
+   "notes": "Available for our dates (checked 22 Nov). Price is for 5 guests including taxes; it's $5,745 before tax. Superhost Edo, very responsive. Road construction down the valley until Dec 2026, usually quiet on the villa side.",
+   "images": [
+    "img/castle-lunita-1.jpg",
+    "img/castle-lunita-2.jpg",
+    "img/castle-lunita-3.jpg",
+    "img/castle-lunita-4.jpg",
+    "img/castle-lunita-5.jpg",
+    "img/castle-lunita-6.jpg",
+    "img/castle-lunita-7.jpg",
+    "img/castle-lunita-8.jpg",
+    "img/castle-lunita-9.jpg",
+    "img/castle-lunita-10.jpg",
+    "img/castle-lunita-11.jpg",
+    "img/castle-lunita-12.jpg"
+   ],
+   "checked": "22 Nov",
+   "cancel": "Free cancellation before 3pm, 12 Dec"
+  },
+  {
+   "id": "new-5br-pererenan",
+   "area": "canggu",
+   "kind": "stay",
+   "source": "Booking.com",
+   "dates": "31 Dec – 5 Jan",
+   "nights": 5,
+   "priceNight": 914.8,
+   "priceTotal": 4574,
+   "addedBy": "Harry",
+   "images": [
+    "img/new-5br-pererenan-1.jpg",
+    "img/new-5br-pererenan-2.jpg",
+    "img/new-5br-pererenan-3.jpg",
+    "img/new-5br-pererenan-4.jpg",
+    "img/new-5br-pererenan-5.jpg",
+    "img/new-5br-pererenan-6.jpg",
+    "img/new-5br-pererenan-7.jpg",
+    "img/new-5br-pererenan-8.jpg",
+    "img/new-5br-pererenan-9.jpg",
+    "img/new-5br-pererenan-10.jpg",
+    "img/new-5br-pererenan-11.jpg",
+    "img/new-5br-pererenan-12.jpg"
+   ],
+   "title": "New 5BR Villa, 200m to the Beach",
+   "url": "https://www.booking.com/hotel/id/new-5br-villa-beach-at-200m-n1.en-gb.html",
+   "location": "Seseh, just west of Pererenan, 4 min walk to Seseh Beach",
+   "facts": [
+    "5 bedrooms",
+    "6 bathrooms",
+    "Sleeps 5",
+    "278 m²"
+   ],
+   "highlights": [
+    "Private pool and tropical garden",
+    "Every bedroom has its own bathroom",
+    "Fast Wi-Fi, about 100 Mbps",
+    "Part of a new complex of 6 villas",
+    "Walk to St. Ali and Pererenan cafés"
+   ],
+   "rating": "9.0 on Booking.com from 2 reviews",
+   "notes": "Available for our dates (checked 22 Nov). Everyone gets their own room. Price includes taxes with a 15% Late Escape deal, but it's non-refundable. Location rated lower (7.5) as it's further out than central Canggu.",
+   "checked": "22 Nov",
+   "cancel": "Non-refundable"
+  },
+  {
+   "id": "stone-villa",
+   "area": "uluwatu",
+   "kind": "stay",
+   "source": "Airbnb",
+   "dates": "26 – 30 Dec only",
+   "nights": 4,
+   "title": "Stone-Style Pool Villa, Bingin",
+   "url": "https://www.airbnb.com.au/rooms/1806233250258956089",
+   "location": "Pecatu, Bingin: 750 m (about 10 min walk) to Bingin Beach",
+   "facts": [
+    "4 bedrooms",
+    "4 beds",
+    "4 bathrooms",
+    "Sleeps 8"
+   ],
+   "highlights": [
+    "Private pool beside a covered open-air living and kitchen area",
+    "4 air-conditioned bedrooms",
+    "Close to Sana, Motel Mexicola and El Kabron (about 5 min drive)"
+   ],
+   "priceTotal": 1443.88,
+   "priceNight": 360.97,
+   "checked": "22 Nov",
+   "cancel": "Free cancellation before 2pm, 26 Nov",
+   "rating": "New listing, 2 reviews",
+   "addedBy": "Harry",
+   "unavailable": "26–30 Dec only, 4 of our 5 Uluwatu nights",
+   "notes": "Discount on now: 10% early booking discount, $401/night × 4 = $1,604 down to $1,444 ($160 off). Cheapest option on the whole site. Priced for 26–30 Dec, so we'd need somewhere for 30 Dec. Run by Bukit Vista, a big manager rated 4.58★, 11 years hosting. Only 2 reviews so far.",
+   "images": [
+    "img/stone-villa-1.jpg",
+    "img/stone-villa-2.jpg",
+    "img/stone-villa-3.jpg",
+    "img/stone-villa-4.jpg",
+    "img/stone-villa-5.jpg",
+    "img/stone-villa-6.jpg",
+    "img/stone-villa-7.jpg",
+    "img/stone-villa-8.jpg",
+    "img/stone-villa-9.jpg",
+    "img/stone-villa-10.jpg",
+    "img/stone-villa-11.jpg",
+    "img/stone-villa-12.jpg"
+   ]
+  },
+  {
+   "id": "dolce-young",
+   "area": "uluwatu",
+   "kind": "stay",
+   "source": "Booking.com",
+   "dates": "26 – 31 Dec",
+   "nights": 5,
+   "title": "Dolce x The Young Villas (2 villas)",
+   "url": "https://www.booking.com/hotel/id/dolce-x-the-young-villas.en-gb.html",
+   "location": "Uluwatu, 2.5 km to Cemongkak Beach",
+   "facts": [
+    "2 × 2-bedroom villas",
+    "4 bedrooms total",
+    "4 bathrooms total",
+    "Max 4 per villa"
+   ],
+   "highlights": [
+    "Each villa has a pool with a view, kitchen and terrace",
+    "Air con, soundproofing, washing machine",
+    "Room service, coffee shop and laundry on site"
+   ],
+   "priceTotal": 5622,
+   "priceNight": 1124.4,
+   "checked": "22 Nov",
+   "cancel": "Free cancellation before 26 Nov",
+   "rating": "8.6 on Booking.com from 127 reviews",
+   "addedBy": "Harry",
+   "unavailable": "Needs 2 separate villas: each is 2 bedrooms, max 4 people",
+   "notes": "Only 2-bedroom villas are left (max 4 each), so 5 of us need two side by side: 2 × $2,811 = $5,622. Each is 30% off with a Black Friday deal, taxes included. Pay nothing until 24 Nov.",
+   "images": [
+    "img/dolce-young-1.jpg",
+    "img/dolce-young-2.jpg",
+    "img/dolce-young-3.jpg",
+    "img/dolce-young-4.jpg",
+    "img/dolce-young-5.jpg",
+    "img/dolce-young-6.jpg",
+    "img/dolce-young-7.jpg",
+    "img/dolce-young-8.jpg",
+    "img/dolce-young-9.jpg",
+    "img/dolce-young-10.jpg",
+    "img/dolce-young-11.jpg",
+    "img/dolce-young-12.jpg"
+   ]
+  },
+  {
+   "area": "canggu",
+   "kind": "stay",
+   "source": "Booking.com",
+   "dates": "31 Dec – 5 Jan",
+   "nights": 5,
+   "checked": "22 Nov",
+   "addedBy": "Harry",
+   "id": "casa-embra",
+   "title": "Casa Embra: Elegant 4BR in Berawa",
+   "url": "https://www.booking.com/hotel/id/casa-embra-chic-amp-tropical-4-bedroom-villa-in-central-berawa.en-gb.html",
+   "location": "Central Berawa, about 1.4 km from Finns (18 min walk to Berawa Beach)",
+   "facts": [
+    "4 bedrooms",
+    "4 king beds",
+    "4 bathrooms",
+    "248 m²"
+   ],
+   "highlights": [
+    "Private pool",
+    "Every bedroom has its own bathroom",
+    "Balcony and patio"
+   ],
+   "priceTotal": 6219.62,
+   "priceNight": 1243.92,
+   "cancel": "Free cancellation before 1 Dec",
+   "rating": "9.3 on Booking.com from 3 reviews",
+   "notes": "33% off Black Friday deal ($9,283 down to $6,220), taxes included. Run by Bali Management Villas.",
+   "images": [
+    "img/casa-embra-1.jpg",
+    "img/casa-embra-2.jpg",
+    "img/casa-embra-3.jpg",
+    "img/casa-embra-4.jpg",
+    "img/casa-embra-5.jpg",
+    "img/casa-embra-6.jpg",
+    "img/casa-embra-7.jpg",
+    "img/casa-embra-8.jpg",
+    "img/casa-embra-9.jpg",
+    "img/casa-embra-10.jpg",
+    "img/casa-embra-11.jpg",
+    "img/casa-embra-12.jpg"
+   ]
+  },
+  {
+   "id": "villa-kayura",
+   "area": "uluwatu",
+   "kind": "stay",
+   "source": "Booking.com",
+   "dates": "26 – 30 Dec only",
+   "nights": 4,
+   "title": "Villa Kayura by BaliSuperHost",
+   "url": "https://www.booking.com/hotel/id/villa-kayura-by-balisuperhost.en-gb.html",
+   "location": "Uluwatu, 2 km from Dreamland Beach",
+   "facts": [
+    "4 bedrooms",
+    "4 beds",
+    "4 bathrooms",
+    "Sleeps 5"
+   ],
+   "highlights": [
+    "Private pool and terrace",
+    "Every bedroom has its own bathroom",
+    "Free parking"
+   ],
+   "priceTotal": 3544,
+   "priceNight": 886,
+   "checked": "22 Nov",
+   "cancel": "Free cancellation before 26 Nov",
+   "rating": "10 on Booking.com from 1 review",
+   "addedBy": "Robert",
+   "unavailable": "26–30 Dec only, booked on 30 Dec",
+   "notes": "Robert's pick. Booked on the night of 30 Dec, so we'd need somewhere else for that night. 10% off, taxes included. Run by BaliSuperHost.",
+   "images": [
+    "img/villa-kayura-1.jpg",
+    "img/villa-kayura-2.jpg",
+    "img/villa-kayura-3.jpg",
+    "img/villa-kayura-4.jpg",
+    "img/villa-kayura-5.jpg",
+    "img/villa-kayura-6.jpg",
+    "img/villa-kayura-7.jpg",
+    "img/villa-kayura-8.jpg",
+    "img/villa-kayura-9.jpg",
+    "img/villa-kayura-10.jpg",
+    "img/villa-kayura-11.jpg",
+    "img/villa-kayura-12.jpg"
+   ]
+  },
+  {
+   "id": "pererenan-unique-pool",
+   "area": "canggu",
+   "kind": "stay",
+   "source": "Booking.com",
+   "dates": "31 Dec – 5 Jan",
+   "nights": 5,
+   "title": "Luxury 4BR Pererenan Villa with Unique Pool",
+   "url": "https://www.booking.com/hotel/id/luxury-4bd-pererenan-villa-by-beach-with-unique-pool.en-gb.html",
+   "location": "Pererenan, under 1 km to Pererenan Beach, about 1.4 km from Finns",
+   "facts": [
+    "4 bedrooms",
+    "4 king beds",
+    "5 bathrooms",
+    "400 m²"
+   ],
+   "highlights": [
+    "Unique-shaped private pool and sun terrace",
+    "Balcony, garden and outdoor lounge",
+    "Free parking and Wi-Fi"
+   ],
+   "priceTotal": 5092,
+   "priceNight": 1018.4,
+   "checked": "23 Nov",
+   "cancel": "Free cancellation before 17 Dec (pay nothing until 15 Dec)",
+   "rating": "10 on Booking.com from 3 reviews",
+   "addedBy": "Robert",
+   "notes": "Robert's pick. Available for our dates. $5,092 total for 5 adults, taxes included, with free cancellation until 17 Dec.",
+   "images": [
+    "img/pererenan-unique-pool-1.jpg",
+    "img/pererenan-unique-pool-2.jpg",
+    "img/pererenan-unique-pool-3.jpg",
+    "img/pererenan-unique-pool-4.jpg",
+    "img/pererenan-unique-pool-5.jpg",
+    "img/pererenan-unique-pool-6.jpg",
+    "img/pererenan-unique-pool-7.jpg",
+    "img/pererenan-unique-pool-8.jpg",
+    "img/pererenan-unique-pool-9.jpg",
+    "img/pererenan-unique-pool-10.jpg",
+    "img/pererenan-unique-pool-11.jpg",
+    "img/pererenan-unique-pool-12.jpg"
+   ]
+  },
+  {
+   "area": "uluwatu",
+   "kind": "stay",
+   "source": "Booking.com",
+   "dates": "26 – 31 Dec",
+   "nights": 5,
+   "checked": "23 Nov",
+   "addedBy": "Robert",
+   "id": "villa-brisa",
+   "title": "Villa Brisa: Ocean-View 3BR, Bingin Hills",
+   "url": "https://www.booking.com/hotel/id/villa-brisa-luxury-3br-in-bingin-hills-with-bbq-amp-ocean-view.en-gb.html",
+   "location": "Bingin Hills, Uluwatu",
+   "facts": [
+    "3 bedrooms",
+    "3 bathrooms",
+    "Sleeps 5",
+    "207 m²"
+   ],
+   "highlights": [
+    "Sea views and a pool with a view",
+    "BBQ, terrace and balcony",
+    "Daily housekeeping"
+   ],
+   "priceTotal": 4154.4,
+   "priceNight": 830.88,
+   "cancel": "Non-refundable",
+   "rating": "9.9 on Booking.com from 21 reviews",
+   "unavailable": "Only 3 bedrooms, so two of us share",
+   "notes": "Robert's pick. 36% Black Friday deal ($6,491 down to $4,154), taxes included, but that rate is non-refundable. Best-reviewed villa on the site.",
+   "images": [
+    "img/villa-brisa-1.jpg",
+    "img/villa-brisa-2.jpg",
+    "img/villa-brisa-3.jpg",
+    "img/villa-brisa-4.jpg",
+    "img/villa-brisa-5.jpg",
+    "img/villa-brisa-6.jpg",
+    "img/villa-brisa-7.jpg",
+    "img/villa-brisa-8.jpg",
+    "img/villa-brisa-9.jpg",
+    "img/villa-brisa-10.jpg",
+    "img/villa-brisa-11.jpg",
+    "img/villa-brisa-12.jpg"
+   ]
+  },
+  {
+   "area": "uluwatu",
+   "kind": "stay",
+   "source": "Booking.com",
+   "dates": "26 – 31 Dec",
+   "nights": 5,
+   "checked": "23 Nov",
+   "addedBy": "Robert",
+   "id": "villa-mata",
+   "title": "Villa Mata Uluwatu",
+   "url": "https://www.booking.com/hotel/id/villa-mata-uluwatu.en-gb.html",
+   "location": "Uluwatu, near Uluwatu Temple",
+   "facts": [
+    "3 bedrooms + sofa bed",
+    "3 bathrooms",
+    "Sleeps 5",
+    "300 m²"
+   ],
+   "highlights": [
+    "Private pool",
+    "Garden terrace",
+    "Free parking and Wi-Fi"
+   ],
+   "priceTotal": 2773,
+   "priceNight": 554.6,
+   "cancel": "Free cancellation before 26 Nov",
+   "rating": "8.4 on Booking.com from 6 reviews",
+   "unavailable": "Only 3 bedrooms; the 5th person is on a sofa bed",
+   "notes": "Robert's pick. $2,773 total for 5 adults, taxes included, fully refundable until 26 Nov.",
+   "images": [
+    "img/villa-mata-1.jpg",
+    "img/villa-mata-2.jpg",
+    "img/villa-mata-3.jpg",
+    "img/villa-mata-4.jpg",
+    "img/villa-mata-5.jpg",
+    "img/villa-mata-6.jpg",
+    "img/villa-mata-7.jpg",
+    "img/villa-mata-8.jpg",
+    "img/villa-mata-9.jpg",
+    "img/villa-mata-10.jpg",
+    "img/villa-mata-11.jpg",
+    "img/villa-mata-12.jpg"
+   ]
+  },
+  {
+   "id": "moa-sanctuary",
+   "area": "canggu",
+   "kind": "stay",
+   "source": "Booking.com",
+   "dates": "31 Dec – 5 Jan",
+   "nights": 5,
+   "title": "Moa 13 Sanctuary – 4BR Rice Field View Villa",
+   "url": "https://www.booking.com/hotel/id/moa-13-sanctuary-4br-ricefield-view-villa-with-pool.en-gb.html",
+   "location": "Batu Belig side of Canggu, about 13 min walk to Batu Belig Beach, about 2.3 km from Finns",
+   "facts": [
+    "4 bedrooms",
+    "4 double beds",
+    "4 bathrooms",
+    "250 m²"
+   ],
+   "highlights": [
+    "Private pool looking over rice fields",
+    "Fitness room",
+    "In-villa breakfast available"
+   ],
+   "priceTotal": 2331,
+   "priceNight": 466.2,
+   "checked": "23 Nov",
+   "cancel": "Non-refundable at $2,331. Fully refundable rate is $2,625 (free cancellation before 27 Dec)",
+   "rating": "9.4 on Booking.com from 8 reviews (manager Luxe By Listings Bali: 8.8 across 234 properties)",
+   "addedBy": "Harry",
+   "notes": "Cheapest Canggu option so far. Both prices are Black Friday deals (about 40% off) and include taxes, so book soon if we like it. $2,331 non-refundable, or $2,625 with free cancellation until 27 Dec.",
+   "images": [
+    "img/moa-sanctuary-1.jpg",
+    "img/moa-sanctuary-2.jpg",
+    "img/moa-sanctuary-3.jpg",
+    "img/moa-sanctuary-4.jpg",
+    "img/moa-sanctuary-5.jpg",
+    "img/moa-sanctuary-6.jpg",
+    "img/moa-sanctuary-7.jpg",
+    "img/moa-sanctuary-8.jpg",
+    "img/moa-sanctuary-9.jpg",
+    "img/moa-sanctuary-10.jpg",
+    "img/moa-sanctuary-11.jpg",
+    "img/moa-sanctuary-12.jpg"
+   ]
+  }
+ ],
+ "votes": []
 }
