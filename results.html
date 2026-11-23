@@ -78,7 +78,9 @@ function tally(i,votes){
 function render(){
   const votes=(data.votes||[]).filter(v=>v&&v.name);
   const people=Number((data.config||{}).people)||5;
-  document.getElementById("voters").innerHTML=votes.length
+  document.getElementById("voters").innerHTML=sharedState==="loading"&&!votes.length?`<b>Loading votes…</b>`
+    :sharedState==="error"&&!votes.length?`<b>Couldn't reach the votes just now.</b> <span class="msg">Retrying automatically…</span>`
+    :votes.length
     ?`<b>${votes.length} of ${people}</b> have voted: ${votes.map(v=>`<span class="pill">${esc(v.name)}</span>`).join("")}<div class="msg" style="font-size:13px;margin-top:4px">Last vote ${esc(data.updated||"")} · updates live</div>`
     :`<b>No votes in yet.</b> <span class="msg">Votes appear here as soon as people hit Submit vote.</span>`;
   document.getElementById("area-tabs").innerHTML=AREAS.map(a=>`<button class="tab" aria-selected="${a.id===area}" data-a="${a.id}">${a.name}</button>`).join("");
@@ -106,7 +108,7 @@ function render(){
 document.addEventListener("click",e=>{const b=e.target.closest("[data-a]"); if(b){area=b.dataset.a; history.replaceState(null,"","#"+area); render()}});
 const STORE="https://api.npoint.io/a809efdc901329b4db75";
 const vkey=n=>String(n||"").trim().toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"anon";
-let fileVotes=[], lastAt="";
+let fileVotes=[], lastAt="", sharedState="loading", retryT=null;
 async function loadShared(){
   try{
     const d=await fetch(STORE+"?t="+Date.now(),{cache:"no-store"}).then(r=>r.json());
@@ -115,8 +117,11 @@ async function loadShared(){
     data.votes=[...m.values()];
     const at=data.votes.map(v=>v.at).filter(Boolean).sort().pop();
     if(at) data.updated=new Date(at).toLocaleString("en-AU",{day:"numeric",month:"short",hour:"numeric",minute:"2-digit"});
-    render();
-  }catch(e){}
+    sharedState="ok"; render();
+  }catch(e){
+    if(sharedState!=="ok"){sharedState="error"; render()}
+    clearTimeout(retryT); retryT=setTimeout(loadShared,3000);
+  }
 }
 fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{data=d; fileVotes=(d.votes||[]).filter(v=>v&&v.name); render(); loadShared(); setInterval(loadShared,20000)}).catch(()=>{document.getElementById("voters").textContent="Couldn't load the results. Pull down to refresh."});
 </script>

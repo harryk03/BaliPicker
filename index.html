@@ -310,7 +310,8 @@ let fileVotes=[], sharedVotes=[], saveT=null, saving=false;
 const vkey=n=>norm(n).replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"anon";
 const cleanVote=v=>({name:String(v.name||"").slice(0,30),ranks:(v.ranks&&typeof v.ranks==="object")?v.ranks:{},no:Array.isArray(v.no)?v.no:[]});
 function mergeVotes(){const m=new Map(); for(const v of fileVotes.concat(sharedVotes)) if(v.name) m.set(vkey(v.name),cleanVote(v)); votes=[...m.values()]}
-async function loadShared(){try{const d=await fetch(STORE+"?t="+Date.now(),{cache:"no-store"}).then(r=>r.json()); sharedVotes=Object.values((d&&d.votes)||{}).filter(v=>v&&v.name); mergeVotes(); renderMain(); updatedLine()}catch(e){}}
+let loadRetry=null;
+async function loadShared(){try{const d=await fetch(STORE+"?t="+Date.now(),{cache:"no-store"}).then(r=>{if(!r.ok) throw new Error(r.status); return r.json()}); sharedVotes=Object.values((d&&d.votes)||{}).filter(v=>v&&v.name); mergeVotes(); renderMain(); updatedLine()}catch(e){clearTimeout(loadRetry); loadRetry=setTimeout(loadShared,3000)}}
 async function saveVote(manual){
   if(!me.name.trim()){nameIn.focus();renderSummary("Add your name first so we know whose vote it is.","err");return}
   if(!picks()&&!me.no.length){if(manual)renderSummary("Pick at least one option first.","err");return}
