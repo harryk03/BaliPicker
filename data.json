@@ -450,6 +450,94 @@
         "img/pererenan-unique-pool-11.jpg",
         "img/pererenan-unique-pool-12.jpg"
       ]
+    },
+    {
+      "area": "uluwatu",
+      "kind": "stay",
+      "source": "Booking.com",
+      "dates": "26 – 31 Dec",
+      "nights": 5,
+      "checked": "23 Nov",
+      "addedBy": "Robert",
+      "id": "villa-brisa",
+      "title": "Villa Brisa: Ocean-View 3BR, Bingin Hills",
+      "url": "https://www.booking.com/hotel/id/villa-brisa-luxury-3br-in-bingin-hills-with-bbq-amp-ocean-view.en-gb.html",
+      "location": "Bingin Hills, Uluwatu",
+      "facts": [
+        "3 bedrooms",
+        "3 bathrooms",
+        "Sleeps 5",
+        "207 m²"
+      ],
+      "highlights": [
+        "Sea views and a pool with a view",
+        "BBQ, terrace and balcony",
+        "Daily housekeeping"
+      ],
+      "priceTotal": 4154.4,
+      "priceNight": 830.88,
+      "cancel": "Non-refundable",
+      "rating": "9.9 on Booking.com from 21 reviews",
+      "unavailable": "Only 3 bedrooms, so two of us share",
+      "notes": "Robert's pick. 36% Black Friday deal ($6,491 down to $4,154), taxes included, but that rate is non-refundable. Best-reviewed villa on the site.",
+      "images": [
+        "img/villa-brisa-1.jpg",
+        "img/villa-brisa-2.jpg",
+        "img/villa-brisa-3.jpg",
+        "img/villa-brisa-4.jpg",
+        "img/villa-brisa-5.jpg",
+        "img/villa-brisa-6.jpg",
+        "img/villa-brisa-7.jpg",
+        "img/villa-brisa-8.jpg",
+        "img/villa-brisa-9.jpg",
+        "img/villa-brisa-10.jpg",
+        "img/villa-brisa-11.jpg",
+        "img/villa-brisa-12.jpg"
+      ]
+    },
+    {
+      "area": "uluwatu",
+      "kind": "stay",
+      "source": "Booking.com",
+      "dates": "26 – 31 Dec",
+      "nights": 5,
+      "checked": "23 Nov",
+      "addedBy": "Robert",
+      "id": "villa-mata",
+      "title": "Villa Mata Uluwatu",
+      "url": "https://www.booking.com/hotel/id/villa-mata-uluwatu.en-gb.html",
+      "location": "Uluwatu, near Uluwatu Temple",
+      "facts": [
+        "3 bedrooms + sofa bed",
+        "3 bathrooms",
+        "Sleeps 5",
+        "300 m²"
+      ],
+      "highlights": [
+        "Private pool",
+        "Garden terrace",
+        "Free parking and Wi-Fi"
+      ],
+      "priceTotal": 2773,
+      "priceNight": 554.6,
+      "cancel": "Free cancellation before 26 Nov",
+      "rating": "8.4 on Booking.com from 6 reviews",
+      "unavailable": "Only 3 bedrooms; the 5th person is on a sofa bed",
+      "notes": "Robert's pick. $2,773 total for 5 adults, taxes included, fully refundable until 26 Nov.",
+      "images": [
+        "img/villa-mata-1.jpg",
+        "img/villa-mata-2.jpg",
+        "img/villa-mata-3.jpg",
+        "img/villa-mata-4.jpg",
+        "img/villa-mata-5.jpg",
+        "img/villa-mata-6.jpg",
+        "img/villa-mata-7.jpg",
+        "img/villa-mata-8.jpg",
+        "img/villa-mata-9.jpg",
+        "img/villa-mata-10.jpg",
+        "img/villa-mata-11.jpg",
+        "img/villa-mata-12.jpg"
+      ]
     }
   ],
   "votes": []
