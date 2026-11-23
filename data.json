@@ -407,6 +407,49 @@
         "img/villa-kayura-11.jpg",
         "img/villa-kayura-12.jpg"
       ]
+    },
+    {
+      "id": "pererenan-unique-pool",
+      "area": "canggu",
+      "kind": "stay",
+      "source": "Booking.com",
+      "dates": "31 Dec – 5 Jan",
+      "nights": 5,
+      "title": "Luxury 4BR Pererenan Villa with Unique Pool",
+      "url": "https://www.booking.com/hotel/id/luxury-4bd-pererenan-villa-by-beach-with-unique-pool.en-gb.html",
+      "location": "Pererenan, under 1 km to Pererenan Beach, about 1.4 km from Finns",
+      "facts": [
+        "4 bedrooms",
+        "4 king beds",
+        "5 bathrooms",
+        "400 m²"
+      ],
+      "highlights": [
+        "Unique-shaped private pool and sun terrace",
+        "Balcony, garden and outdoor lounge",
+        "Free parking and Wi-Fi"
+      ],
+      "priceTotal": 5092,
+      "priceNight": 1018.4,
+      "checked": "23 Nov",
+      "cancel": "Free cancellation before 17 Dec (pay nothing until 15 Dec)",
+      "rating": "10 on Booking.com from 3 reviews",
+      "addedBy": "Robert",
+      "notes": "Robert's pick. Available for our dates. $5,092 total for 5 adults, taxes included, with free cancellation until 17 Dec.",
+      "images": [
+        "img/pererenan-unique-pool-1.jpg",
+        "img/pererenan-unique-pool-2.jpg",
+        "img/pererenan-unique-pool-3.jpg",
+        "img/pererenan-unique-pool-4.jpg",
+        "img/pererenan-unique-pool-5.jpg",
+        "img/pererenan-unique-pool-6.jpg",
+        "img/pererenan-unique-pool-7.jpg",
+        "img/pererenan-unique-pool-8.jpg",
+        "img/pererenan-unique-pool-9.jpg",
+        "img/pererenan-unique-pool-10.jpg",
+        "img/pererenan-unique-pool-11.jpg",
+        "img/pererenan-unique-pool-12.jpg"
+      ]
     }
   ],
   "votes": []
