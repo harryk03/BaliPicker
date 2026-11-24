@@ -68,7 +68,7 @@
    "priceTotal": null,
    "addedBy": "Harry",
    "id": "seaside-finns",
-   "title": "Seaside Luxury 4BR Villa, 400m to Finns",
+   "title": "❌ BOOKED: Seaside Luxury 4BR Villa, 400m to Finns",
    "url": "https://www.airbnb.com.au/rooms/53466376",
    "location": "Canggu, 400m from Finns Beach Club",
    "facts": [
@@ -100,7 +100,8 @@
    ],
    "cancel": "Free cancellation for 24 hours after booking, partial refund before 24 Dec",
    "checked": "24 Nov",
-   "unavailable": "No longer available: booked out for both 30 Dec and 31 Dec starts"
+   "unavailable": "BOOKED, GONE. Someone else has booked it, so it's off the table. Move your vote.",
+   "gone": "Booked by someone else"
   },
   {
    "area": "uluwatu",

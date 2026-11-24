@@ -67,6 +67,11 @@ header h1{font-family:Fraunces,Georgia,serif;font-weight:650;font-size:30px;line
 .bud{font-size:13px;font-weight:600;padding:4px 9px;border-radius:8px;display:inline-block;margin-bottom:8px}
 .bud.ok{background:var(--green-soft);color:var(--green)}
 .bud.over{background:var(--terra-soft);color:var(--terra)}
+.card.gone{opacity:.72}.card.gone .gallery img{filter:grayscale(1)}
+.gone-stamp{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.gone-stamp span{background:#b3261e;color:#fff;font-weight:800;font-size:22px;letter-spacing:.08em;padding:10px 18px;border-radius:10px;transform:rotate(-8deg);box-shadow:0 6px 20px rgba(0,0,0,.3)}
+.gone-note{background:#b3261e;color:#fff;font-weight:600;border-radius:10px;padding:10px 12px;margin:10px 0 0;font-size:14px}
+.gone-banner{background:var(--terra-soft);color:var(--terra);border:1px solid var(--terra);border-radius:12px;padding:10px 14px;margin:0 0 14px;font-size:14px}
 .notes{font-size:14px;margin:6px 0 4px}
 .notes li{margin:2px 0}
 .notes ul{margin:4px 0;padding-left:18px}
@@ -242,9 +247,9 @@ function card(i,leader){
   const imgs=(i.images||[]).map(safeImg).filter(Boolean), url=safeUrl(i.url);
   const facts=(i.facts||[]).map(f=>`<span class="fact">${esc(f)}</span>`).join("");
   const hl=(i.highlights||[]).length?`<ul>${i.highlights.map(h=>`<li>${esc(h)}</li>`).join("")}</ul>`:"";
-  return `<article class="card">
+  return `<article class="card${i.gone?" gone":""}">
     ${imgs.length?`<div class="gwrap"><div class="gallery">${imgs.map((s,n)=>`<img src="${s}" alt="${esc(i.title)} photo ${n+1}" loading="lazy">`).join("")}</div>
-      ${imgs.length>1?`<button class="gnav prev" type="button" data-g="-1" aria-label="Previous photo">‹</button><button class="gnav next" type="button" data-g="1" aria-label="Next photo">›</button><span class="gcount">${imgs.length} photos · swipe</span>`:""}${leader===i.id?`<span class="badge-lead">Leading</span>`:""}</div>`:""}
+      ${imgs.length>1?`<button class="gnav prev" type="button" data-g="-1" aria-label="Previous photo">‹</button><button class="gnav next" type="button" data-g="1" aria-label="Next photo">›</button><span class="gcount">${imgs.length} photos · swipe</span>`:""}${leader===i.id?`<span class="badge-lead">Leading</span>`:""}${i.gone?`<div class="gone-stamp"><span>BOOKED · GONE</span></div>`:""}</div>`:""}
     <div class="body">
       <div class="title-row"><h2>${esc(i.title)}</h2>${i.source?`<span class="src">${esc(i.source)}</span>`:""}</div>
       ${i.unavailable?`<span class="bud over">⚠ ${esc(i.unavailable)}</span>`:""}
@@ -254,7 +259,7 @@ function card(i,leader){
       <div class="notes">${hl}${i.notes?`<p style="margin:6px 0">${esc(i.notes)}</p>`:""}</div>
       <div class="meta">${[i.cancel,i.rating,i.addedBy?"Added by "+i.addedBy:"",i.checked?"Price checked "+i.checked:""].filter(Boolean).map(esc).join(" · ")}</div>
       ${url?`<div class="meta"><a href="${esc(url)}" target="_blank" rel="noopener">Open on ${esc(i.source||"site")} ↗</a></div>`:""}
-      ${voteRow(i)}${tallyLine(i)}
+      ${i.gone?`<div class="gone-note">❌ This one is booked out and gone. Voting is closed on it. If you ranked it, pick something else.</div>`:voteRow(i)}${tallyLine(i)}
     </div></article>`;
 }
 function table(list,leader){
@@ -270,12 +275,14 @@ function table(list,leader){
   return `<div class="tablewrap"><table><thead><tr><th></th><th>Option</th>${stay?"<th>Night</th><th>Total</th><th>Each</th>":"<th>Per person</th><th>Group</th><th>Time</th>"}<th>Details</th><th>Pts</th></tr></thead><tbody>${rows}</tbody></table></div>`;
 }
 function renderMain(){
-  const list=sectionIdeas(view.area,view.kind);
-  let leader=null,best=0; for(const i of list){const t=tallyFor(i); if(t.pts>best){best=t.pts;leader=i.id}}
+  const list=sectionIdeas(view.area,view.kind).slice().sort((a,b)=>(!!a.gone)-(!!b.gone));
+  let leader=null,best=0; for(const i of list){if(i.gone) continue; const t=tallyFor(i); if(t.pts>best){best=t.pts;leader=i.id}}
+  const gone=list.filter(i=>i.gone), myKey=sectionKey(view.area,view.kind), myGone=gone.filter(i=>(me.ranks[myKey]||[]).includes(i.id));
+  const banner=gone.length?`<div class="gone-banner">❌ <b>${gone.map(i=>esc(i.title.replace(/^❌ BOOKED: /,""))).join(", ")}</b> ${gone.length>1?"are":"is"} booked out and gone.${myGone.length?" <b>You ranked it, so please move that vote to another villa.</b>":""}</div>`:"";
   if(!list.length){
     $("main").innerHTML=`<div class="empty">No ${view.kind==="stay"?"stays":"things to do"} in ${AREAS.find(a=>a.id===view.area).name} yet. Send a link below.</div>`; return;
   }
-  $("main").innerHTML=myPicks()+(view.mode==="table"?table(list,leader):`<div class="cards">${list.map(i=>card(i,leader)).join("")}</div>`);
+  $("main").innerHTML=banner+myPicks()+(view.mode==="table"?table(list,leader):`<div class="cards">${list.map(i=>card(i,leader)).join("")}</div>`);
 }
 function myPicks(){
   const key=sectionKey(view.area,view.kind), r=me.ranks[key]||[], lab=["★ 1st","2nd","3rd"];
