@@ -83,7 +83,7 @@
     "Walk to Finns and the beach"
    ],
    "rating": "4.8★ from 70 reviews",
-   "notes": "Checked 24 Nov: Airbnb now says these dates are not available, for both 30 Dec – 5 Jan and our old 31 Dec – 5 Jan. Looks like someone else booked it.",
+   "notes": "Booked - no longer available. Airbnb shows it taken for both 30 Dec and 31 Dec starts (checked 24 Nov). All votes for it have been removed.",
    "images": [
     "img/seaside-finns-1.jpg",
     "img/seaside-finns-2.jpg",
@@ -100,8 +100,8 @@
    ],
    "cancel": "Free cancellation for 24 hours after booking, partial refund before 24 Dec",
    "checked": "24 Nov",
-   "unavailable": "BOOKED, GONE. Someone else has booked it, so it's off the table. Move your vote.",
-   "gone": "Booked by someone else"
+   "unavailable": "Booked - no longer available",
+   "gone": "Booked - no longer available"
   },
   {
    "area": "uluwatu",

@@ -35,8 +35,8 @@ h2{font-family:Fraunces,Georgia,serif;font-weight:650;font-size:22px;margin:28px
 .tag{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;margin-top:4px}
 .tag.lead{background:var(--gold-soft);color:var(--gold)}
 .tag.cull{background:var(--terra-soft);color:var(--terra)}
-.tag.gone{background:#b3261e;color:#fff}
-.row.gone{opacity:.6}.row.gone img{filter:grayscale(1)}
+.tag.gone{background:#444;color:#fff}
+.row.gone{opacity:.55;filter:grayscale(1)}
 .tag.none{background:var(--bg);color:var(--muted);border:1px solid var(--line)}
 .who{font-size:13px;margin-top:4px}
 .who .d{color:var(--terra)}
@@ -68,6 +68,7 @@ const safeUrl=u=>{try{const x=new URL(String(u));return /^https?:$/.test(x.proto
 
 function tally(i,votes){
   const key=i.area+"-"+(i.kind||"stay"); let pts=0; const ranks=[], nos=[];
+  if(i.gone) return {pts:0,ranks:[],nos:[],firsts:0};
   for(const v of votes){
     const r=(v.ranks&&v.ranks[key])||[], ix=r.indexOf(i.id);
     if(ix>=0&&ix<3){pts+=POINTS[ix]; ranks.push({n:v.name,ix})}
@@ -98,7 +99,7 @@ function render(){
       const i=r.i,t=r.t, img=(i.images||[]).map(safeImg).filter(Boolean)[0], url=safeUrl(i.url);
       const cull=t.nos.length>0&&t.nos.length>=t.ranks.length;
       const each=(i.kind||"stay")==="stay"?(i.priceTotal?money(i.priceTotal/p)+" each":"price tbc"):(i.pricePP?money(i.pricePP)+" pp":"");
-      const tag=i.gone?`<span class="tag gone">❌ Booked · gone</span>`:i.id===top?`<span class="tag lead">★ Leading</span>`:cull?`<span class="tag cull">Cull?</span>`:(!t.ranks.length&&!t.nos.length?`<span class="tag none">No votes</span>`:"");
+      const tag=i.gone?`<span class="tag gone">Booked - no longer available</span>`:i.id===top?`<span class="tag lead">★ Leading</span>`:cull?`<span class="tag cull">Cull?</span>`:(!t.ranks.length&&!t.nos.length?`<span class="tag none">No votes</span>`:"");
       return `<div class="row${i.gone?" gone":cull?" culled":""}"><div class="rank">${n+1}</div>${img?`<img src="${img}" alt="" loading="lazy">`:""}
         <div class="main"><div class="t">${url?`<a href="${esc(url)}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">${esc(i.title)}</a>`:esc(i.title)}</div>
           <div class="meta">${esc(each)}${i.dates?" · "+esc(i.dates):""}</div>
