@@ -1,5 +1,5 @@
 {
- "updated": "24 Nov 2026",
+ "updated": "25 Nov 2026",
  "config": {
   "people": 5,
   "budgetNight": null,
@@ -534,6 +534,51 @@
     "img/moa-sanctuary-10.jpg",
     "img/moa-sanctuary-11.jpg",
     "img/moa-sanctuary-12.jpg"
+   ]
+  },
+  {
+   "id": "villa-kalem",
+   "area": "canggu",
+   "kind": "stay",
+   "source": "Booking.com",
+   "dates": "30 Dec – 5 Jan",
+   "nights": 6,
+   "title": "Villa Kalem Canggu by Nakula",
+   "url": "https://www.booking.com/hotel/id/villa-kalem-canggu-by-nakula.en-gb.html",
+   "location": "Berawa, Canggu, 13 min walk to Berawa Beach, about 1.7 km from Finns",
+   "facts": [
+    "4 bedrooms",
+    "4 extra-large double beds",
+    "4 bathrooms",
+    "700 m²"
+   ],
+   "highlights": [
+    "Private pool with sun deck",
+    "Pool table and big open-plan living",
+    "Recently renovated, garden and rooftop seating",
+    "Free parking and Wi-Fi"
+   ],
+   "priceTotal": 3930,
+   "priceNight": 655.0,
+   "checked": "25 Nov",
+   "cancel": "Non-refundable at $3,930. Free cancellation only on the breakfast rate, $8,548 (before 30 Nov)",
+   "rating": "9.9 on Booking.com from 16 reviews",
+   "addedBy": "Harry",
+   "notes": "Available 30 Dec – 5 Jan (checked 25 Nov). $3,930 total, 53% off with a Black Friday deal, taxes included, but non-refundable. Breakfast rates cost a lot more ($6,605 non-refundable, $8,548 refundable). Highest-rated villa on the site.",
+   "images": [
+    "img/villa-kalem-1.jpg",
+    "img/villa-kalem-2.jpg",
+    "img/villa-kalem-3.jpg",
+    "img/villa-kalem-4.jpg",
+    "img/villa-kalem-5.jpg",
+    "img/villa-kalem-6.jpg",
+    "img/villa-kalem-7.jpg",
+    "img/villa-kalem-8.jpg",
+    "img/villa-kalem-9.jpg",
+    "img/villa-kalem-10.jpg",
+    "img/villa-kalem-11.jpg",
+    "img/villa-kalem-12.jpg",
+    "img/villa-kalem-13.jpg"
    ]
   }
  ],
