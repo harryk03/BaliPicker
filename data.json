@@ -191,51 +191,6 @@
    "cancel": "Free cancellation before 3pm, 12 Dec (partial refund before 19 Dec)"
   },
   {
-   "id": "new-5br-pererenan",
-   "area": "canggu",
-   "kind": "stay",
-   "source": "Booking.com",
-   "dates": "30 Dec – 5 Jan",
-   "nights": 6,
-   "priceNight": 995.67,
-   "priceTotal": 5974,
-   "addedBy": "Harry",
-   "images": [
-    "img/new-5br-pererenan-1.jpg",
-    "img/new-5br-pererenan-2.jpg",
-    "img/new-5br-pererenan-3.jpg",
-    "img/new-5br-pererenan-4.jpg",
-    "img/new-5br-pererenan-5.jpg",
-    "img/new-5br-pererenan-6.jpg",
-    "img/new-5br-pererenan-7.jpg",
-    "img/new-5br-pererenan-8.jpg",
-    "img/new-5br-pererenan-9.jpg",
-    "img/new-5br-pererenan-10.jpg",
-    "img/new-5br-pererenan-11.jpg",
-    "img/new-5br-pererenan-12.jpg"
-   ],
-   "title": "New 5BR Villa, 200m to the Beach",
-   "url": "https://www.booking.com/hotel/id/new-5br-villa-beach-at-200m-n1.en-gb.html",
-   "location": "Seseh, just west of Pererenan, 4 min walk to Seseh Beach",
-   "facts": [
-    "5 bedrooms",
-    "6 bathrooms",
-    "Sleeps 5",
-    "278 m²"
-   ],
-   "highlights": [
-    "Private pool and tropical garden",
-    "Every bedroom has its own bathroom",
-    "Fast Wi-Fi, about 100 Mbps",
-    "Part of a new complex of 6 villas",
-    "Walk to St. Ali and Pererenan cafés"
-   ],
-   "rating": "9.0 on Booking.com from 2 reviews",
-   "notes": "Available 30 Dec – 5 Jan (checked 24 Nov). $5,974 total, taxes included, non-refundable. Everyone gets their own room. Location rated lower (7.5) as it's further out than central Canggu.",
-   "checked": "24 Nov",
-   "cancel": "Non-refundable"
-  },
-  {
    "id": "stone-villa",
    "area": "uluwatu",
    "kind": "stay",
