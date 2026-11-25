@@ -580,6 +580,95 @@
     "img/villa-kalem-12.jpg",
     "img/villa-kalem-13.jpg"
    ]
+  },
+  {
+   "id": "villa-wiraja",
+   "area": "canggu",
+   "kind": "stay",
+   "source": "Booking.com",
+   "dates": "30 Dec – 5 Jan",
+   "nights": 6,
+   "title": "Villa Wiraja 1 – Modern 4BR in Berawa",
+   "url": "https://www.booking.com/hotel/id/wiraja-1.en-gb.html",
+   "location": "Berawa / Batu Belig side, 6 min walk to Batu Belig Beach, about 2.1 km from Finns",
+   "facts": [
+    "4 bedrooms",
+    "4 double beds",
+    "4 bathrooms",
+    "300 m²"
+   ],
+   "highlights": [
+    "Long private pool through the middle of the villa",
+    "Open living and dining area with full kitchen",
+    "Garden, terrace and free parking"
+   ],
+   "priceTotal": 4577,
+   "priceNight": 762.83,
+   "checked": "25 Nov",
+   "cancel": "Non-refundable",
+   "rating": "7.6 on Booking.com from 6 reviews (manager Mr G: 9)",
+   "addedBy": "Harry",
+   "notes": "Available 30 Dec – 5 Jan (checked 25 Nov). $4,577 total, 38% off with a Black Friday deal, taxes included, non-refundable. The property may charge extra fees not shown. Reviews are mixed: staff 10, but facilities only 6.6.",
+   "images": [
+    "img/villa-wiraja-1.jpg",
+    "img/villa-wiraja-2.jpg",
+    "img/villa-wiraja-3.jpg",
+    "img/villa-wiraja-4.jpg",
+    "img/villa-wiraja-5.jpg",
+    "img/villa-wiraja-6.jpg",
+    "img/villa-wiraja-7.jpg",
+    "img/villa-wiraja-8.jpg",
+    "img/villa-wiraja-9.jpg",
+    "img/villa-wiraja-10.jpg",
+    "img/villa-wiraja-11.jpg",
+    "img/villa-wiraja-12.jpg"
+   ]
+  },
+  {
+   "id": "villa-milos",
+   "area": "canggu",
+   "kind": "stay",
+   "source": "Booking.com",
+   "dates": "30 Dec – 5 Jan",
+   "nights": 6,
+   "title": "Villa Milos – Tropical 4BR, 90 Seconds to the Beach",
+   "url": "https://www.booking.com/hotel/id/villa-milos.en-gb.html",
+   "location": "Berawa, Canggu, 3 min walk to Berawa Beach, about 0.8 km from Finns",
+   "facts": [
+    "4 bedrooms",
+    "4 double beds",
+    "4 bathrooms",
+    "200 m²"
+   ],
+   "highlights": [
+    "Private pool with sun loungers and thatched umbrella",
+    "Balconies with pool views",
+    "Closest option to Finns and the beach",
+    "Free parking"
+   ],
+   "priceTotal": 4585,
+   "priceNight": 764.17,
+   "checked": "25 Nov",
+   "cancel": "Non-refundable",
+   "rating": "8.8 on Booking.com from 5 reviews (manager Mr G: 9)",
+   "addedBy": "Harry",
+   "notes": "Available 30 Dec – 5 Jan (checked 25 Nov). $4,585 total with a Black Friday deal, taxes included, non-refundable. The closest Canggu villa to Finns on the site. Same manager as Villa Wiraja.",
+   "images": [
+    "img/villa-milos-1.jpg",
+    "img/villa-milos-2.jpg",
+    "img/villa-milos-3.jpg",
+    "img/villa-milos-4.jpg",
+    "img/villa-milos-5.jpg",
+    "img/villa-milos-6.jpg",
+    "img/villa-milos-7.jpg",
+    "img/villa-milos-8.jpg",
+    "img/villa-milos-9.jpg",
+    "img/villa-milos-10.jpg",
+    "img/villa-milos-11.jpg",
+    "img/villa-milos-12.jpg",
+    "img/villa-milos-13.jpg",
+    "img/villa-milos-14.jpg"
+   ]
   }
  ],
  "votes": []
