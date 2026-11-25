@@ -59,51 +59,6 @@
    "checked": "24 Nov"
   },
   {
-   "area": "canggu",
-   "kind": "stay",
-   "source": "Airbnb",
-   "dates": "30 Dec – 5 Jan",
-   "nights": 6,
-   "priceNight": null,
-   "priceTotal": null,
-   "addedBy": "Harry",
-   "id": "seaside-finns",
-   "title": "❌ BOOKED: Seaside Luxury 4BR Villa, 400m to Finns",
-   "url": "https://www.airbnb.com.au/rooms/53466376",
-   "location": "Canggu, 400m from Finns Beach Club",
-   "facts": [
-    "4 bedrooms",
-    "4 beds",
-    "4.5 bathrooms",
-    "Sleeps 8"
-   ],
-   "highlights": [
-    "Private pool with sun beds",
-    "Outdoor lounge and tropical garden",
-    "Walk to Finns and the beach"
-   ],
-   "rating": "4.8★ from 70 reviews",
-   "notes": "Booked - no longer available. Airbnb shows it taken for both 30 Dec and 31 Dec starts (checked 24 Nov). All votes for it have been removed.",
-   "images": [
-    "img/seaside-finns-1.jpg",
-    "img/seaside-finns-2.jpg",
-    "img/seaside-finns-3.jpg",
-    "img/seaside-finns-4.jpg",
-    "img/seaside-finns-5.jpg",
-    "img/seaside-finns-6.jpg",
-    "img/seaside-finns-7.jpg",
-    "img/seaside-finns-8.jpg",
-    "img/seaside-finns-9.jpg",
-    "img/seaside-finns-10.jpg",
-    "img/seaside-finns-11.jpg",
-    "img/seaside-finns-12.jpg"
-   ],
-   "cancel": "Free cancellation for 24 hours after booking, partial refund before 24 Dec",
-   "checked": "24 Nov",
-   "unavailable": "Booked - no longer available",
-   "gone": "Booked - no longer available"
-  },
-  {
    "area": "uluwatu",
    "kind": "stay",
    "source": "Booking.com",
@@ -668,6 +623,51 @@
     "img/villa-milos-12.jpg",
     "img/villa-milos-13.jpg",
     "img/villa-milos-14.jpg"
+   ]
+  },
+  {
+   "id": "alex-av9",
+   "area": "canggu",
+   "kind": "stay",
+   "source": "Booking.com",
+   "dates": "30 Dec – 5 Jan",
+   "nights": 6,
+   "title": "Alex Villas – Four-Bedroom AV9 with Private Pool",
+   "url": "https://www.booking.com/hotel/id/2br-luxury-villa-av1.en-gb.html",
+   "location": "Berawa, Canggu, 8 min walk to Berawa Beach, about 0.9 km from Finns",
+   "facts": [
+    "4 bedrooms",
+    "4 double beds",
+    "4 bathrooms",
+    "320 m²"
+   ],
+   "highlights": [
+    "Private pool with garden lawn",
+    "Modern concrete-and-timber design, double-height living",
+    "Big kitchen island, dining for the group, bathtubs",
+    "Daily housekeeping"
+   ],
+   "priceTotal": 5624,
+   "priceNight": 937.33,
+   "checked": "25 Nov",
+   "cancel": "Free cancellation before 9 Dec, pay nothing until 7 Dec (non-refundable rate is $5,053)",
+   "rating": "8.9 on Booking.com from 120 reviews across the Alex Villas complex",
+   "addedBy": "Harry",
+   "notes": "Book the 'Four-Bedroom AV9' on the Alex Villas page, not the 2BR or 3BR villas. Only 1 left. $5,624 with free cancellation (pay nothing until 7 Dec, cancel free before 9 Dec), or $5,053 non-refundable. Both are Black Friday deals, taxes included.",
+   "images": [
+    "img/alex-av9-1.jpg",
+    "img/alex-av9-2.jpg",
+    "img/alex-av9-3.jpg",
+    "img/alex-av9-4.jpg",
+    "img/alex-av9-5.jpg",
+    "img/alex-av9-6.jpg",
+    "img/alex-av9-7.jpg",
+    "img/alex-av9-8.jpg",
+    "img/alex-av9-9.jpg",
+    "img/alex-av9-10.jpg",
+    "img/alex-av9-11.jpg",
+    "img/alex-av9-12.jpg",
+    "img/alex-av9-13.jpg"
    ]
   }
  ],
