@@ -316,7 +316,7 @@ const STORE="https://api.npoint.io/a809efdc901329b4db75";
 let fileVotes=[], sharedVotes=[], saveT=null, saving=false;
 const vkey=n=>norm(n).replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"anon";
 const cleanVote=v=>({name:String(v.name||"").slice(0,30),ranks:(v.ranks&&typeof v.ranks==="object")?v.ranks:{},no:Array.isArray(v.no)?v.no:[]});
-function stripGone(v){const g=new Set(ideas.filter(i=>i.gone).map(i=>i.id)); if(!g.size) return v; const ranks={}; for(const k in v.ranks||{}) ranks[k]=(v.ranks[k]||[]).map(id=>g.has(id)?null:id); return Object.assign({},v,{ranks,no:(v.no||[]).filter(id=>!g.has(id))})}
+function stripGone(v){const g=new Set(ideas.filter(i=>i.gone).map(i=>i.id)), live=new Set(ideas.filter(i=>!i.gone).map(i=>i.id)); const ranks={}; for(const k in v.ranks||{}) ranks[k]=(v.ranks[k]||[]).map(id=>id&&live.has(id)?id:null); return Object.assign({},v,{ranks,no:(v.no||[]).filter(id=>!g.has(id))})}
 function mergeVotes(){const m=new Map(); for(const v of fileVotes.concat(sharedVotes)) if(v.name) m.set(vkey(v.name),stripGone(cleanVote(v))); votes=[...m.values()]}
 let loadRetry=null;
 async function loadShared(){try{const d=await fetch(STORE+"?t="+Date.now(),{cache:"no-store"}).then(r=>{if(!r.ok) throw new Error(r.status); return r.json()}); sharedVotes=Object.values((d&&d.votes)||{}).filter(v=>v&&v.name); mergeVotes(); renderMain(); updatedLine()}catch(e){clearTimeout(loadRetry); loadRetry=setTimeout(loadShared,3000)}}
