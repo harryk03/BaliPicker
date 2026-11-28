@@ -517,6 +517,45 @@
    ],
    "addedBy": "Harry",
    "checked": "28 Nov"
+  },
+  {
+   "id": "villa-sayuri",
+   "area": "xmas",
+   "kind": "stay",
+   "source": "Direct with host (Alfred in Bali)",
+   "url": "https://www.booking.com/hotel/id/villa-sayuri-by-alfred-in-bali.en-gb.html",
+   "title": "Villa Sayuri by Alfred in Bali – 3BR Pool Villa, Kerobokan",
+   "location": "Kerobokan (Gg. Ambon, Jl. Tegal Cupek), between Seminyak and Canggu",
+   "dates": "23 – 26 Dec",
+   "nights": 3,
+   "facts": [
+    "3 bedrooms",
+    "2 extra-large + 1 large double bed",
+    "3 bathrooms",
+    "300 m²"
+   ],
+   "highlights": [
+    "Private pool, sun terrace and garden",
+    "Daily housekeeping, free parking",
+    "Managed by Alfred in Bali (9.4 across 128 villas)"
+   ],
+   "priceTotal": 2200,
+   "priceNight": 733.33,
+   "cancel": "Booking direct with the host. Confirm cancellation and payment terms with them",
+   "rating": "10/10 from 4 external reviews (no Booking.com reviews yet)",
+   "notes": "Host confirmed directly that it's available 23–26 Dec for roughly A$2,200 total (about $733 each). Booking.com shows it as unavailable for these dates, so it has to be booked through the host. Link is the Booking.com page for photos and details only.",
+   "images": [
+    "img/villa-sayuri-1.jpg",
+    "img/villa-sayuri-2.jpg",
+    "img/villa-sayuri-3.jpg",
+    "img/villa-sayuri-4.jpg",
+    "img/villa-sayuri-5.jpg",
+    "img/villa-sayuri-6.jpg",
+    "img/villa-sayuri-7.jpg",
+    "img/villa-sayuri-8.jpg"
+   ],
+   "addedBy": "Harry",
+   "checked": "28 Nov"
   }
  ],
  "votes": []
