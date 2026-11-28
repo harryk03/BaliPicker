@@ -310,6 +310,45 @@
    ],
    "addedBy": "Harry",
    "checked": "28 Nov"
+  },
+  {
+   "id": "deo-villa",
+   "area": "xmas",
+   "kind": "stay",
+   "source": "Booking.com",
+   "url": "https://www.booking.com/hotel/id/deo-villa-seminyak.en-gb.html?checkin=2026-12-23&checkout=2026-12-26&group_adults=3",
+   "title": "Deo Villa Seminyak – Three-Bedroom Villa with Plunge Pool",
+   "location": "Seminyak / Batu Belig. About 550 m to Batu Belig Beach, 550 m to Kynd Community, 7 min to Mari Beach Club, 12 min to Atlas and Finns",
+   "dates": "23 – 26 Dec",
+   "nights": 3,
+   "facts": [
+    "3 bedrooms",
+    "3 large double beds + sofa bed",
+    "3 bathrooms",
+    "300 m²"
+   ],
+   "highlights": [
+    "Modern tropical villa with private plunge pool",
+    "Every bedroom ensuite, daily housekeeping",
+    "Walk to Batu Belig beach bars"
+   ],
+   "priceTotal": 784.0,
+   "priceNight": 261.33,
+   "cancel": "Non-refundable. Pay by bank transfer before arrival",
+   "rating": "9.4 Superb from 16 reviews (location 9.3) · Managed by CV Bali Accommodation Management",
+   "notes": "Available 23–26 Dec (checked 28 Nov). AUD 784 total for the Three-Bedroom Villa, taxes included, Black Friday 30% off (from AUD 1,119). Rp 1,000,000 (~$82) cash damage deposit on arrival. Quiet hours 10pm–5am, no parties. Make sure to pick the Three-Bedroom option, the recommended one is only 2 bedrooms.",
+   "images": [
+    "img/deo-villa-1.jpg",
+    "img/deo-villa-2.jpg",
+    "img/deo-villa-3.jpg",
+    "img/deo-villa-4.jpg",
+    "img/deo-villa-5.jpg",
+    "img/deo-villa-6.jpg",
+    "img/deo-villa-7.jpg",
+    "img/deo-villa-8.jpg"
+   ],
+   "addedBy": "Harry",
+   "checked": "28 Nov"
   }
  ],
  "votes": []
