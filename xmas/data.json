@@ -389,6 +389,92 @@
    ],
    "addedBy": "Harry",
    "checked": "28 Nov"
+  },
+  {
+   "id": "villa-suri",
+   "area": "xmas",
+   "kind": "stay",
+   "source": "Batu Collection (direct)",
+   "url": "https://batucollection.com/villas/suri",
+   "title": "Villa Suri – 3BR Riverside Pool Villa, Batu Belig",
+   "location": "Batu Belig, in a quiet lane north of Jl. Batu Belig (Gg. Tukad Surenadi) by the river. About 850 m / 12 min walk or 4 min drive to Batu Belig Beach. Minutes to Mari, Potato Head and Finns",
+   "dates": "23 – 26 Dec",
+   "nights": 3,
+   "facts": [
+    "3 bedrooms",
+    "3 ensuites",
+    "3 bathrooms",
+    "Sleeps 6"
+   ],
+   "highlights": [
+    "Double-height open living with sunken lounge",
+    "Private pool and upstairs balcony over the greenery",
+    "Daily housekeeping, on-site parking"
+   ],
+   "priceTotal": 1600,
+   "priceNight": 533.33,
+   "cancel": "Booked by request direct with the villa manager. Ask about cancellation and deposit",
+   "rating": "Listed as a Guest Favourite (no review count on their own site)",
+   "notes": "Available 23–26 Dec (checked 28 Nov). Priced in USD: $325 + $400 + $400 = US$1,125 for 3 nights, roughly A$1,600 depending on the exchange rate. Direct booking, so no Airbnb/Booking.com protection.",
+   "images": [
+    "img/villa-suri-1.jpg",
+    "img/villa-suri-2.jpg",
+    "img/villa-suri-3.jpg",
+    "img/villa-suri-4.jpg",
+    "img/villa-suri-5.jpg",
+    "img/villa-suri-6.jpg",
+    "img/villa-suri-7.jpg",
+    "img/villa-suri-8.jpg",
+    "img/villa-suri-9.jpg",
+    "img/villa-suri-10.jpg",
+    "img/villa-suri-11.jpg",
+    "img/villa-suri-12.jpg"
+   ],
+   "addedBy": "Harry",
+   "checked": "28 Nov"
+  },
+  {
+   "id": "break-nem",
+   "area": "xmas",
+   "kind": "stay",
+   "source": "The Break (direct)",
+   "url": "https://thebreakboutiquevillas.lodgify.com/en/the-break-villa-nem-3br-pool-with-ice-bath-sauna-access",
+   "title": "The Break Villa Nem – 3BR Pool Villa with Sauna & Ice Bath",
+   "location": "Batu Belig, in a boutique complex of 8 villas about 300 m from the beach, near Canggu's beach clubs",
+   "dates": "23 – 26 Dec",
+   "nights": 3,
+   "facts": [
+    "3 bedrooms",
+    "3 ensuites",
+    "3 bathrooms",
+    "Sleeps 6"
+   ],
+   "highlights": [
+    "Private pool and double-height living",
+    "Shared sauna, ice bath and steam room",
+    "300 m to the beach"
+   ],
+   "priceTotal": 2210,
+   "priceNight": 736.67,
+   "cancel": "Non-refundable. 100% paid at booking",
+   "rating": "No reviews yet on their own site",
+   "notes": "Available 23–26 Dec (checked 28 Nov). $2,210 total for 3 guests (site set to AUD), Christmas rate. No security deposit. Booked direct through Lodgify, not Airbnb.",
+   "images": [
+    "img/break-nem-1.jpg",
+    "img/break-nem-2.jpg",
+    "img/break-nem-3.jpg",
+    "img/break-nem-4.jpg",
+    "img/break-nem-5.jpg",
+    "img/break-nem-6.jpg",
+    "img/break-nem-7.jpg",
+    "img/break-nem-8.jpg",
+    "img/break-nem-9.jpg",
+    "img/break-nem-10.jpg",
+    "img/break-nem-11.jpg",
+    "img/break-nem-12.jpg"
+   ],
+   "addedBy": "Harry",
+   "checked": "28 Nov"
   }
  ],
  "votes": []
