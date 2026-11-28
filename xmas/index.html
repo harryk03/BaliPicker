@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bali 23–26 Dec Villa Vote</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5efe3; --card:#fffdf8; --ink:#1e2722; --muted:#6c6f66; --line:#e4d9c6;
+  --green:#2e5b48; --green-soft:#e2ece4; --terra:#c4613a; --terra-soft:#f6e3d8;
+  --gold:#b88a1c; --gold-soft:#f5ebcc; --shadow:0 1px 2px rgba(40,30,10,.06),0 6px 24px rgba(40,30,10,.06);
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#151a17; --card:#1e2420; --ink:#ece6da; --muted:#9a9d94; --line:#2f3731;
+  --green:#7fb89b; --green-soft:#22332a; --terra:#e48a63; --terra-soft:#3a2820;
+  --gold:#e0b84a; --gold-soft:#3a3220; --shadow:none;
+}}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font:inherit;color:inherit}
+a{color:var(--green)}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 190px}
+header h1{font-family:Fraunces,Georgia,serif;font-weight:650;font-size:30px;line-height:1.1;margin:4px 0 6px;letter-spacing:-.01em}
+.kicker{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--terra);font-weight:600}
+.sub{color:var(--muted);margin:0 0 14px}
+.budget{display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 12px;margin-bottom:16px}
+.budget b{font-weight:600}
+.budget .sep{color:var(--line)}
+.budget form{display:flex;gap:6px;flex-wrap:wrap;align-items:center;width:100%}
+.budget input{width:110px;padding:7px 9px;border:1px solid var(--line);border-radius:9px;background:var(--bg)}
+.link-btn{background:none;border:0;padding:0;color:var(--green);font-weight:600;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+.tabs{display:flex;gap:6px;margin-bottom:8px}
+.tab{flex:1;padding:11px 10px;border-radius:12px;border:1px solid var(--line);background:var(--card);font-weight:600;cursor:pointer;font-family:Fraunces,Georgia,serif;font-size:18px}
+.tab[aria-selected=true]{background:var(--green);border-color:var(--green);color:#fff}
+@media (prefers-color-scheme:dark){.tab[aria-selected=true]{color:#10140f}}
+.tdates{display:block;font-family:Inter,sans-serif;font-size:12px;font-weight:500;opacity:.8;margin-top:2px}
+.tab small{font-family:Inter,sans-serif;font-size:12px;font-weight:500;opacity:.75;margin-left:4px}
+.subtabs{display:flex;gap:6px;align-items:center;margin-bottom:14px;flex-wrap:wrap}
+.pill{padding:7px 13px;border-radius:999px;border:1px solid var(--line);background:transparent;cursor:pointer;font-weight:500;font-size:14px}
+.pill[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.spacer{flex:1}
+.cards{display:grid;gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+.gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;background:var(--line);aspect-ratio:3/2;scrollbar-width:none}
+.gallery::-webkit-scrollbar{display:none}
+.gallery img{flex:0 0 100%;width:100%;height:100%;object-fit:cover;scroll-snap-align:start;display:block}
+.gwrap{position:relative}
+.gnav{position:absolute;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:0;background:rgba(255,255,255,.85);color:#1e2722;font-size:20px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.gnav.prev{left:8px}.gnav.next{right:8px}
+@media (hover:none){.gnav{display:none}}
+.gcount{position:absolute;right:10px;bottom:10px;background:rgba(0,0,0,.55);color:#fff;font-size:12px;padding:3px 8px;border-radius:999px}
+.badge-lead{position:absolute;left:10px;top:10px;background:var(--gold);color:#fff;font-size:12px;font-weight:600;padding:4px 9px;border-radius:999px}
+.body{padding:14px 16px 16px}
+.title-row{display:flex;gap:10px;align-items:flex-start;justify-content:space-between}
+.card h2{font-family:Fraunces,Georgia,serif;font-weight:650;font-size:21px;line-height:1.2;margin:0}
+.src{font-size:12px;font-weight:600;padding:3px 8px;border-radius:999px;background:var(--terra-soft);color:var(--terra);white-space:nowrap}
+.loc{color:var(--muted);margin:3px 0 10px;font-size:14px}
+.facts{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.fact{font-size:13px;padding:4px 9px;border-radius:8px;background:var(--bg);border:1px solid var(--line)}
+.price{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:4px 0 10px}
+.price div{background:var(--bg);border-radius:10px;padding:8px 10px}
+.price .k{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.price .v{font-weight:600;font-size:16px}
+.bud{font-size:13px;font-weight:600;padding:4px 9px;border-radius:8px;display:inline-block;margin-bottom:8px}
+.bud.ok{background:var(--green-soft);color:var(--green)}
+.bud.over{background:var(--terra-soft);color:var(--terra)}
+.card.gone{opacity:.6;filter:grayscale(1)}
+.gone-stamp{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.gone-stamp span{background:#333;color:#fff;font-weight:800;font-size:18px;text-align:center;letter-spacing:.08em;padding:10px 18px;border-radius:10px;transform:rotate(-8deg);box-shadow:0 6px 20px rgba(0,0,0,.3)}
+.gone-note{background:#444;color:#fff;font-weight:600;border-radius:10px;padding:10px 12px;margin:10px 0 0;font-size:14px}
+.gone-banner{background:var(--terra-soft);color:var(--terra);border:1px solid var(--terra);border-radius:12px;padding:10px 14px;margin:0 0 14px;font-size:14px}
+.notes{font-size:14px;margin:6px 0 4px}
+.notes li{margin:2px 0}
+.notes ul{margin:4px 0;padding-left:18px}
+.meta{font-size:13px;color:var(--muted);margin-top:8px}
+.vote{display:flex;gap:6px;margin-top:12px;flex-wrap:wrap}
+.vbtn{flex:1;min-width:58px;white-space:nowrap;padding:10px 6px;border-radius:11px;border:1px solid var(--line);background:transparent;cursor:pointer;font-weight:600;font-size:14px}
+.vbtn[aria-pressed=true].r1{background:var(--gold);border-color:var(--gold);color:#fff}
+.vbtn[aria-pressed=true].r2,.vbtn[aria-pressed=true].r3{background:var(--green);border-color:var(--green);color:#fff}
+.vbtn.no{flex:1.25}
+.vbtn[aria-pressed=true].no{background:var(--terra);border-color:var(--terra);color:#fff}
+.vbtn.taken{opacity:.38;border-style:dashed}
+.mypicks{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 12px;margin-bottom:14px;font-size:14px}
+.mypicks .h{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;margin-bottom:4px}
+.mypicks .p{display:flex;align-items:center;gap:8px;padding:3px 0}
+.mypicks .slot{font-weight:600;width:52px;flex:0 0 auto}
+.mypicks .nm{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mypicks .empty-s{color:var(--muted)}
+.mypicks button{background:none;border:0;color:var(--terra);font-size:13px;cursor:pointer;padding:2px 4px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:130px;max-width:92%;width:max-content;background:var(--ink);color:var(--bg);padding:10px 14px;border-radius:12px;font-size:14px;z-index:20;box-shadow:0 6px 20px rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.show{opacity:1}
+.tally{font-size:13px;margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);color:var(--muted)}
+.tally b{color:var(--ink)}
+.empty{background:var(--card);border:1px dashed var(--line);border-radius:16px;padding:22px;text-align:center;color:var(--muted)}
+.tablewrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:16px}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:620px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+td img{width:64px;height:44px;object-fit:cover;border-radius:6px;display:block}
+.section-h{font-family:Fraunces,Georgia,serif;font-size:19px;margin:26px 0 8px}
+.pending{display:grid;gap:8px}
+.pend{background:var(--card);border:1px dashed var(--line);border-radius:12px;padding:10px 12px;font-size:14px;word-break:break-all}
+.pend .who{color:var(--muted);font-size:12px;word-break:normal}
+.add{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;display:grid;gap:8px}
+.add .row{display:flex;gap:8px;flex-wrap:wrap}
+.add input,.add select,.add textarea{padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--bg);width:100%}
+.add .row>*{flex:1;min-width:120px}
+.btn{padding:11px 16px;border-radius:12px;border:0;background:var(--green);color:#fff;font-weight:600;cursor:pointer}
+@media (prefers-color-scheme:dark){.btn{color:#10140f}}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--ink)}
+.btn:disabled{opacity:.45;cursor:default}
+.msg{font-size:13px;color:var(--muted)}
+.msg.ok{color:var(--green)} .msg.err{color:var(--terra)}
+.dock{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);box-shadow:0 -6px 24px rgba(0,0,0,.06);z-index:5}
+.dock-in{max-width:860px;margin:0 auto;padding:10px 16px calc(10px + env(safe-area-inset-bottom));display:grid;gap:8px}
+.dock-row{display:flex;gap:8px;align-items:center}
+.dock input{flex:1 1 0;width:0;min-width:0;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--bg)}
+.dock .summary{font-size:13px;color:var(--muted);min-height:18px}
+.fallback textarea{width:100%;height:90px;margin-top:6px;padding:8px;border:1px solid var(--line);border-radius:10px;background:var(--bg)}
+.loading{color:var(--muted);text-align:center;padding:30px 0}
+a.btn{flex:0 0 auto;text-decoration:none;display:inline-block;white-space:nowrap;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Bali · 23–26 Dec · Abel, Adem & Harry</div>
+    <h1>Our villa for 23–26 Dec</h1>
+    <p class="sub">Rank your top 3, one 1st, one 2nd and one 3rd each (1st is your favourite), and tap 👎 on anything you don't like. Then add your name and hit <b>Submit vote</b>. It shows up on the results page straight away.</p>
+  </header>
+
+  <div class="budget" id="budget"></div>
+
+  <div class="tabs" role="tablist" id="area-tabs"></div>
+  <div class="subtabs" id="kind-tabs"></div>
+
+  <div id="main"><p class="loading">Loading options…</p></div>
+
+  <h3 class="section-h">Add an idea</h3>
+  <form class="add" id="add-form" novalidate>
+    <input id="add-url" type="url" inputmode="url" placeholder="Paste a link (Airbnb, Booking.com, Google Maps, TikTok…)" aria-label="Link">
+    <div class="row">
+      <select id="add-area" aria-label="Area"><option value="xmas">23–26 Dec</option></select>
+      <select id="add-kind" aria-label="Type"><option value="stay">Stay</option><option value="do">Thing to do</option></select>
+    </div>
+    <textarea id="add-note" rows="2" placeholder="Note (optional): why you like it" aria-label="Note"></textarea>
+    <div class="dock-row"><button class="btn" type="submit">Send idea on WhatsApp</button></div>
+    <span class="msg" id="add-msg">It opens WhatsApp with the link ready to send to Harry or the group. Harry adds it here with photos and prices.</span>
+  </form>
+  <p class="msg" id="updated" style="margin-top:18px"></p>
+  <p class="msg"><a href="results.html">See the vote results →</a></p>
+</div>
+
+<div class="dock" role="region" aria-label="Your vote">
+  <div class="dock-in">
+    <div class="dock-row">
+      <input id="voter-name" type="text" placeholder="Your name" aria-label="Your name" maxlength="30" autocomplete="given-name">
+      <button class="btn" id="save-btn" type="button">Submit vote</button>
+    </div>
+    <div class="dock-row" style="align-items:flex-start"><div class="summary" id="summary" style="flex:1">Pick your top 3 above.</div><a class="link-btn" id="wa-link" href="#" target="_blank" rel="noopener" style="font-size:13px;margin-right:10px">WhatsApp</a><button class="link-btn" id="copy-btn" type="button" style="font-size:13px">Copy</button></div>
+  </div>
+</div>
+
+<script>
+const AREAS=[{id:"xmas",name:"Villa"}];
+const KINDS=[{id:"stay",name:"Stays"},{id:"do",name:"Things to do"}];
+const POINTS=[3,2,1];
+
+let ideas=[], votes=[], config={};
+const store={get(k){try{return JSON.parse(localStorage.getItem("bali-xmas:"+k))}catch(e){return null}},set(k,v){try{localStorage.setItem("bali-xmas:"+k,JSON.stringify(v))}catch(e){}}};
+let view={area:store.get("area")||null, kind:store.get("kind")||"stay", mode:"cards"};
+let me=Object.assign({name:"",ranks:{},no:[]}, store.get("me")||{});
+if(!Array.isArray(me.no)) me.no=[];
+
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safeUrl=u=>{try{const x=new URL(String(u));return /^https?:$/.test(x.protocol)?x.href:null}catch(e){return null}};
+const safeImg=p=>/^img\/[\w.-]+\.(jpe?g|png|webp)$/i.test(String(p))?p:null;
+const money=n=>(typeof n==="number"&&isFinite(n))?"$"+Math.round(n).toLocaleString("en-AU"):"—";
+const sectionKey=(a,k)=>a+"-"+k;
+const people=()=>Number(config.people)>0?Number(config.people):4;
+const budget=()=>Number(config.budgetNight)>0?Number(config.budgetNight):null;
+const norm=s=>String(s||"").trim().toLowerCase();
+
+function sectionIdeas(a,k){return ideas.filter(i=>i.area===a&&(i.kind||"stay")===k)}
+
+function allVotes(){
+  const myName=norm(me.name);
+  const others=votes.filter(v=>!myName||norm(v.name)!==myName);
+  const hasMine=Object.values(me.ranks).some(r=>(r||[]).some(Boolean))||me.no.length;
+  return hasMine?others.concat([{...me,name:me.name.trim()||"You",mine:true}]):others;
+}
+function tallyFor(i){
+  const key=sectionKey(i.area,i.kind||"stay");
+  let pts=0; const ranked=[], nos=[];
+  for(const v of allVotes()){
+    const r=(v.ranks&&v.ranks[key])||[];
+    const ix=r.indexOf(i.id);
+    if(ix>=0&&ix<3){pts+=POINTS[ix]; ranked.push({name:v.name,ix,mine:v.mine});}
+    if(Array.isArray(v.no)&&v.no.includes(i.id)) nos.push(v.name);
+  }
+  ranked.sort((a,b)=>a.ix-b.ix);
+  return {pts,ranked,nos};
+}
+
+function renderBudget(){
+  const b=budget(), p=people();
+  $("budget").innerHTML=`<span>Budget <b>${b?money(b)+" / night":"not set yet"}</b></span><span class="sep">|</span><span>Splitting <b>${p} ways</b></span>`;
+}
+function renderTabs(){
+  $("area-tabs").innerHTML=AREAS.map(a=>{
+    const n=ideas.filter(i=>i.area===a.id).length, d=(config.areas||{})[a.id]||{};
+    return `<button class="tab" role="tab" aria-selected="${view.area===a.id}" data-area="${a.id}">${a.name}<small>${n}</small>${d.dates?`<span class="tdates">${esc(d.dates)}${d.nights?` · ${esc(d.nights)} nights`:""}</span>`:""}</button>`}).join("");
+  $("kind-tabs").innerHTML=KINDS.map(k=>`<button class="pill" aria-pressed="${view.kind===k.id}" data-kind="${k.id}">${k.name} · ${sectionIdeas(view.area,k.id).length}</button>`).join("")
+    +`<span class="spacer"></span><button class="pill" aria-pressed="${view.mode==="table"}" data-mode="1">${view.mode==="table"?"Show cards":"Compare table"}</button>`;
+}
+function night(i){return i.priceNight||(i.priceTotal&&i.nights?i.priceTotal/i.nights:null)}
+function priceBlock(i){
+  const p=people();
+  if((i.kind||"stay")==="stay"&&!i.priceTotal&&!night(i)) return `<div class="price"><div style="grid-column:1/-1"><div class="k">Price${i.nights?` · ${esc(i.nights)} nts`:""}</div><div class="v" style="font-size:14px;font-weight:500">${i.unavailable?"No price, not available for our dates":"To come once Harry checks the dates"}</div></div></div>`;
+  if((i.kind||"stay")==="stay") return `<div class="price"><div><div class="k">Per night</div><div class="v">${money(night(i))}</div></div>
+      <div><div class="k">Total${i.nights?` · ${esc(i.nights)} nts`:""}</div><div class="v">${money(i.priceTotal)}</div></div>
+      <div><div class="k">Each (÷${p})</div><div class="v">${money(i.priceTotal?i.priceTotal/p:null)}</div></div></div>`;
+  return `<div class="price"><div><div class="k">Per person</div><div class="v">${money(i.pricePP)}</div></div>
+    <div><div class="k">Group of ${p}</div><div class="v">${money(i.pricePP?i.pricePP*p:i.priceTotal)}</div></div>
+    <div><div class="k">Time</div><div class="v" style="font-size:14px">${esc(i.duration||"—")}</div></div></div>`;
+}
+function budgetBadge(i){
+  const b=budget(), n=night(i); if(!b||(i.kind||"stay")!=="stay"||!n) return "";
+  return n<=b?`<span class="bud ok">Under budget by ${money(b-n)}/night</span>`:`<span class="bud over">Over budget by ${money(n-b)}/night</span>`;
+}
+function voteRow(i){
+  const r=me.ranks[sectionKey(i.area,i.kind||"stay")]||[], lab=["★ 1st","2nd","3rd"];
+  return `<div class="vote">${[0,1,2].map(n=>{const taken=r[n]&&r[n]!==i.id; return `<button class="vbtn r${n+1}${taken?" taken":""}" aria-pressed="${r[n]===i.id}"${taken?` aria-disabled="true" title="${lab[n]} is already used in this list"`:""} data-rank="${n}" data-id="${esc(i.id)}">${lab[n]}</button>`}).join("")}
+    <button class="vbtn no" aria-pressed="${me.no.includes(i.id)}" data-no="${esc(i.id)}" aria-label="Dislike">👎 Dislike</button></div>`;
+}
+function tallyLine(i){
+  const t=tallyFor(i), ord=["1st","2nd","3rd"];
+  if(!t.ranked.length&&!t.nos.length) return `<div class="tally">No votes yet.</div>`;
+  return `<div class="tally"><b>${t.pts} pts</b> · ${t.ranked.map(x=>esc(x.name)+(x.mine?" (you)":"")+" "+ord[x.ix]).join(", ")||"no ranks"}${t.nos.length?` · <span style="color:var(--terra)">👎 ${t.nos.map(esc).join(", ")}</span>`:""}</div>`;
+}
+function card(i,leader){
+  const imgs=(i.images||[]).map(safeImg).filter(Boolean), url=safeUrl(i.url);
+  const facts=(i.facts||[]).map(f=>`<span class="fact">${esc(f)}</span>`).join("");
+  const hl=(i.highlights||[]).length?`<ul>${i.highlights.map(h=>`<li>${esc(h)}</li>`).join("")}</ul>`:"";
+  return `<article class="card${i.gone?" gone":""}">
+    ${imgs.length?`<div class="gwrap"><div class="gallery">${imgs.map((s,n)=>`<img src="${s}" alt="${esc(i.title)} photo ${n+1}" loading="lazy">`).join("")}</div>
+      ${imgs.length>1?`<button class="gnav prev" type="button" data-g="-1" aria-label="Previous photo">‹</button><button class="gnav next" type="button" data-g="1" aria-label="Next photo">›</button><span class="gcount">${imgs.length} photos · swipe</span>`:""}${leader===i.id?`<span class="badge-lead">Leading</span>`:""}${i.gone?`<div class="gone-stamp"><span>BOOKED · NO LONGER AVAILABLE</span></div>`:""}</div>`:""}
+    <div class="body">
+      <div class="title-row"><h2>${esc(i.title)}</h2>${i.source?`<span class="src">${esc(i.source)}</span>`:""}</div>
+      ${i.unavailable?`<span class="bud over">⚠ ${esc(i.unavailable)}</span>`:""}
+      <div class="loc">${esc(i.location||"")}${i.dates?` · ${esc(i.dates)}`:""}</div>
+      ${facts?`<div class="facts">${facts}</div>`:""}
+      ${priceBlock(i)}${budgetBadge(i)}
+      <div class="notes">${hl}${i.notes?`<p style="margin:6px 0">${esc(i.notes)}</p>`:""}</div>
+      <div class="meta">${[i.cancel,i.rating,i.addedBy?"Added by "+i.addedBy:"",i.checked?"Price checked "+i.checked:""].filter(Boolean).map(esc).join(" · ")}</div>
+      ${url?`<div class="meta"><a href="${esc(url)}" target="_blank" rel="noopener">Open on ${esc(i.source||"site")} ↗</a></div>`:""}
+      ${i.gone?`<div class="gone-note">Booked - no longer available. Votes for it have been removed and voting is closed.</div>`:voteRow(i)+tallyLine(i)}
+    </div></article>`;
+}
+function table(list,leader){
+  const stay=view.kind==="stay", p=people(), b=budget();
+  const rows=list.map(i=>{
+    const img=(i.images||[]).map(safeImg).filter(Boolean)[0], t=tallyFor(i), n=night(i);
+    return `<tr><td>${img?`<img src="${img}" alt="">`:""}</td>
+      <td><b>${esc(i.title)}</b>${leader===i.id?" ★":""}${i.unavailable?`<div class="msg err">⚠ ${esc(i.unavailable)}</div>`:""}<div class="msg">${esc(i.location||"")}</div></td>
+      ${stay?`<td class="num">${money(n)}${b&&n?`<div class="msg ${n<=b?"ok":"err"}">${n<=b?"under":"over"}</div>`:""}</td><td class="num">${money(i.priceTotal)}</td><td class="num">${money(i.priceTotal?i.priceTotal/p:null)}</td>`
+            :`<td class="num">${money(i.pricePP)}</td><td class="num">${money(i.pricePP?i.pricePP*p:i.priceTotal)}</td><td>${esc(i.duration||"—")}</td>`}
+      <td>${esc((i.facts||[]).join(" · "))}</td>
+      <td class="num"><b>${t.pts}</b>${t.nos.length?` <span class="msg err">👎${t.nos.length}</span>`:""}</td></tr>`}).join("");
+  return `<div class="tablewrap"><table><thead><tr><th></th><th>Option</th>${stay?"<th>Night</th><th>Total</th><th>Each</th>":"<th>Per person</th><th>Group</th><th>Time</th>"}<th>Details</th><th>Pts</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+function renderMain(){
+  const list=sectionIdeas(view.area,view.kind).slice().sort((a,b)=>(!!a.gone)-(!!b.gone));
+  let leader=null,best=0; for(const i of list){if(i.gone) continue; const t=tallyFor(i); if(t.pts>best){best=t.pts;leader=i.id}}
+  const gone=list.filter(i=>i.gone), myKey=sectionKey(view.area,view.kind), myGone=gone.filter(i=>(me.ranks[myKey]||[]).includes(i.id));
+  const banner=gone.length?`<div class="gone-banner">❌ <b>${gone.map(i=>esc(i.title.replace(/^❌ BOOKED: /,""))).join(", ")}</b> : booked - no longer available. All votes for it have been removed, so if you had it ranked, <b>pick another villa for that spot</b>.</div>`:"";
+  if(!list.length){
+    $("main").innerHTML=`<div class="empty">No ${view.kind==="stay"?"stays":"things to do"} in ${AREAS.find(a=>a.id===view.area).name} yet. Send a link below.</div>`; return;
+  }
+  $("main").innerHTML=banner+myPicks()+(view.mode==="table"?table(list,leader):`<div class="cards">${list.map(i=>card(i,leader)).join("")}</div>`);
+}
+function myPicks(){
+  const key=sectionKey(view.area,view.kind), r=me.ranks[key]||[], lab=["★ 1st","2nd","3rd"];
+  const area=AREAS.find(a=>a.id===view.area).name;
+  return `<div class="mypicks"><div class="h">Your picks · ${esc(area)} ${view.kind==="stay"?"stays":"things to do"}</div>${[0,1,2].map(n=>{const i=ideas.find(x=>x.id===r[n]);
+    return `<div class="p"><span class="slot">${lab[n]}</span>${i?`<span class="nm">${esc(i.title)}</span><button type="button" data-clear="${n}" aria-label="Clear ${lab[n]}">✕ Clear</button>`:`<span class="nm empty-s">Not picked yet</span>`}</div>`}).join("")}</div>`;
+}
+let toastT=null;
+function toast(msg){let t=$("toast"); if(!t){t=document.createElement("div");t.id="toast";t.className="toast";t.setAttribute("role","status");document.body.appendChild(t)} t.textContent=msg; t.classList.add("show"); clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove("show"),3200)}
+
+function voteText(){
+  const lines=[`🗳️ Bali 23–26 Dec vote: ${me.name.trim()||"?"}`];
+  for(const a of AREAS) for(const k of KINDS){
+    const named=(me.ranks[sectionKey(a.id,k.id)]||[]).map((id,n)=>{const i=ideas.find(x=>x.id===id);return i?`${n+1}. ${i.title}`:null}).filter(Boolean);
+    if(named.length) lines.push(`${a.name} ${k.name.toLowerCase()}: ${named.join(" | ")}`);
+  }
+  const nos=me.no.map(id=>(ideas.find(x=>x.id===id)||{}).title).filter(Boolean);
+  if(nos.length) lines.push(`👎 Dislike: ${nos.join(", ")}`);
+  lines.push(`[code ${btoa(unescape(encodeURIComponent(JSON.stringify({n:me.name.trim(),r:me.ranks,x:me.no})))) }]`);
+  return lines.join("\n");
+}
+function picks(){return Object.values(me.ranks).reduce((s,r)=>s+(r||[]).filter(Boolean).length,0)}
+function renderSummary(msg,cls){
+  const n=picks(), el=$("summary");
+  el.className="summary"+(cls?" msg "+cls:"");
+  el.textContent=msg||(n?`${n} pick${n>1?"s":""}${me.no.length?`, ${me.no.length} dislike${me.no.length>1?"s":""}`:""}. ${me.submitted?"Changes save automatically.":"Tap Submit vote when you're done."}`:"Pick your top 3 above.");
+  $("wa-link").href="https://wa.me/?text="+encodeURIComponent(voteText());
+}
+function renderAll(){renderBudget();renderTabs();renderMain();renderSummary()}
+const STORE="https://api.npoint.io/c4c84113a94c7298e2eb";
+let fileVotes=[], sharedVotes=[], saveT=null, saving=false;
+const vkey=n=>norm(n).replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"anon";
+const cleanVote=v=>({name:String(v.name||"").slice(0,30),ranks:(v.ranks&&typeof v.ranks==="object")?v.ranks:{},no:Array.isArray(v.no)?v.no:[]});
+function stripGone(v){const g=new Set(ideas.filter(i=>i.gone).map(i=>i.id)), live=new Set(ideas.filter(i=>!i.gone).map(i=>i.id)); const ranks={}; for(const k in v.ranks||{}) ranks[k]=(v.ranks[k]||[]).map(id=>id&&live.has(id)?id:null); return Object.assign({},v,{ranks,no:(v.no||[]).filter(id=>!g.has(id))})}
+function mergeVotes(){const m=new Map(); for(const v of fileVotes.concat(sharedVotes)) if(v.name) m.set(vkey(v.name),stripGone(cleanVote(v))); votes=[...m.values()]}
+let loadRetry=null;
+async function loadShared(){try{const d=await fetch(STORE+"?t="+Date.now(),{cache:"no-store"}).then(r=>{if(!r.ok) throw new Error(r.status); return r.json()}); sharedVotes=Object.values((d&&d.votes)||{}).filter(v=>v&&v.name); mergeVotes(); renderMain(); updatedLine()}catch(e){clearTimeout(loadRetry); loadRetry=setTimeout(loadShared,3000)}}
+async function saveVote(manual){
+  if(!me.name.trim()){nameIn.focus();renderSummary("Add your name first so we know whose vote it is.","err");return}
+  if(!picks()&&!me.no.length){if(manual)renderSummary("Pick at least one option first.","err");return}
+  if(saving) return; saving=true; if(manual) renderSummary("Saving…");
+  try{
+    let d=await fetch(STORE+"?t="+Date.now(),{cache:"no-store"}).then(r=>r.json()).catch(()=>null);
+    if(!d||typeof d!=="object") d={}; if(!d.votes||typeof d.votes!=="object") d.votes={};
+    d.votes[vkey(me.name)]={name:me.name.trim().slice(0,30),ranks:me.ranks,no:me.no,at:new Date().toISOString()};
+    const r=await fetch(STORE,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d)});
+    if(!r.ok) throw new Error(r.status);
+    me.submitted=true; store.set("me",me);
+    sharedVotes=Object.values(d.votes); mergeVotes(); renderMain(); updatedLine();
+    renderSummary("Saved ✓ Everyone can see it on the results page.","ok");
+  }catch(e){renderSummary("Couldn't save just now. Try again, or send it on WhatsApp.","err")}
+  saving=false;
+}
+function persist(){store.set("me",me); if(me.submitted&&me.name.trim()){clearTimeout(saveT); saveT=setTimeout(()=>saveVote(false),1200)}}
+function updatedLine(){$("updated").textContent=`${votes.length} vote${votes.length===1?"":"s"} in so far.`}
+
+document.addEventListener("click",e=>{
+  const g=e.target.closest("[data-g]"); if(g){const gal=g.parentElement.querySelector(".gallery"); gal.scrollBy({left:gal.clientWidth*(+g.dataset.g),behavior:"smooth"}); return}
+  const at=e.target.closest("[data-area]"); if(at){view.area=at.dataset.area;store.set("area",view.area);renderAll();return}
+  const kt=e.target.closest("[data-kind]"); if(kt){view.kind=kt.dataset.kind;store.set("kind",view.kind);renderAll();return}
+  if(e.target.closest("[data-mode]")){view.mode=view.mode==="table"?"cards":"table";renderAll();return}
+  const cb=e.target.closest("[data-clear]");
+  if(cb){const key=sectionKey(view.area,view.kind), r=(me.ranks[key]||[]).slice(0,3); while(r.length<3) r.push(null); r[+cb.dataset.clear]=null; me.ranks[key]=r; persist(); renderMain(); renderSummary(); return}
+  const rb=e.target.closest("[data-rank]");
+  if(rb){
+    const id=rb.dataset.id,n=+rb.dataset.rank,i=ideas.find(x=>x.id===id); if(!i) return;
+    const key=sectionKey(i.area,i.kind||"stay"), r=(me.ranks[key]||[]).slice(0,3); while(r.length<3) r.push(null);
+    if(r[n]&&r[n]!==id){const cur=ideas.find(x=>x.id===r[n]); const lab=["1st","2nd","3rd"][n]; toast(`You've already got ${cur?cur.title:"another villa"} as your ${lab}. Clear it first (tap its ${lab} again, or ✕ Clear at the top), then pick this one.`); return}
+    if(r[n]===id) r[n]=null; else {for(let k=0;k<3;k++) if(r[k]===id) r[k]=null; r[n]=id}
+    me.ranks[key]=r; me.no=me.no.filter(x=>x!==id); persist(); renderMain(); renderSummary(); return;
+  }
+  const nb=e.target.closest("[data-no]");
+  if(nb){
+    const id=nb.dataset.no;
+    if(me.no.includes(id)) me.no=me.no.filter(x=>x!==id);
+    else {me.no.push(id); for(const k in me.ranks) me.ranks[k]=(me.ranks[k]||[]).map(x=>x===id?null:x)}
+    persist(); renderMain(); renderSummary();
+  }
+});
+
+const nameIn=$("voter-name"); nameIn.value=me.name||"";
+nameIn.addEventListener("input",()=>{me.name=nameIn.value;persist();renderMain();renderSummary()});
+
+$("save-btn").addEventListener("click",()=>saveVote(true));
+$("wa-link").addEventListener("click",e=>{if(!me.name.trim()){e.preventDefault();nameIn.focus();renderSummary("Add your name first.","err")}});
+$("copy-btn").addEventListener("click",()=>{
+  if(!me.name.trim()){nameIn.focus();renderSummary("Add your name first.","err");return}
+  try{navigator.clipboard.writeText(voteText()).then(()=>renderSummary("Copied. Paste it to Harry.","ok"),()=>renderSummary("Couldn't copy. Use Submit vote instead.","err"))}
+  catch(err){renderSummary("Couldn't copy. Use Submit vote instead.","err")}
+});
+$("add-form").addEventListener("submit",e=>{
+  e.preventDefault();
+  const msg=$("add-msg"), u=safeUrl($("add-url").value.trim());
+  if(!u){msg.textContent="Paste a full link starting with https://";msg.className="msg err";return}
+  const area=$("add-area").selectedOptions[0].text, kind=$("add-kind").selectedOptions[0].text, note=$("add-note").value.trim();
+  const text=`💡 Bali 23–26 Dec idea (${area}, ${kind})${me.name.trim()?" from "+me.name.trim():""}\n${u}${note?"\n"+note:""}`;
+  window.location.href="https://wa.me/?text="+encodeURIComponent(text);
+});
+
+fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{
+  config=d.config||{}; ideas=(d.ideas||[]).filter(i=>i&&i.id&&i.title&&i.area);
+  fileVotes=(d.votes||[]).filter(v=>v&&v.name); mergeVotes();
+  {const c=stripGone(me); if(JSON.stringify(c.ranks)!==JSON.stringify(me.ranks)||c.no.length!==me.no.length){me.ranks=c.ranks;me.no=c.no;store.set("me",me)}}
+  if(!view.area||!AREAS.some(a=>a.id===view.area)) view.area=(AREAS.find(a=>ideas.some(i=>i.area===a.id))||AREAS[0]).id;
+  updatedLine(); renderAll(); loadShared(); setInterval(loadShared,30000);
+}).catch(()=>{$("main").innerHTML=`<div class="empty">Couldn't load the options. Pull down to refresh.</div>`});
+</script>
+</body>
+</html>

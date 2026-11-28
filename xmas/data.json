@@ -1,0 +1,274 @@
+{
+ "updated": "28 Nov 2026",
+ "config": {
+  "people": 3,
+  "budgetNight": null,
+  "areas": {
+   "xmas": {
+    "dates": "23 – 26 Dec",
+    "nights": 3
+   }
+  }
+ },
+ "ideas": [
+  {
+   "id": "sidha-sidhi",
+   "area": "xmas",
+   "kind": "stay",
+   "source": "Airbnb",
+   "url": "https://www.airbnb.com.au/rooms/1745551195544317022",
+   "title": "Sidha Sidhi – 3BR Mediterranean Villa in the Middle of Canggu",
+   "location": "Canggu, in a private alley. 5 min drive or 20 min walk to Echo Beach, La Brisa, Old Man's and Mexicola",
+   "dates": "23 – 26 Dec",
+   "nights": 3,
+   "facts": [
+    "3 bedrooms",
+    "3 beds",
+    "4 bathrooms",
+    "Sleeps 6"
+   ],
+   "highlights": [
+    "Mediterranean-style villa with private pool",
+    "In a private alley in central Canggu",
+    "20 min walk to Echo Beach, Old Man's and La Brisa"
+   ],
+   "priceTotal": 614.04,
+   "priceNight": 204.68,
+   "cancel": "Free cancellation before 3pm, 22 Dec (pay $0 today)",
+   "rating": "New listing, no reviews yet (host has 107 reviews on other places) · Host: Yudik, Superhost, 2 years hosting",
+   "notes": "Available 23–26 Dec (checked 28 Nov). $614.04 total for 3 nights, taxes and fees included.",
+   "images": [
+    "img/sidha-sidhi-1.jpg",
+    "img/sidha-sidhi-2.jpg",
+    "img/sidha-sidhi-3.jpg",
+    "img/sidha-sidhi-4.jpg",
+    "img/sidha-sidhi-5.jpg",
+    "img/sidha-sidhi-6.jpg",
+    "img/sidha-sidhi-7.jpg",
+    "img/sidha-sidhi-8.jpg",
+    "img/sidha-sidhi-9.jpg",
+    "img/sidha-sidhi-10.jpg",
+    "img/sidha-sidhi-11.jpg",
+    "img/sidha-sidhi-12.jpg"
+   ],
+   "addedBy": "Harry",
+   "checked": "28 Nov"
+  },
+  {
+   "id": "casa-azzouzi",
+   "area": "xmas",
+   "kind": "stay",
+   "source": "Airbnb",
+   "url": "https://www.airbnb.com.au/rooms/1821423696621931962",
+   "title": "Casa De Azzouzi – Modern 3BR Retreat in Kerobokan",
+   "location": "Kerobokan (Jl. Raya Kedampang). Minutes from Seminyak, Petitenget and Canggu, near Boy'N'Cow and nüde café",
+   "dates": "23 – 26 Dec",
+   "nights": 3,
+   "facts": [
+    "3 bedrooms",
+    "3 beds",
+    "3 bathrooms",
+    "Sleeps 6"
+   ],
+   "highlights": [
+    "Private pool in tropical garden",
+    "Daily housekeeping, 200 Mbps Wi-Fi",
+    "Minutes from Seminyak, Petitenget and Canggu"
+   ],
+   "priceTotal": 654.52,
+   "priceNight": 218.17,
+   "cancel": "Free cancellation for 24 hours after booking, partial refund before 16 Dec",
+   "rating": "New listing, no reviews yet (Balinest Villas has 10,701 reviews on other places) · Host: Balinest Villas, Superhost, 4 years hosting",
+   "notes": "Available 23–26 Dec (checked 28 Nov). $654.52 total for 3 nights, taxes and fees included.",
+   "images": [
+    "img/casa-azzouzi-1.jpg",
+    "img/casa-azzouzi-2.jpg",
+    "img/casa-azzouzi-3.jpg",
+    "img/casa-azzouzi-4.jpg",
+    "img/casa-azzouzi-5.jpg",
+    "img/casa-azzouzi-6.jpg",
+    "img/casa-azzouzi-7.jpg",
+    "img/casa-azzouzi-8.jpg",
+    "img/casa-azzouzi-9.jpg",
+    "img/casa-azzouzi-10.jpg",
+    "img/casa-azzouzi-11.jpg",
+    "img/casa-azzouzi-12.jpg"
+   ],
+   "addedBy": "Harry",
+   "checked": "28 Nov"
+  },
+  {
+   "id": "villa-drift-10",
+   "area": "xmas",
+   "kind": "stay",
+   "source": "Airbnb",
+   "url": "https://www.airbnb.com.au/rooms/1825065408468752966",
+   "title": "Villa Drift 10 – Luxury villa with private pool and rooftop",
+   "location": "Uluwatu, quiet residential area near Balangan. 7 min drive to Balangan and Dreamland, 15 min to Bingin",
+   "dates": "23 – 26 Dec",
+   "nights": 3,
+   "facts": [
+    "3 bedrooms",
+    "3 beds",
+    "3 bathrooms",
+    "Sleeps 6"
+   ],
+   "highlights": [
+    "Private pool and rooftop terrace",
+    "Bathtub in the master suite",
+    "7 min drive to Balangan and Dreamland beaches"
+   ],
+   "priceTotal": 668.1,
+   "priceNight": 222.7,
+   "cancel": "Free cancellation before 3pm, 9 Dec (partial refund before 16 Dec)",
+   "rating": "New listing, no reviews yet (host has 129 reviews on other places) · Host: Maison Damai, Superhost, 1 year hosting",
+   "notes": "Available 23–26 Dec (checked 28 Nov). $668.10 total for 3 nights, taxes and fees included.",
+   "images": [
+    "img/villa-drift-10-1.jpg",
+    "img/villa-drift-10-2.jpg",
+    "img/villa-drift-10-3.jpg",
+    "img/villa-drift-10-4.jpg",
+    "img/villa-drift-10-5.jpg",
+    "img/villa-drift-10-6.jpg",
+    "img/villa-drift-10-7.jpg",
+    "img/villa-drift-10-8.jpg",
+    "img/villa-drift-10-9.jpg",
+    "img/villa-drift-10-10.jpg",
+    "img/villa-drift-10-11.jpg",
+    "img/villa-drift-10-12.jpg"
+   ],
+   "addedBy": "Harry",
+   "checked": "28 Nov"
+  },
+  {
+   "id": "bingin-lux-boho",
+   "area": "xmas",
+   "kind": "stay",
+   "source": "Airbnb",
+   "url": "https://www.airbnb.com.au/rooms/848887582693157188",
+   "title": "Bingin Lux Boho Villa",
+   "location": "Uluwatu, residential Bingin. Cafés and restaurants on the main road nearby, about 15 min walk to Bingin Beach",
+   "dates": "23 – 26 Dec",
+   "nights": 3,
+   "facts": [
+    "3 bedrooms",
+    "3 beds",
+    "4 bathrooms",
+    "Sleeps 6"
+   ],
+   "highlights": [
+    "Boho-style villa with private pool",
+    "Walk to Bingin cafés and restaurants",
+    "About 15 min walk to Bingin Beach"
+   ],
+   "priceTotal": 701.46,
+   "priceNight": 233.82,
+   "cancel": "Free cancellation for 24 hours after booking, partial refund before 16 Dec",
+   "rating": "4.83★ from 60 reviews · Host: Wayan, Superhost, 4 years hosting",
+   "notes": "Available 23–26 Dec (checked 28 Nov). $701.46 total for 3 nights, taxes and fees included. Discounted from $886.08.",
+   "images": [
+    "img/bingin-lux-boho-1.jpg",
+    "img/bingin-lux-boho-2.jpg",
+    "img/bingin-lux-boho-3.jpg",
+    "img/bingin-lux-boho-4.jpg",
+    "img/bingin-lux-boho-5.jpg",
+    "img/bingin-lux-boho-6.jpg",
+    "img/bingin-lux-boho-7.jpg",
+    "img/bingin-lux-boho-8.jpg",
+    "img/bingin-lux-boho-9.jpg",
+    "img/bingin-lux-boho-10.jpg",
+    "img/bingin-lux-boho-11.jpg",
+    "img/bingin-lux-boho-12.jpg"
+   ],
+   "addedBy": "Harry",
+   "checked": "28 Nov"
+  },
+  {
+   "id": "villa-svargi",
+   "area": "xmas",
+   "kind": "stay",
+   "source": "Airbnb",
+   "url": "https://www.airbnb.com.au/rooms/1756238546361127304",
+   "title": "Villa Svargi – Central Uluwatu 3BR with Private Pool",
+   "location": "Central Uluwatu. About 20 min walk to Blue Point Beach (Single Fin / Suluban)",
+   "dates": "23 – 26 Dec",
+   "nights": 3,
+   "facts": [
+    "3 bedrooms",
+    "3 beds",
+    "3.5 bathrooms",
+    "Sleeps 6"
+   ],
+   "highlights": [
+    "Pool courtyard with over-water swing",
+    "Rooftop and hot tub",
+    "About 20 min walk to Blue Point Beach / Single Fin"
+   ],
+   "priceTotal": 897.72,
+   "priceNight": 299.24,
+   "cancel": "Free cancellation before 2pm, 22 Dec (pay $0 today)",
+   "rating": "4.6★ from 5 reviews · Host: Reonard, Superhost, 3 months hosting",
+   "notes": "Available 23–26 Dec (checked 28 Nov). $897.72 total for 3 nights, taxes and fees included. Listing warns of occasional power maintenance in Uluwatu (about once a month, under 3 hours).",
+   "images": [
+    "img/villa-svargi-1.jpg",
+    "img/villa-svargi-2.jpg",
+    "img/villa-svargi-3.jpg",
+    "img/villa-svargi-4.jpg",
+    "img/villa-svargi-5.jpg",
+    "img/villa-svargi-6.jpg",
+    "img/villa-svargi-7.jpg",
+    "img/villa-svargi-8.jpg",
+    "img/villa-svargi-9.jpg",
+    "img/villa-svargi-10.jpg",
+    "img/villa-svargi-11.jpg",
+    "img/villa-svargi-12.jpg"
+   ],
+   "addedBy": "Harry",
+   "checked": "28 Nov"
+  },
+  {
+   "id": "graf-residence",
+   "area": "xmas",
+   "kind": "stay",
+   "source": "Airbnb",
+   "url": "https://www.airbnb.com.au/rooms/1599690363661513446",
+   "title": "Graf Residence – Designer 3-Suite Pool Villa, Umalas",
+   "location": "Umalas, between Canggu and Seminyak. About 30 min walk to Seminyak's Ikat Gallery",
+   "dates": "23 – 26 Dec",
+   "nights": 3,
+   "facts": [
+    "3 bedrooms",
+    "3 super king beds",
+    "3.5 bathrooms",
+    "Sleeps 6"
+   ],
+   "highlights": [
+    "Moody double-height lounge",
+    "Private pool and big terrace",
+    "Between Canggu and Seminyak"
+   ],
+   "priceTotal": 1054.1,
+   "priceNight": 351.37,
+   "cancel": "Free cancellation before 3pm, 9 Dec (partial refund before 16 Dec)",
+   "rating": "4.6★ from 5 reviews · Host: Your Stay Bali, 3 years hosting",
+   "notes": "Available 23–26 Dec (checked 28 Nov). $1,054.10 total for 3 nights, taxes and fees included. Discounted from $1,159.25.",
+   "images": [
+    "img/graf-residence-1.jpg",
+    "img/graf-residence-2.jpg",
+    "img/graf-residence-3.jpg",
+    "img/graf-residence-4.jpg",
+    "img/graf-residence-5.jpg",
+    "img/graf-residence-6.jpg",
+    "img/graf-residence-7.jpg",
+    "img/graf-residence-8.jpg",
+    "img/graf-residence-9.jpg",
+    "img/graf-residence-10.jpg",
+    "img/graf-residence-11.jpg",
+    "img/graf-residence-12.jpg"
+   ],
+   "addedBy": "Harry",
+   "checked": "28 Nov"
+  }
+ ],
+ "votes": []
+}
