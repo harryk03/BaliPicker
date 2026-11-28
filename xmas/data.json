@@ -349,6 +349,46 @@
    ],
    "addedBy": "Harry",
    "checked": "28 Nov"
+  },
+  {
+   "id": "beyond-the-palms",
+   "area": "xmas",
+   "kind": "stay",
+   "source": "Airbnb",
+   "url": "https://www.airbnb.com.au/rooms/1138105700588823608",
+   "title": "Beyond the Palms – Brand New 4BR Canggu Villa with Rooftop",
+   "location": "Canggu (Berawa side). 5 min to Pepito, Bali MMA and Wanderlust, 6 min to Obsidian Gym, 12 min to Finns and Atlas, 13 min to Berawa Beach",
+   "dates": "23 – 26 Dec",
+   "nights": 3,
+   "facts": [
+    "4 bedrooms",
+    "4 king beds",
+    "4 bathrooms",
+    "Sleeps 8"
+   ],
+   "highlights": [
+    "45 m² pool, BBQ area and rooftop with jacuzzi and movie projector",
+    "86-inch TV with Sonos, SMEG kitchen, all-night security",
+    "Every bedroom has a king bed and TV"
+   ],
+   "priceTotal": 2754.81,
+   "priceNight": 918.27,
+   "cancel": "Free cancellation for 24 hours after booking, partial refund before 2pm, 16 Dec",
+   "rating": "4.86★ from 71 reviews · Host: The Tropical Door, Superhost, 8 years hosting",
+   "notes": "Available 23–26 Dec (checked 28 Nov). $2,754.81 total for 3 nights, discounted from $5,432.98. By far the priciest option (~$918 each). Construction next door until July 2027 may be noisy. Some reviews mention damage charges for small breakages, so photograph everything at check-in.",
+   "images": [
+    "img/beyond-the-palms-1.jpg",
+    "img/beyond-the-palms-2.jpg",
+    "img/beyond-the-palms-3.jpg",
+    "img/beyond-the-palms-4.jpg",
+    "img/beyond-the-palms-5.jpg",
+    "img/beyond-the-palms-6.jpg",
+    "img/beyond-the-palms-7.jpg",
+    "img/beyond-the-palms-8.jpg",
+    "img/beyond-the-palms-9.jpg"
+   ],
+   "addedBy": "Harry",
+   "checked": "28 Nov"
   }
  ],
  "votes": []
