@@ -556,6 +556,33 @@
    ],
    "addedBy": "Harry",
    "checked": "28 Nov"
+  },
+  {
+   "id": "openhouse-cafe",
+   "area": "xmas",
+   "kind": "do",
+   "source": "Google Maps",
+   "url": "https://maps.app.goo.gl/oBxXasF99mbpkTFD6",
+   "title": "Openhouse Cafe – Pererenan",
+   "location": "Jl. Tukad Pingai, Pererenan (just past Canggu)",
+   "facts": [
+    "Café",
+    "4.7★ from 1,627 Google reviews",
+    "Open till 11pm"
+   ],
+   "highlights": [
+    "Build-your-own healthy plates with macros listed",
+    "Big portions, chill vibe, good music",
+    "Also runs DJ / community nights"
+   ],
+   "notes": "Reviewers rave about the food and staff. Bookable via WhatsApp (+62 853-3800-7745) or openhousecafebali.com.",
+   "images": [
+    "img/openhouse-cafe-1.jpg",
+    "img/openhouse-cafe-2.jpg",
+    "img/openhouse-cafe-3.jpg"
+   ],
+   "addedBy": "Harry",
+   "checked": "28 Nov"
   }
  ],
  "votes": []
